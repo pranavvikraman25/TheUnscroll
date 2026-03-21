@@ -2,9 +2,9 @@
 import { useState } from 'react'
 
 const categoryConfig: Record<string, { label: string; bg: string; color: string }> = {
-    fun: { label: '🎉 Fun', bg: '#fef9e7', color: '#c8970a' },
-    knowledge: { label: '📚 Knowledge', bg: '#edf7f0', color: '#2d8a4e' },
-    learning: { label: '🧠 Learning', bg: '#eef3fe', color: '#3b5bdb' },
+    fun: { label: 'Fun', bg: '#fef9e7', color: '#c8970a' },
+    knowledge: { label: 'Knowledge', bg: '#edf7f0', color: '#2d8a4e' },
+    learning: { label: 'Learning', bg: '#eef3fe', color: '#3b5bdb' },
 }
 
 const categoryEmoji: Record<string, string> = {
@@ -44,6 +44,7 @@ export default function SiteCard({ site, isSaved, onToggleSave }: {
                 {(!site.screenshot || imgError) ? (
                     <span>{categoryEmoji[site.category] || '🌐'}</span>
                 ) : (
+                    // eslint-disable-next-line @next/next/no-img-element
                     <img
                         src={site.screenshot} alt={site.name}
                         style={{ width: '100%', height: '100%', objectFit: 'cover' }}

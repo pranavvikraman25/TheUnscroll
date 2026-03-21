@@ -12,9 +12,19 @@ export default function Sidebar({ active, onSelect, total, savedCount }: {
 }) {
     return (
         <aside style={{
-            width: '210px', flexShrink: 0, background: '#fff',
-            borderRight: '1px solid #e5e7eb', padding: '20px 12px',
-            display: 'flex', flexDirection: 'column', gap: '4px', minHeight: '100vh',
+            width: '210px',
+            flexShrink: 0,
+            background: '#fff',
+            borderRight: '1px solid #e5e7eb',
+            padding: '20px 12px',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '4px',
+            /* Fixed sidebar — only content scrolls */
+            position: 'sticky',
+            top: 0,
+            height: '100vh',
+            overflowY: 'auto',
         }}>
             {/* Logo */}
             <div style={{ marginBottom: '20px', paddingLeft: '8px' }}>

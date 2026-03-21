@@ -1,8 +1,11 @@
 'use client'
 import { useState, useMemo, useEffect } from 'react'
-import sites from '../data/sites.json'
+import allSites from '../data/sites.json'
 import SiteCard from '../components/SiteCard'
 import Sidebar from '../components/Sidebar'
+
+// Filter out empty placeholder entries
+const sites = allSites.filter(s => s.name.trim() !== '')
 
 export default function Home() {
   const [category, setCategory] = useState('all')
@@ -14,14 +17,14 @@ export default function Home() {
     try {
       const stored = localStorage.getItem('tabbreaker-saved')
       if (stored) setSaved(JSON.parse(stored))
-    } catch { }
+    } catch { /* ignore */ }
   }, [])
 
   // Save to localStorage whenever saved list changes
   useEffect(() => {
     try {
       localStorage.setItem('tabbreaker-saved', JSON.stringify(saved))
-    } catch { }
+    } catch { /* ignore */ }
   }, [saved])
 
   const toggleSave = (id: number) => {
@@ -44,14 +47,16 @@ export default function Home() {
   }, [category, search, saved])
 
   return (
-    <div style={{ display: 'flex', minHeight: '100vh' }}>
+    <div style={{ display: 'flex', height: '100vh', overflow: 'hidden', background: '#f9fafb' }}>
       <Sidebar
         active={category}
         onSelect={setCategory}
         total={sites.length}
         savedCount={saved.length}
       />
-      <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
+
+      {/* Right side — only this scrolls */}
+      <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflowY: 'auto', background: '#f9fafb' }}>
 
         {/* Top bar */}
         <div style={{
@@ -85,7 +90,7 @@ export default function Home() {
         </div>
 
         {/* Hero */}
-        <div style={{ padding: '28px 24px 20px', borderBottom: '1px solid #f3f4f6' }}>
+        <div style={{ padding: '28px 24px 20px', borderBottom: '1px solid #f3f4f6', background: '#fff' }}>
           <h1 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '6px' }}>
             <span style={{ color: '#2d8a4e' }}>100 websites</span> to break your{' '}
             <span style={{ color: '#c8970a' }}>reel addiction</span> ✦
