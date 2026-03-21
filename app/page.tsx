@@ -1,5 +1,5 @@
 'use client'
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import sites from '../data/sites.json'
 import SiteCard from '../components/SiteCard'
 import Sidebar from '../components/Sidebar'
@@ -8,6 +8,21 @@ export default function Home() {
   const [category, setCategory] = useState('all')
   const [search, setSearch] = useState('')
   const [saved, setSaved] = useState<number[]>([])
+
+  // Load saved sites from localStorage on first render
+  useEffect(() => {
+    try {
+      const stored = localStorage.getItem('tabbreaker-saved')
+      if (stored) setSaved(JSON.parse(stored))
+    } catch { }
+  }, [])
+
+  // Save to localStorage whenever saved list changes
+  useEffect(() => {
+    try {
+      localStorage.setItem('tabbreaker-saved', JSON.stringify(saved))
+    } catch { }
+  }, [saved])
 
   const toggleSave = (id: number) => {
     setSaved(prev => prev.includes(id) ? prev.filter(s => s !== id) : [...prev, id])

@@ -1,10 +1,10 @@
 'use client'
 
 const categories = [
-    { key: 'all', label: '🌐 All sites' },
-    { key: 'fun', label: '🎉 Fun' },
-    { key: 'knowledge', label: '📚 Knowledge' },
-    { key: 'learning', label: '🧠 Learning' },
+    { key: 'all', label: 'All sites' },
+    { key: 'fun', label: 'Fun' },
+    { key: 'knowledge', label: 'Knowledge' },
+    { key: 'learning', label: 'Learning' },
 ]
 
 export default function Sidebar({ active, onSelect, total, savedCount }: {
@@ -51,7 +51,7 @@ export default function Sidebar({ active, onSelect, total, savedCount }: {
                     background: active === 'saved' ? '#fef9e7' : 'transparent',
                     color: active === 'saved' ? '#c8970a' : '#374151',
                 }}>
-                    ⭐ Saved ({savedCount})
+                    Saved ({savedCount})
                 </button>
             )}
 
