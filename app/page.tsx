@@ -1,65 +1,110 @@
-import Image from "next/image";
+'use client'
+import { useState, useMemo } from 'react'
+import sites from '../data/sites.json'
+import SiteCard from '../components/SiteCard'
+import Sidebar from '../components/Sidebar'
 
 export default function Home() {
+  const [category, setCategory] = useState('all')
+  const [search, setSearch] = useState('')
+  const [saved, setSaved] = useState<number[]>([])
+
+  const toggleSave = (id: number) => {
+    setSaved(prev => prev.includes(id) ? prev.filter(s => s !== id) : [...prev, id])
+  }
+
+  const filtered = useMemo(() => {
+    let list = sites
+    if (category === 'saved') list = sites.filter(s => saved.includes(s.id))
+    else if (category !== 'all') list = sites.filter(s => s.category === category)
+    if (search.trim()) {
+      const q = search.toLowerCase()
+      list = list.filter(s =>
+        s.name.toLowerCase().includes(q) ||
+        s.description.toLowerCase().includes(q) ||
+        s.category.toLowerCase().includes(q)
+      )
+    }
+    return list
+  }, [category, search, saved])
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <div style={{ display: 'flex', minHeight: '100vh' }}>
+      <Sidebar
+        active={category}
+        onSelect={setCategory}
+        total={sites.length}
+        savedCount={saved.length}
+      />
+      <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
+
+        {/* Top bar */}
+        <div style={{
+          padding: '12px 20px', borderBottom: '1px solid #e5e7eb',
+          background: '#fff', display: 'flex', alignItems: 'center', gap: '12px',
+          position: 'sticky', top: 0, zIndex: 10,
+        }}>
+          <input
+            type="text"
+            placeholder="🔍  Search sites... e.g. music, typing, NASA"
+            value={search}
+            onChange={e => setSearch(e.target.value)}
+            style={{
+              flex: 1, padding: '9px 14px', border: '1px solid #e5e7eb',
+              borderRadius: '8px', fontSize: '13px', background: '#f9fafb',
+              outline: 'none', color: '#111',
+            }}
+          />
+          <a
+            href="https://github.com/pranavvikraman25/tabbreaker/issues/new"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              padding: '9px 18px', borderRadius: '8px', fontSize: '13px',
+              border: '1px solid #2d8a4e', color: '#2d8a4e',
+              textDecoration: 'none', fontWeight: 600, whiteSpace: 'nowrap',
+            }}
+          >
+            + Submit a site
+          </a>
+        </div>
+
+        {/* Hero */}
+        <div style={{ padding: '28px 24px 20px', borderBottom: '1px solid #f3f4f6' }}>
+          <h1 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '6px' }}>
+            <span style={{ color: '#2d8a4e' }}>100 websites</span> to break your{' '}
+            <span style={{ color: '#c8970a' }}>reel addiction</span> ✦
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p style={{ fontSize: '14px', color: '#6b7280', margin: 0 }}>
+            Every site here has the same pull as a reel — but leaves you smarter, happier, or genuinely amazed.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        {/* Grid */}
+        <div style={{
+          padding: '20px 24px',
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))',
+          gap: '16px',
+        }}>
+          {filtered.length === 0 ? (
+            <div style={{ gridColumn: '1/-1', textAlign: 'center', padding: '60px 0', color: '#9ca3af' }}>
+              <div style={{ fontSize: '40px', marginBottom: '12px' }}>🔍</div>
+              <div style={{ fontSize: '15px' }}>No sites found. Try a different search!</div>
+            </div>
+          ) : (
+            filtered.map(site => (
+              <SiteCard
+                key={site.id}
+                site={site}
+                isSaved={saved.includes(site.id)}
+                onToggleSave={toggleSave}
+              />
+            ))
+          )}
         </div>
-      </main>
+
+      </div>
     </div>
-  );
+  )
 }

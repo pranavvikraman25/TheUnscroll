@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "name": "Neal.fun",
+        "url": "https://neal.fun",
+        "description": "A collection of fun, interactive web experiments — from spending a billion dollars to the size of space.",
+        "category": "fun",
+        "screenshot": ""
+    },
+    {
+        "id": 2,
+        "name": "The Useless Web",
+        "url": "https://theuselessweb.com",
+        "description": "Click a button and get sent to a random, hilariously pointless website. Pure internet chaos.",
+        "category": "fun",
+        "screenshot": ""
+    },
+    {
+        "id": 3,
+        "name": "Pointer Pointer",
+        "url": "https://pointerpointer.com",
+        "description": "Move your mouse anywhere on the page and it finds a photo of someone literally pointing at your cursor.",
+        "category": "fun",
+        "screenshot": ""
+    },
+    {
+        "id": 4,
+        "name": "NASA APOD",
+        "url": "https://apod.nasa.gov",
+        "description": "A new stunning photo of the universe every single day, explained by a professional astronomer.",
+        "category": "knowledge",
+        "screenshot": ""
+    },
+    {
+        "id": 5,
+        "name": "Bartosz Ciechanowski",
+        "url": "https://ciechanow.ski",
+        "description": "Deeply interactive visual explanations of how everyday things work — GPS, engines, clocks, waves.",
+        "category": "knowledge",
+        "screenshot": ""
+    },
+    {
+        "id": 6,
+        "name": "Our World in Data",
+        "url": "https://ourworldindata.org",
+        "description": "Research and data visualizations that show how the world is changing — poverty, health, energy, and more.",
+        "category": "knowledge",
+        "screenshot": ""
+    },
+    {
+        "id": 7,
+        "name": "Brilliant",
+        "url": "https://brilliant.org",
+        "description": "Learn math, logic, science and CS through bite-sized interactive challenges. Brain workout mode: ON.",
+        "category": "learning",
+        "screenshot": ""
+    },
+    {
+        "id": 8,
+        "name": "Typing Club",
+        "url": "https://www.typingclub.com",
+        "description": "Learn to touch-type fast with fun, gamified lessons. You'll thank yourself forever.",
+        "category": "learning",
+        "screenshot": ""
+    },
+    {
+        "id": 9,
+        "name": "Khan Academy",
+        "url": "https://www.khanacademy.org",
+        "description": "Free world-class education in math, science, computing, and more. Actually great for all ages.",
+        "category": "learning",
+        "screenshot": ""
+    },
+    {
+        "id": 10,
+        "name": "Radiooooo",
+        "url": "https://radiooooo.com",
+        "description": "A musical time machine — pick any decade and country and listen to what was playing on the radio.",
+        "category": "fun",
+        "screenshot": ""
+    },
+    {
+        "id": 11,
+        "name": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org",
+        "description": "Millions of freely usable images, audio, and video from around the world. Endlessly fascinating to explore.",
+        "category": "knowledge",
+        "screenshot": ""
+    },
+    {
+        "id": 12,
+        "name": "Regexr",
+        "url": "https://regexr.com",
+        "description": "Learn and test Regular Expressions in real time with visual highlighting and a cheat sheet.",
+        "category": "learning",
+        "screenshot": ""
+    }
+]
