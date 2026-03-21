@@ -361,30 +361,142 @@
     },
     {
         "id": 46,
-        "name": "",
-        "url": "",
-        "description": "",
+        "name": "Paper Me",
+        "url": "https://paperme.pixzens.com",
+        "description": "Turn your photos into beautiful paper-cut style art. A uniquely satisfying creative tool right in the browser.",
         "category": "fun",
         "screenshot": ""
     },
     {
         "id": 47,
-        "name": "",
-        "url": "",
-        "description": "",
+        "name": "Story Tribe",
+        "url": "https://storytribeapp.com",
+        "description": "A collaborative storytelling app where you and friends co-write stories together. Great for creativity and imagination.",
         "category": "fun",
         "screenshot": ""
     },
     {
         "id": 48,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
+        "name": "Runable",
+        "url": "https://runable.com",
+        "description": "Run, test, and share code snippets interactively in the browser. Clean interface, instant results, no setup needed.",
+        "category": "learning",
         "screenshot": ""
     },
     {
         "id": 49,
+        "name": "Wolfram Alpha",
+        "url": "https://www.wolframalpha.com",
+        "description": "Type any question and get computed, factual answers — math, science, history, nutrition, dates. The world's smartest calculator.",
+        "category": "knowledge",
+        "screenshot": ""
+    },
+    {
+        "id": 50,
+        "name": "Capitol Trades",
+        "url": "https://www.capitoltrades.com",
+        "description": "Track real stock trades made by US politicians. See exactly what senators and congress members are buying and selling.",
+        "category": "knowledge",
+        "screenshot": ""
+    },
+    {
+        "id": 51,
+        "name": "Remove Paywall",
+        "url": "https://www.removepaywall.com",
+        "description": "Paste any paywalled article URL and read it for free. Access NYT, Bloomberg, and more without a subscription.",
+        "category": "knowledge",
+        "screenshot": ""
+    },
+    {
+        "id": 52,
+        "name": "Airmore AI",
+        "url": "https://airmore.ai",
+        "description": "A collection of free AI tools — image generation, writing, voice, video, and more. All in one place with no login.",
+        "category": "fun",
+        "screenshot": ""
+    },
+    {
+        "id": 53,
+        "name": "Exercism",
+        "url": "https://exercism.org",
+        "description": "Practice coding in 67 languages with real exercises and get feedback from volunteer mentors. Free, deep, and genuinely useful.",
+        "category": "learning",
+        "screenshot": ""
+    },
+    {
+        "id": 54,
+        "name": "Coddy",
+        "url": "https://coddy.tech",
+        "description": "Bite-sized interactive coding challenges that teach you to code through doing. Clean UX, great for beginners.",
+        "category": "learning",
+        "screenshot": ""
+    },
+    {
+        "id": 55,
+        "name": "Muscle Wiki",
+        "url": "https://musclewiki.com",
+        "description": "Click any muscle on a 3D body map and instantly see the best exercises for it. The best free fitness reference on the web.",
+        "category": "knowledge",
+        "screenshot": ""
+    },
+    {
+        "id": 56,
+        "name": "Auto Catalog Archive",
+        "url": "https://autocatalogarchive.com",
+        "description": "Browse thousands of original car brochures and catalogs from the 1950s to today. A paradise for car enthusiasts.",
+        "category": "fun",
+        "screenshot": ""
+    },
+    {
+        "id": 57,
+        "name": "JMail",
+        "url": "https://jmail.world",
+        "description": "Instant disposable email addresses — no signup, no password. Perfect for avoiding spam when trying out new services.",
+        "category": "fun",
+        "screenshot": ""
+    },
+    {
+        "id": 58,
+        "name": "Alison",
+        "url": "https://alison.com",
+        "description": "Over 5,000 free online courses with real certificates. From IT to languages to business — all genuinely free.",
+        "category": "learning",
+        "screenshot": ""
+    },
+    {
+        "id": 59,
+        "name": "True Size",
+        "url": "https://www.truesize.of.earth",
+        "description": "Drag any country across the world map to see its true geographic size. Reveals how much Mercator maps deceive us.",
+        "category": "knowledge",
+        "screenshot": ""
+    },
+    {
+        "id": 60,
+        "name": "World Monitor",
+        "url": "https://worldmonitor.app",
+        "description": "A live dashboard of the world — population, births, deaths, CO2, energy use, all ticking in real time.",
+        "category": "knowledge",
+        "screenshot": ""
+    },
+    {
+        "id": 61,
+        "name": "EmuPedia",
+        "url": "https://emupedia.net",
+        "description": "Play thousands of retro games — DOS, SNES, Game Boy, Arcade — directly in your browser. Pure gaming nostalgia.",
+        "category": "fun",
+        "screenshot": ""
+    },
+    {
+        "id": 62,
+        "name": "White Screen",
+        "url": "https://whitescreen.online",
+        "description": "A pure white screen for your monitor — useful for cleaning screens, lighting for photos, or just blanking out distractions.",
+        "category": "fun",
+        "screenshot": ""
+    },
+    {
+        "id": 63,
         "name": "",
         "url": "",
         "description": "",
