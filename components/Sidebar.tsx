@@ -29,11 +29,11 @@ export default function Sidebar({ active, onSelect, total, savedCount }: {
             {/* Logo */}
             <div style={{ marginBottom: '20px', paddingLeft: '8px' }}>
                 <div style={{ fontSize: '22px', fontWeight: 700, letterSpacing: '-0.5px' }}>
-                    <span style={{ color: '#2d8a4e' }}>Tab</span>
-                    <span style={{ color: '#c8970a' }}>Breaker</span>
+                    <span style={{ color: '#2d8a4e' }}>The </span>
+                    <span style={{ color: '#c8970a' }}>Unscroll</span>
                 </div>
                 <div style={{ fontSize: '11px', color: '#9ca3af', marginTop: '2px' }}>
-                    Break the reel loop ✦
+                    Your cure for endless scrolling ✦
                 </div>
             </div>
 

@@ -92,11 +92,11 @@ export default function Home() {
         {/* Hero */}
         <div style={{ padding: '28px 24px 20px', borderBottom: '1px solid #f3f4f6', background: '#fff' }}>
           <h1 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '6px' }}>
-            <span style={{ color: '#2d8a4e' }}>100 websites</span> to break your{' '}
-            <span style={{ color: '#c8970a' }}>reel addiction</span> ✦
+            <span style={{ color: '#2d8a4e' }}>The Unscroll</span> — your cure for{' '}
+            <span style={{ color: '#c8970a' }}>endless scrolling</span> ✦
           </h1>
           <p style={{ fontSize: '14px', color: '#6b7280', margin: 0 }}>
-            Every site here has the same pull as a reel — but leaves you smarter, happier, or genuinely amazed.
+            Every site here earns your attention the honest way — wonder, learning, or pure joy. No algorithm. Just the internet at its best.
           </p>
         </div>
 
