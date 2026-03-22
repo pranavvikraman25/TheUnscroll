@@ -91,12 +91,15 @@ export default function Home() {
 
         {/* Hero */}
         <div style={{ padding: '28px 24px 20px', borderBottom: '1px solid #f3f4f6', background: '#fff' }}>
+          <div style={{ fontSize: '11px', fontWeight: 600, color: '#9ca3af', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '8px' }}>
+            {category === 'all' ? `${sites.length} sites across 7 categories` : `${filtered.length} sites in this category`}
+          </div>
           <h1 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '6px' }}>
             <span style={{ color: '#2d8a4e' }}>The Unscroll</span> — your cure for{' '}
             <span style={{ color: '#c8970a' }}>endless scrolling</span> ✦
           </h1>
           <p style={{ fontSize: '14px', color: '#6b7280', margin: 0 }}>
-            Every site here earns your attention the honest way — wonder, learning, or pure joy. No algorithm. Just the internet at its best.
+            Every site earns your attention the honest way — wonder, learning, or pure joy. No algorithm. Just the internet at its best.
           </p>
         </div>
 
@@ -110,7 +113,7 @@ export default function Home() {
           {filtered.length === 0 ? (
             <div style={{ gridColumn: '1/-1', textAlign: 'center', padding: '60px 0', color: '#9ca3af' }}>
               <div style={{ fontSize: '40px', marginBottom: '12px' }}>🔍</div>
-              <div style={{ fontSize: '15px' }}>No sites found. Try a different search!</div>
+              <div style={{ fontSize: '15px' }}>No sites match. Try another keyword!</div>
             </div>
           ) : (
             filtered.map(site => (

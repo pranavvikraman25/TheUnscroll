@@ -1,206 +1,902 @@
 [
     {
         "id": 1,
-        "name": "Neal.fun",
-        "url": "https://neal.fun",
-        "description": "A collection of fun, interactive web experiments — from spending a billion dollars to the size of space.",
-        "category": "fun",
+        "name": "Radio Garden",
+        "url": "https://radio.garden",
+        "description": "Spin a 3D globe and tune into live radio stations from every corner of the world. Thrissur, Tokyo, New York — all live.",
+        "category": "travel",
         "screenshot": ""
     },
     {
         "id": 2,
-        "name": "The Useless Web",
-        "url": "https://theuselessweb.com",
-        "description": "Click a button and get sent to a random, hilariously pointless website. Pure internet chaos.",
-        "category": "fun",
+        "name": "GeoGuessr",
+        "url": "https://www.geoguessr.com",
+        "description": "Dropped into a random Google Street View somewhere on Earth — figure out where you are from visual clues alone.",
+        "category": "travel",
         "screenshot": ""
     },
     {
         "id": 3,
-        "name": "Pointer Pointer",
-        "url": "https://pointerpointer.com",
-        "description": "Move your mouse anywhere on the page and it finds a photo of someone literally pointing at your cursor.",
-        "category": "fun",
+        "name": "Drive & Listen",
+        "url": "https://driveandlisten.herokuapp.com",
+        "description": "Virtual drives through major cities around the world with local radio playing. Istanbul at night, NYC in the rain.",
+        "category": "travel",
         "screenshot": ""
     },
     {
         "id": 4,
-        "name": "NASA APOD",
-        "url": "https://apod.nasa.gov",
-        "description": "A new stunning photo of the universe every single day, explained by a professional astronomer.",
-        "category": "knowledge",
+        "name": "WindowSwap",
+        "url": "https://www.window-swap.com",
+        "description": "Look through someone else's window somewhere in the world. New view, new country, every click.",
+        "category": "travel",
         "screenshot": ""
     },
     {
         "id": 5,
-        "name": "Bartosz Ciechanowski",
-        "url": "https://ciechanow.ski",
-        "description": "Deeply interactive visual explanations of how everyday things work — GPS, engines, clocks, waves.",
-        "category": "knowledge",
+        "name": "Google Arts & Culture",
+        "url": "https://artsandculture.google.com",
+        "description": "Virtual tours of the world's greatest museums and art galleries. The Louvre, MoMA, and 2,000 more — all free.",
+        "category": "travel",
         "screenshot": ""
     },
     {
         "id": 6,
-        "name": "Our World in Data",
-        "url": "https://ourworldindata.org",
-        "description": "Research and data visualizations that show how the world is changing — poverty, health, energy, and more.",
-        "category": "knowledge",
+        "name": "AirPano",
+        "url": "https://www.airpano.com",
+        "description": "360-degree aerial panoramas of the most breathtaking places on Earth. Immersive and genuinely stunning.",
+        "category": "travel",
         "screenshot": ""
     },
     {
         "id": 7,
-        "name": "Brilliant",
-        "url": "https://brilliant.org",
-        "description": "Learn math, logic, science and CS through bite-sized interactive challenges. Brain workout mode: ON.",
-        "category": "learning",
+        "name": "MapCrunch",
+        "url": "https://www.mapcrunch.com",
+        "description": "Click Teleport and get dropped into a random Google Street View location anywhere in the world. A passport-free adventure.",
+        "category": "travel",
         "screenshot": ""
     },
     {
         "id": 8,
-        "name": "Typing Club",
-        "url": "https://www.typingclub.com",
-        "description": "Learn to touch-type fast with fun, gamified lessons. You'll thank yourself forever.",
-        "category": "learning",
+        "name": "Ancient Earth Globe",
+        "url": "https://dinosaurpictures.org/ancient-earth",
+        "description": "See what Earth looked like 600 million years ago — drag the slider and watch continents collide and split.",
+        "category": "travel",
         "screenshot": ""
     },
     {
         "id": 9,
-        "name": "Khan Academy",
-        "url": "https://www.khanacademy.org",
-        "description": "Free world-class education in math, science, computing, and more. Actually great for all ages.",
-        "category": "learning",
+        "name": "FlightRadar24",
+        "url": "https://www.flightradar24.com",
+        "description": "Watch thousands of planes moving across the globe in real-time. Click any plane and see its full flight info.",
+        "category": "travel",
         "screenshot": ""
     },
     {
         "id": 10,
-        "name": "Radiooooo",
-        "url": "https://radiooooo.com",
-        "description": "A musical time machine — pick any decade and country and listen to what was playing on the radio.",
-        "category": "fun",
+        "name": "NASA Eyes",
+        "url": "https://eyes.nasa.gov",
+        "description": "Interactive 3D exploration of the solar system and every NASA mission ever launched. The whole universe in your browser.",
+        "category": "travel",
         "screenshot": ""
     },
     {
         "id": 11,
-        "name": "Wikimedia Commons",
-        "url": "https://commons.wikimedia.org",
-        "description": "Millions of freely usable images, audio, and video from around the world. Endlessly fascinating to explore.",
-        "category": "knowledge",
+        "name": "MarineTraffic",
+        "url": "https://www.marinetraffic.com",
+        "description": "Track ships and tankers moving across the oceans in real-time. Every cargo ship, cruise liner, and tanker, live.",
+        "category": "travel",
         "screenshot": ""
     },
     {
         "id": 12,
-        "name": "Regexr",
-        "url": "https://regexr.com",
-        "description": "Learn and test Regular Expressions in real time with visual highlighting and a cheat sheet.",
-        "category": "learning",
+        "name": "EarthCam",
+        "url": "https://www.earthcam.com",
+        "description": "Live webcam feeds from Times Square, Niagara Falls, tropical beaches, and hundreds of places worldwide.",
+        "category": "travel",
         "screenshot": ""
     },
     {
         "id": 13,
-        "name": "Radio Garden",
-        "url": "https://radio.garden",
-        "description": "Spin a 3D globe and tune into live radio stations from every corner of the world. Thrissur, Tokyo, New York — all live.",
-        "category": "fun",
+        "name": "Google Earth",
+        "url": "https://earth.google.com/web",
+        "description": "The classic way to explore our planet — zoom from space to your street. Every mountain, reef, and city.",
+        "category": "travel",
         "screenshot": ""
     },
     {
         "id": 14,
-        "name": "My 90s TV",
-        "url": "https://www.my90stv.com",
-        "description": "A simulated TV experience from the 90s — real commercials, shows, and music videos playing on loop. Pure nostalgia.",
-        "category": "fun",
+        "name": "ISS Live Stream",
+        "url": "https://www.nasa.gov/nasatv",
+        "description": "Watch the live view from the International Space Station as it orbits Earth every 90 minutes. Real-time space TV.",
+        "category": "travel",
         "screenshot": ""
     },
     {
         "id": 15,
-        "name": "Learning Music by Ableton",
-        "url": "https://learningmusic.ableton.com",
-        "description": "Learn the fundamentals of music through interactive, in-browser lessons. Beat making, chords, scales — all playable.",
-        "category": "learning",
+        "name": "GeoFS",
+        "url": "https://www.geo-fs.com",
+        "description": "Fly a real aircraft anywhere on Earth in your browser using satellite imagery. A surprisingly serious flight simulator.",
+        "category": "travel",
         "screenshot": ""
     },
     {
         "id": 16,
-        "name": "AFFiNE",
-        "url": "https://affine.pro",
-        "description": "An open-source all-in-one workspace — notes, docs, and whiteboards combined. The privacy-first Notion alternative.",
-        "category": "learning",
+        "name": "Space Type Generator",
+        "url": "https://spacetypegenerator.com",
+        "description": "Type anything and watch each letter come alive with mesmerizing space-themed animations. Oddly satisfying.",
+        "category": "creativity",
         "screenshot": ""
     },
     {
         "id": 17,
-        "name": "GeoFS",
-        "url": "https://www.geo-fs.com",
-        "description": "Fly a real aircraft anywhere on Earth right in your browser using satellite imagery. A surprisingly serious flight simulator.",
-        "category": "fun",
+        "name": "Weave Silk",
+        "url": "https://weavesilk.com",
+        "description": "Draw mesmerizing symmetrical flowing art with your mouse. Every stroke mirrors itself into hypnotic patterns.",
+        "category": "creativity",
         "screenshot": ""
     },
     {
         "id": 18,
-        "name": "Space Type Generator",
-        "url": "https://spacetypegenerator.com",
-        "description": "Type anything and watch each letter come alive with mesmerizing space-themed animations. Oddly satisfying.",
-        "category": "fun",
+        "name": "AutoDraw",
+        "url": "https://www.autodraw.com",
+        "description": "You doodle roughly; Google's AI instantly suggests what you meant and turns it into clean clipart. Magical.",
+        "category": "creativity",
         "screenshot": ""
     },
     {
         "id": 19,
-        "name": "Floor796",
-        "url": "https://floor796.com",
-        "description": "An endlessly expanding animated pixel-art scene packed with hundreds of pop culture easter eggs. You'll spend hours finding them.",
-        "category": "fun",
+        "name": "Excalidraw",
+        "url": "https://excalidraw.com",
+        "description": "A virtual whiteboard that feels like actual hand-drawn sketches. Perfect for diagrams, brainstorming, or doodling.",
+        "category": "creativity",
         "screenshot": ""
     },
     {
         "id": 20,
-        "name": "Zoomquilt 2",
-        "url": "https://zoomquilt2.com",
-        "description": "An infinitely zooming collaborative painting that descends forever through surreal worlds. Hypnotic and endless.",
-        "category": "fun",
+        "name": "Photopea",
+        "url": "https://www.photopea.com",
+        "description": "A free, browser-based Photoshop clone. Open PSD files, edit photos, design graphics — zero install needed.",
+        "category": "creativity",
         "screenshot": ""
     },
     {
         "id": 21,
-        "name": "Scale of the Universe",
-        "url": "https://www.htwins.net/scale2",
-        "description": "Zoom from the Planck length to the observable universe and everything in between. Mind-blowing sense of scale.",
-        "category": "knowledge",
+        "name": "Canva",
+        "url": "https://www.canva.com",
+        "description": "Easy graphic design for everyone — posters, logos, presentations, social media. Drag-and-drop and done.",
+        "category": "creativity",
         "screenshot": ""
     },
     {
         "id": 22,
-        "name": "Find the Invisible Cow",
-        "url": "https://findtheinvisiblecow.com",
-        "description": "Move your mouse to find an invisible cow guided only by an increasingly loud MOO. Peak internet absurdity.",
-        "category": "fun",
+        "name": "Pixlr",
+        "url": "https://pixlr.com",
+        "description": "Powerful photo editing right in your browser. Layers, filters, AI tools — no Photoshop subscription needed.",
+        "category": "creativity",
         "screenshot": ""
     },
     {
         "id": 23,
-        "name": "Hacker Typer",
-        "url": "https://hackertyper.net",
-        "description": "Open it, start typing, and look like a Hollywood hacker. Any key you press generates lines of code. Impressively convincing.",
-        "category": "fun",
+        "name": "Piskel",
+        "url": "https://www.piskelapp.com",
+        "description": "Create animated pixel art sprites directly in the browser. Export for games, GIFs, or just pure fun.",
+        "category": "creativity",
         "screenshot": ""
     },
     {
         "id": 24,
-        "name": "TV Garden",
-        "url": "https://tv.garden",
-        "description": "Watch free live TV channels from countries all over the world — news, entertainment, sports, all in one place.",
-        "category": "fun",
+        "name": "Incredibox",
+        "url": "https://www.incredibox.com",
+        "description": "Drag icons onto beatboxers to create cool layered music loops. Instant music production, zero music knowledge needed.",
+        "category": "creativity",
         "screenshot": ""
     },
     {
         "id": 25,
-        "name": "Pomoflight",
-        "url": "https://pomoflight.com",
-        "description": "A beautiful Pomodoro timer that turns your focus sessions into a flight journey. Work feels like an adventure.",
-        "category": "learning",
+        "name": "Patatap",
+        "url": "https://www.patatap.com",
+        "description": "Turn your keyboard into a musical instrument and visualizer. Every key triggers a unique sound and animation.",
+        "category": "creativity",
         "screenshot": ""
     },
     {
         "id": 26,
+        "name": "Chrome Music Lab",
+        "url": "https://musiclab.chromeexperiments.com",
+        "description": "Google's fun browser experiments with sound, rhythm, and music theory. Learn music through play — actually brilliant.",
+        "category": "creativity",
+        "screenshot": ""
+    },
+    {
+        "id": 27,
+        "name": "Kleki",
+        "url": "https://kleki.com",
+        "description": "A simple, distraction-free paint tool in the browser. Clean, fast, and surprisingly capable for digital art.",
+        "category": "creativity",
+        "screenshot": ""
+    },
+    {
+        "id": 28,
+        "name": "SculptGL",
+        "url": "https://stephaneginier.com/sculptgl",
+        "description": "Digital 3D sculpting directly in your browser. Shape virtual clay with brushes like a real 3D artist.",
+        "category": "creativity",
+        "screenshot": ""
+    },
+    {
+        "id": 29,
+        "name": "Behance",
+        "url": "https://www.behance.net",
+        "description": "Browse incredible professional creative portfolios — design, photography, illustration, motion. Endless inspiration.",
+        "category": "creativity",
+        "screenshot": ""
+    },
+    {
+        "id": 30,
+        "name": "Dribbble",
+        "url": "https://dribbble.com",
+        "description": "Design inspiration from the world's top UI/UX designers. The best place to see what great interfaces look like.",
+        "category": "creativity",
+        "screenshot": ""
+    },
+    {
+        "id": 31,
+        "name": "FontStruct",
+        "url": "https://fontstruct.com",
+        "description": "Build your own fonts from scratch in the browser using a grid-based editor. Design your own handwriting as a typeface.",
+        "category": "creativity",
+        "screenshot": ""
+    },
+    {
+        "id": 32,
+        "name": "Giphy",
+        "url": "https://giphy.com",
+        "description": "Search or create your own GIFs. The world's largest GIF library — every emotion, every moment, animated.",
+        "category": "creativity",
+        "screenshot": ""
+    },
+    {
+        "id": 33,
+        "name": "City Roads",
+        "url": "https://anvaka.github.io/city-roads",
+        "description": "Draw all the roads of any city in the world at once — creates stunning map art from real OpenStreetMap data.",
+        "category": "creativity",
+        "screenshot": ""
+    },
+    {
+        "id": 34,
+        "name": "Zoomquilt 2",
+        "url": "https://zoomquilt2.com",
+        "description": "An infinitely zooming collaborative painting that descends forever through surreal, dreamlike worlds.",
+        "category": "creativity",
+        "screenshot": ""
+    },
+    {
+        "id": 35,
+        "name": "Paper Me",
+        "url": "https://paperme.pixzens.com",
+        "description": "Turn your photos into beautiful paper-cut style art. A uniquely satisfying creative tool in the browser.",
+        "category": "creativity",
+        "screenshot": ""
+    },
+    {
+        "id": 36,
+        "name": "Noun Project",
+        "url": "https://thenounproject.com",
+        "description": "A massive library of clean, minimal icons for everything imaginable. Free to browse and use.",
+        "category": "creativity",
+        "screenshot": ""
+    },
+    {
+        "id": 37,
+        "name": "Sloyd AI",
+        "url": "https://www.sloyd.ai",
+        "description": "Type any description and get a 3D model generated instantly in your browser. Mind-bending AI creativity.",
+        "category": "creativity",
+        "screenshot": ""
+    },
+    {
+        "id": 38,
+        "name": "Rodin AI",
+        "url": "https://hyperhuman.deemos.com/rodin",
+        "description": "Generate detailed 3D models from text or images for free. Turn a sentence into a fully downloadable 3D asset.",
+        "category": "creativity",
+        "screenshot": ""
+    },
+    {
+        "id": 39,
+        "name": "NASA APOD",
+        "url": "https://apod.nasa.gov",
+        "description": "A new stunning photo of the universe every single day, explained by a professional astronomer. Always breathtaking.",
+        "category": "science",
+        "screenshot": ""
+    },
+    {
+        "id": 40,
+        "name": "Bartosz Ciechanowski",
+        "url": "https://ciechanow.ski",
+        "description": "Deeply interactive visual explanations of how everyday things work — GPS, engines, clocks, waves. Pure brilliance.",
+        "category": "science",
+        "screenshot": ""
+    },
+    {
+        "id": 41,
+        "name": "Our World in Data",
+        "url": "https://ourworldindata.org",
+        "description": "Research and data visualizations showing how the world is changing — poverty, health, energy, happiness. Eye-opening.",
+        "category": "science",
+        "screenshot": ""
+    },
+    {
+        "id": 42,
+        "name": "Scale of the Universe",
+        "url": "https://www.htwins.net/scale2",
+        "description": "Zoom from the Planck length to the edge of the observable universe. A perspective-shattering journey through scale.",
+        "category": "science",
+        "screenshot": ""
+    },
+    {
+        "id": 43,
+        "name": "100,000 Stars",
+        "url": "https://stars.chromeexperiments.com",
+        "description": "An interactive 3D visualization of our stellar neighborhood — 100,000 real stars mapped and labeled.",
+        "category": "science",
+        "screenshot": ""
+    },
+    {
+        "id": 44,
+        "name": "Stellarium Web",
+        "url": "https://stellarium-web.org",
+        "description": "A realistic, real-time sky map showing the exact stars, planets, and constellations above your location right now.",
+        "category": "science",
+        "screenshot": ""
+    },
+    {
+        "id": 45,
+        "name": "HowStuffWorks",
+        "url": "https://www.howstuffworks.com",
+        "description": "Clear, well-researched explanations for how everything works — from jet engines to human emotions.",
+        "category": "science",
+        "screenshot": ""
+    },
+    {
+        "id": 46,
+        "name": "Mental Floss",
+        "url": "https://www.mentalfloss.com",
+        "description": "Trivia, quizzes, and delightfully weird history facts. The rabbit hole you actually enjoy falling into.",
+        "category": "science",
+        "screenshot": ""
+    },
+    {
+        "id": 47,
+        "name": "Snopes",
+        "url": "https://www.snopes.com",
+        "description": "The internet's original fact-checker — busting myths, viral rumors, and misinformation since 1994.",
+        "category": "science",
+        "screenshot": ""
+    },
+    {
+        "id": 48,
+        "name": "Zooniverse",
+        "url": "https://www.zooniverse.org",
+        "description": "Participate in real scientific research as a citizen scientist — classify galaxies, transcribe old manuscripts, find penguins.",
+        "category": "science",
+        "screenshot": ""
+    },
+    {
+        "id": 49,
+        "name": "Worldometer",
+        "url": "https://www.worldometers.info",
+        "description": "Real-time statistics on global population, deaths, births, energy use, and more — all ticking live.",
+        "category": "science",
+        "screenshot": ""
+    },
+    {
+        "id": 50,
+        "name": "Space.com",
+        "url": "https://www.space.com",
+        "description": "The best source for space news, cosmic photos, and explanations of everything happening beyond Earth.",
+        "category": "science",
+        "screenshot": ""
+    },
+    {
+        "id": 51,
+        "name": "Atlas Obscura",
+        "url": "https://www.atlasobscura.com",
+        "description": "A guide to 25,000+ hidden wonders, curious places, and unusual landmarks around the world. The weird travel bible.",
+        "category": "science",
+        "screenshot": ""
+    },
+    {
+        "id": 52,
+        "name": "Evolution of Trust",
+        "url": "https://ncase.me/trust",
+        "description": "An interactive game theory guide on why cooperation and trust evolve. Surprisingly moving and thought-provoking.",
+        "category": "science",
+        "screenshot": ""
+    },
+    {
+        "id": 53,
+        "name": "Wait But Why",
+        "url": "https://waitbutwhy.com",
+        "description": "Long, deep, stick-figure illustrated articles on life, AI, Elon Musk, consciousness, and the universe. Brilliantly written.",
+        "category": "science",
+        "screenshot": ""
+    },
+    {
+        "id": 54,
+        "name": "Information is Beautiful",
+        "url": "https://informationisbeautiful.net",
+        "description": "Complex data turned into stunning, insightful visual charts. Facts and statistics made genuinely beautiful.",
+        "category": "science",
+        "screenshot": ""
+    },
+    {
+        "id": 55,
+        "name": "Internet Live Stats",
+        "url": "https://www.internetlivestats.com",
+        "description": "Watch the internet grow in real-time — emails sent, tweets posted, Google searches, websites created, all live.",
+        "category": "science",
+        "screenshot": ""
+    },
+    {
+        "id": 56,
+        "name": "MapFight",
+        "url": "https://mapfight.xyz",
+        "description": "Compare the real size of any two countries side by side. Shockingly reveals how distorted most world maps are.",
+        "category": "science",
+        "screenshot": ""
+    },
+    {
+        "id": 57,
+        "name": "True Size of Countries",
+        "url": "https://www.thetruesize.com",
+        "description": "Drag any country across the Mercator map to see its actual geographic size. Greenland is not bigger than Africa.",
+        "category": "science",
+        "screenshot": ""
+    },
+    {
+        "id": 58,
+        "name": "World Monitor",
+        "url": "https://worldmonitor.app",
+        "description": "A live dashboard of the world — population, births, deaths, CO2, internet usage, all ticking in real time.",
+        "category": "science",
+        "screenshot": ""
+    },
+    {
+        "id": 59,
+        "name": "Wolfram Alpha",
+        "url": "https://www.wolframalpha.com",
+        "description": "Type any question — math, science, history, nutrition — and get precise computed answers. The world's smartest calculator.",
+        "category": "science",
+        "screenshot": ""
+    },
+    {
+        "id": 60,
+        "name": "Capitol Trades",
+        "url": "https://www.capitoltrades.com",
+        "description": "Track real stock trades made by US politicians. See exactly what senators are buying and selling in real-time.",
+        "category": "science",
+        "screenshot": ""
+    },
+    {
+        "id": 61,
+        "name": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org",
+        "description": "Millions of freely usable images, audio, and video from around the world. An endless visual archive of everything.",
+        "category": "science",
+        "screenshot": ""
+    },
+    {
+        "id": 62,
+        "name": "Finviz",
+        "url": "https://finviz.com",
+        "description": "A real-time financial market heatmap showing the entire stock market as a color-coded visual grid. Instantly readable.",
+        "category": "science",
+        "screenshot": ""
+    },
+    {
+        "id": 63,
+        "name": "Neal.fun",
+        "url": "https://neal.fun",
+        "description": "A goldmine of web toys — spend a billion dollars, dive to the bottom of the sea, watch the universe grow.",
+        "category": "games",
+        "screenshot": ""
+    },
+    {
+        "id": 64,
+        "name": "The Useless Web",
+        "url": "https://theuselessweb.com",
+        "description": "Click a button and get sent to a random, hilariously pointless website. Pure, unfiltered internet chaos.",
+        "category": "games",
+        "screenshot": ""
+    },
+    {
+        "id": 65,
+        "name": "Pointer Pointer",
+        "url": "https://pointerpointer.com",
+        "description": "Move your mouse anywhere on the page and it finds a photo of someone literally pointing at your cursor.",
+        "category": "games",
+        "screenshot": ""
+    },
+    {
+        "id": 66,
+        "name": "Find the Invisible Cow",
+        "url": "https://findtheinvisiblecow.com",
+        "description": "Move your mouse to find an invisible cow guided only by an increasingly loud MOO. Peak internet absurdity.",
+        "category": "games",
+        "screenshot": ""
+    },
+    {
+        "id": 67,
+        "name": "Hacker Typer",
+        "url": "https://hackertyper.net",
+        "description": "Open it, start typing, and look like a Hollywood hacker. Any key you press generates lines of code.",
+        "category": "games",
+        "screenshot": ""
+    },
+    {
+        "id": 68,
+        "name": "Floor796",
+        "url": "https://floor796.com",
+        "description": "An endlessly expanding animated pixel-art scene packed with hundreds of pop culture easter eggs to find.",
+        "category": "games",
+        "screenshot": ""
+    },
+    {
+        "id": 69,
+        "name": "EmuPedia",
+        "url": "https://emupedia.net",
+        "description": "Play thousands of retro games — DOS, SNES, Game Boy, Arcade — directly in your browser. Pure nostalgia.",
+        "category": "games",
+        "screenshot": ""
+    },
+    {
+        "id": 70,
+        "name": "Contexto",
+        "url": "https://contexto.me",
+        "description": "Guess the secret word — every guess is ranked by AI semantic similarity. Like Wordle but for big brains.",
+        "category": "games",
+        "screenshot": ""
+    },
+    {
+        "id": 71,
+        "name": "Letroso",
+        "url": "https://letroso.com",
+        "description": "A daily word puzzle where you unscramble letters to find hidden words. Fast, fun, and surprisingly addictive.",
+        "category": "games",
+        "screenshot": ""
+    },
+    {
+        "id": 72,
+        "name": "Conexo",
+        "url": "https://conexo.ws",
+        "description": "Group 16 words into 4 hidden categories. A daily puzzle that tests lateral thinking and vocabulary.",
+        "category": "games",
+        "screenshot": ""
+    },
+    {
+        "id": 73,
+        "name": "Little Alchemy 2",
+        "url": "https://littlealchemy2.com",
+        "description": "Combine elements (Earth + Fire = Lava) to create new items. Over 700 combinations to discover.",
+        "category": "games",
+        "screenshot": ""
+    },
+    {
+        "id": 74,
+        "name": "Quick, Draw!",
+        "url": "https://quickdraw.withgoogle.com",
+        "description": "Can Google's neural network guess what you're drawing in 20 seconds? A globally addictive drawing game.",
+        "category": "games",
+        "screenshot": ""
+    },
+    {
+        "id": 75,
+        "name": "Akinator",
+        "url": "https://en.akinator.com",
+        "description": "The web genie that guesses the character you're thinking of in just 20 questions. Eerily accurate.",
+        "category": "games",
+        "screenshot": ""
+    },
+    {
+        "id": 76,
+        "name": "Sporcle",
+        "url": "https://www.sporcle.com",
+        "description": "Thousands of trivia quizzes on every topic imaginable — geography, music, movies, sports, science.",
+        "category": "games",
+        "screenshot": ""
+    },
+    {
+        "id": 77,
+        "name": "2048",
+        "url": "https://play2048.co",
+        "description": "The classic addictive sliding tile math game. Combine same-numbered tiles to reach 2048. Deceptively simple.",
+        "category": "games",
+        "screenshot": ""
+    },
+    {
+        "id": 78,
+        "name": "Cookie Clicker",
+        "url": "https://orteil.dashnet.org/cookieclicker",
+        "description": "The original idle game — click a cookie and build a cookie empire. Warning: ruins productivity completely.",
+        "category": "games",
+        "screenshot": ""
+    },
+    {
+        "id": 79,
+        "name": "GeekTyper",
+        "url": "https://geektyper.com",
+        "description": "Mash any key and watch Hollywood-style hacker code fly across the screen. Great for pranking non-tech friends.",
+        "category": "games",
+        "screenshot": ""
+    },
+    {
+        "id": 80,
+        "name": "Slither.io",
+        "url": "https://slither.io",
+        "description": "Multiplayer snake game in your browser — grow longer by eating glowing dots, avoid other snakes. Wildly addictive.",
+        "category": "games",
+        "screenshot": ""
+    },
+    {
+        "id": 81,
+        "name": "Paper.io",
+        "url": "https://paper.io",
+        "description": "Conquer territory by drawing squares on the map. But don't let other players cut your trail — they'll eliminate you.",
+        "category": "games",
+        "screenshot": ""
+    },
+    {
+        "id": 82,
+        "name": "Agar.io",
+        "url": "https://agar.io",
+        "description": "Eat smaller cells to grow larger — multiplayer browser game, zero setup. The original viral .io game.",
+        "category": "games",
+        "screenshot": ""
+    },
+    {
+        "id": 83,
+        "name": "Chess.com",
+        "url": "https://www.chess.com",
+        "description": "Play chess against friends, bots, or strangers. The world's largest chess platform with puzzles and lessons.",
+        "category": "games",
+        "screenshot": ""
+    },
+    {
+        "id": 84,
+        "name": "Lichess",
+        "url": "https://lichess.org",
+        "description": "Free, open-source chess with no ads, no paywalls, no nonsense. Just chess, beautifully made.",
+        "category": "games",
+        "screenshot": ""
+    },
+    {
+        "id": 85,
+        "name": "Tetris",
+        "url": "https://tetris.com/play-tetris",
+        "description": "The official free online version of the world's most famous puzzle game. Stack blocks. Clear lines. Don't stop.",
+        "category": "games",
+        "screenshot": ""
+    },
+    {
+        "id": 86,
+        "name": "Jigsaw Explorer",
+        "url": "https://www.jigsawexplorer.com",
+        "description": "Online jigsaw puzzles from any image — hundreds of pieces, relaxing, and surprisingly satisfying to complete.",
+        "category": "games",
+        "screenshot": ""
+    },
+    {
+        "id": 87,
+        "name": "Crossword Labs",
+        "url": "https://crosswordlabs.com",
+        "description": "Play or build your own crossword puzzles online. Clean interface, great for teachers and trivia lovers.",
+        "category": "games",
+        "screenshot": ""
+    },
+    {
+        "id": 88,
+        "name": "Sudoku.com",
+        "url": "https://sudoku.com",
+        "description": "Classic number logic puzzles from easy to expert. Clean design, no ads interrupting your focus.",
+        "category": "games",
+        "screenshot": ""
+    },
+    {
+        "id": 89,
+        "name": "Typeracer",
+        "url": "https://play.typeracer.com",
+        "description": "Race other people by typing quotes as fast and accurately as possible. The most fun way to improve WPM.",
+        "category": "games",
+        "screenshot": ""
+    },
+    {
+        "id": 90,
+        "name": "Git City",
+        "url": "https://www.thegitcity.com",
+        "description": "Visualize any GitHub profile as a 3D pixel-art city — buildings represent repos, activity lights up the skyline.",
+        "category": "games",
+        "screenshot": ""
+    },
+    {
+        "id": 91,
+        "name": "Artikel Game",
+        "url": "https://artikelgame.com",
+        "description": "A fast game to learn German articles (der, die, das) through quick-fire rounds. Great for language learners.",
+        "category": "games",
+        "screenshot": ""
+    },
+    {
+        "id": 92,
+        "name": "Zoom Quilt",
+        "url": "https://www.zoomquilt.org",
+        "description": "An infinitely zooming piece of collaborative art — different artists, one endless visual journey. Deeply trippy.",
+        "category": "games",
+        "screenshot": ""
+    },
+    {
+        "id": 93,
+        "name": "Radiooooo",
+        "url": "https://radiooooo.com",
+        "description": "A musical time machine — pick any decade and country and listen to what was actually playing on the radio.",
+        "category": "chill",
+        "screenshot": ""
+    },
+    {
+        "id": 94,
+        "name": "My 90s TV",
+        "url": "https://www.my90stv.com",
+        "description": "A simulated 90s TV experience with real commercials, shows, and music videos playing on loop. Pure nostalgia.",
+        "category": "chill",
+        "screenshot": ""
+    },
+    {
+        "id": 95,
+        "name": "TV Garden",
+        "url": "https://tv.garden",
+        "description": "Watch free live TV channels from countries all over the world — news, entertainment, and sports all in one place.",
+        "category": "chill",
+        "screenshot": ""
+    },
+    {
+        "id": 96,
+        "name": "A Soft Murmur",
+        "url": "https://asoftmurmur.com",
+        "description": "Mix ambient sounds — rain, thunder, waves, coffee shop — to custom-blend your perfect focus or sleep background.",
+        "category": "chill",
+        "screenshot": ""
+    },
+    {
+        "id": 97,
+        "name": "MyNoise",
+        "url": "https://mynoise.net",
+        "description": "High-quality, customizable audio soundscapes for focus, sleep, or relaxation. The best ambient sound generator.",
+        "category": "chill",
+        "screenshot": ""
+    },
+    {
+        "id": 98,
+        "name": "Rainy Mood",
+        "url": "https://rainymood.com",
+        "description": "Infinite, looping rain sounds. Just open it and feel instantly calmer. The simplest relaxation tool on the internet.",
+        "category": "chill",
+        "screenshot": ""
+    },
+    {
+        "id": 99,
+        "name": "The Oatmeal",
+        "url": "https://www.theoatmeal.com",
+        "description": "Hilarious, insightful comics and quizzes about cats, grammar, mantis shrimp, and the absurdity of life.",
+        "category": "chill",
+        "screenshot": ""
+    },
+    {
+        "id": 100,
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org",
+        "description": "60,000+ free eBooks — every classic ever written, from Dickens to Dostoevsky. Completely free, forever.",
+        "category": "chill",
+        "screenshot": ""
+    },
+    {
+        "id": 101,
+        "name": "Medium",
+        "url": "https://medium.com",
+        "description": "Long-form articles on every topic by writers who actually know what they're talking about. Many stories are free.",
+        "category": "chill",
+        "screenshot": ""
+    },
+    {
+        "id": 102,
+        "name": "Goodreads",
+        "url": "https://www.goodreads.com",
+        "description": "Find your next favorite book based on what you've loved before. Track your reading and see friend recommendations.",
+        "category": "chill",
+        "screenshot": ""
+    },
+    {
+        "id": 103,
+        "name": "The Marginalian",
+        "url": "https://www.themarginalian.org",
+        "description": "Maria Popova's stunning writings on art, science, history, literature, and what it means to live a good life.",
+        "category": "chill",
+        "screenshot": ""
+    },
+    {
+        "id": 104,
+        "name": "Aeon",
+        "url": "https://aeon.co",
+        "description": "Provocative, beautifully written essays on philosophy, science, culture, and the deep questions of existence.",
+        "category": "chill",
+        "screenshot": ""
+    },
+    {
+        "id": 105,
+        "name": "Fable",
+        "url": "https://fable.co",
+        "description": "A social app for bookworms and binge-watchers — discover what your friends are reading and watching.",
+        "category": "chill",
+        "screenshot": ""
+    },
+    {
+        "id": 106,
+        "name": "Story Tribe",
+        "url": "https://storytribeapp.com",
+        "description": "A collaborative storytelling app where you and friends co-write stories together. Creativity meets social.",
+        "category": "chill",
+        "screenshot": ""
+    },
+    {
+        "id": 107,
+        "name": "Auto Catalog Archive",
+        "url": "https://autocatalogarchive.com",
+        "description": "Browse thousands of original car brochures and catalogs from the 1950s to today. A paradise for car lovers.",
+        "category": "chill",
+        "screenshot": ""
+    },
+    {
+        "id": 108,
+        "name": "Brilliant",
+        "url": "https://brilliant.org",
+        "description": "Learn math, logic, science and CS through bite-sized interactive challenges. The smartest learning app online.",
+        "category": "learning",
+        "screenshot": ""
+    },
+    {
+        "id": 109,
+        "name": "Typing Club",
+        "url": "https://www.typingclub.com",
+        "description": "Learn to touch-type fast with gamified, structured lessons. You'll thank yourself for every year after.",
+        "category": "learning",
+        "screenshot": ""
+    },
+    {
+        "id": 110,
+        "name": "Khan Academy",
+        "url": "https://www.khanacademy.org",
+        "description": "Free world-class education in math, science, computing, and more. Actually good for all ages, genuinely.",
+        "category": "learning",
+        "screenshot": ""
+    },
+    {
+        "id": 111,
+        "name": "Regexr",
+        "url": "https://regexr.com",
+        "description": "Learn and test Regular Expressions in real-time with visual highlighting and a cheat sheet. A developer must-have.",
+        "category": "learning",
+        "screenshot": ""
+    },
+    {
+        "id": 112,
+        "name": "Learning Music by Ableton",
+        "url": "https://learningmusic.ableton.com",
+        "description": "Learn music fundamentals through interactive, playable browser lessons — beats, chords, scales, and basslines.",
+        "category": "learning",
+        "screenshot": ""
+    },
+    {
+        "id": 113,
         "name": "21st.dev",
         "url": "https://21st.dev",
         "description": "Discover and copy community-made UI components instantly. The GitHub for beautiful interface building blocks.",
@@ -208,7 +904,7 @@
         "screenshot": ""
     },
     {
-        "id": 27,
+        "id": 114,
         "name": "Entertrained — Typing",
         "url": "https://entertrained.app",
         "description": "Improve your typing speed by typing actual famous books. Get faster at typing while finishing a novel.",
@@ -216,167 +912,31 @@
         "screenshot": ""
     },
     {
-        "id": 28,
-        "name": "Finviz",
-        "url": "https://finviz.com",
-        "description": "A real-time financial market heatmap and stock screener. See the entire stock market as a color-coded visual grid.",
-        "category": "knowledge",
-        "screenshot": ""
-    },
-    {
-        "id": 29,
-        "name": "Diode — Circuit Simulator",
-        "url": "https://withdiode.com/explore",
-        "description": "Build and simulate electronic circuits in 3D right in your browser. Drag, connect, and watch the circuit come alive.",
-        "category": "knowledge",
-        "screenshot": ""
-    },
-    {
-        "id": 30,
-        "name": "Git City",
-        "url": "https://www.thegitcity.com",
-        "description": "Visualize any GitHub profile as a 3D pixel-art city — buildings represent repos, activity lights up the skyline.",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 31,
-        "name": "Contexto",
-        "url": "https://contexto.me",
-        "description": "Guess the secret word — every guess is ranked by AI similarity. Like Wordle but with no letter hints, only semantic closeness.",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 32,
-        "name": "Letroso",
-        "url": "https://letroso.com",
-        "description": "A daily word puzzle game where you unscramble letters to find hidden words. Fast, fun, and surprisingly addictive.",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 33,
-        "name": "Expresso",
-        "url": "https://www.expresso-app.org",
-        "description": "Paste any text and instantly see overused words, sentence length issues, and writing style stats. A writer's best tool.",
-        "category": "learning",
-        "screenshot": ""
-    },
-    {
-        "id": 34,
-        "name": "Conexo",
-        "url": "https://conexo.ws",
-        "description": "Group 16 words into 4 hidden categories — a daily puzzle that tests lateral thinking and vocabulary. Harder than it looks.",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 35,
+        "id": 115,
         "name": "Mind Luster",
         "url": "https://www.mindluster.com",
-        "description": "Over 300,000 free online courses from top providers — all in one searchable place. Learn anything at your own pace.",
+        "description": "Over 300,000 free online courses from top providers — all in one searchable place. Learn anything, anytime.",
         "category": "learning",
         "screenshot": ""
     },
     {
-        "id": 36,
-        "name": "Fable",
-        "url": "https://fable.co",
-        "description": "A social app for bookworms and binge-watchers — discover what your friends are reading and watching, and share reactions.",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 37,
-        "name": "MapFight",
-        "url": "https://mapfight.xyz",
-        "description": "Compare the real size of any two countries side by side on a map. Shockingly reveals how distorted most maps are.",
-        "category": "knowledge",
-        "screenshot": ""
-    },
-    {
-        "id": 38,
-        "name": "City Roads",
-        "url": "https://anvaka.github.io/city-roads",
-        "description": "Draw all the roads of any city in the world at once — creates stunning map art from OpenStreetMap data.",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 39,
-        "name": "Excalidraw",
-        "url": "https://excalidraw.com",
-        "description": "A virtual collaborative whiteboard that feels like actual hand-drawn sketches. Perfect for diagrams, brainstorming, or just doodling.",
-        "category": "learning",
-        "screenshot": ""
-    },
-    {
-        "id": 40,
-        "name": "Noun Project",
-        "url": "https://thenounproject.com",
-        "description": "A massive library of clean, minimal icons for everything imaginable. Free to browse, great for projects and presentations.",
-        "category": "knowledge",
-        "screenshot": ""
-    },
-    {
-        "id": 41,
-        "name": "Sloyd AI",
-        "url": "https://www.sloyd.ai",
-        "description": "Type a description and get a 3D model generated instantly in your browser. Mind-bending what AI can create in seconds.",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 42,
-        "name": "Rodin AI",
-        "url": "https://hyperhuman.deemos.com/rodin",
-        "description": "Generate detailed 3D models from text or images for free. Turn a sentence into a fully downloadable 3D asset.",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 43,
+        "id": 116,
         "name": "Coursiv",
         "url": "https://coursiv.io",
-        "description": "Learn AI skills for work, business, and side hustles through short structured courses. Practical, not theoretical.",
+        "description": "Learn AI skills for work, business, and side hustles through short, structured courses. Practical, not theoretical.",
         "category": "learning",
         "screenshot": ""
     },
     {
-        "id": 44,
+        "id": 117,
         "name": "HDLBits",
         "url": "https://hdlbits.01xz.net",
-        "description": "Practice digital logic and Verilog HDL through hundreds of progressive circuit design exercises — with instant feedback.",
+        "description": "Practice digital logic and Verilog HDL through hundreds of progressive circuit design exercises with instant feedback.",
         "category": "learning",
         "screenshot": ""
     },
     {
-        "id": 45,
-        "name": "Artikel Game",
-        "url": "https://artikelgame.com",
-        "description": "A fun game to learn German articles (der, die, das) through quick-fire rounds. Great for German learners of any level.",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 46,
-        "name": "Paper Me",
-        "url": "https://paperme.pixzens.com",
-        "description": "Turn your photos into beautiful paper-cut style art. A uniquely satisfying creative tool right in the browser.",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 47,
-        "name": "Story Tribe",
-        "url": "https://storytribeapp.com",
-        "description": "A collaborative storytelling app where you and friends co-write stories together. Great for creativity and imagination.",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 48,
+        "id": 118,
         "name": "Runable",
         "url": "https://runable.com",
         "description": "Run, test, and share code snippets interactively in the browser. Clean interface, instant results, no setup needed.",
@@ -384,47 +944,15 @@
         "screenshot": ""
     },
     {
-        "id": 49,
-        "name": "Wolfram Alpha",
-        "url": "https://www.wolframalpha.com",
-        "description": "Type any question and get computed, factual answers — math, science, history, nutrition, dates. The world's smartest calculator.",
-        "category": "knowledge",
-        "screenshot": ""
-    },
-    {
-        "id": 50,
-        "name": "Capitol Trades",
-        "url": "https://www.capitoltrades.com",
-        "description": "Track real stock trades made by US politicians. See exactly what senators and congress members are buying and selling.",
-        "category": "knowledge",
-        "screenshot": ""
-    },
-    {
-        "id": 51,
-        "name": "Remove Paywall",
-        "url": "https://www.removepaywall.com",
-        "description": "Paste any paywalled article URL and read it for free. Access NYT, Bloomberg, and more without a subscription.",
-        "category": "knowledge",
-        "screenshot": ""
-    },
-    {
-        "id": 52,
-        "name": "Airmore AI",
-        "url": "https://airmore.ai",
-        "description": "A collection of free AI tools — image generation, writing, voice, video, and more. All in one place with no login.",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 53,
+        "id": 119,
         "name": "Exercism",
         "url": "https://exercism.org",
-        "description": "Practice coding in 67 languages with real exercises and get feedback from volunteer mentors. Free, deep, and genuinely useful.",
+        "description": "Practice coding in 67+ languages with mentor-reviewed exercises. The best free platform for getting genuinely good.",
         "category": "learning",
         "screenshot": ""
     },
     {
-        "id": 54,
+        "id": 120,
         "name": "Coddy",
         "url": "https://coddy.tech",
         "description": "Bite-sized interactive coding challenges that teach you to code through doing. Clean UX, great for beginners.",
@@ -432,483 +960,163 @@
         "screenshot": ""
     },
     {
-        "id": 55,
-        "name": "Muscle Wiki",
-        "url": "https://musclewiki.com",
-        "description": "Click any muscle on a 3D body map and instantly see the best exercises for it. The best free fitness reference on the web.",
-        "category": "knowledge",
-        "screenshot": ""
-    },
-    {
-        "id": 56,
-        "name": "Auto Catalog Archive",
-        "url": "https://autocatalogarchive.com",
-        "description": "Browse thousands of original car brochures and catalogs from the 1950s to today. A paradise for car enthusiasts.",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 57,
-        "name": "JMail",
-        "url": "https://jmail.world",
-        "description": "Instant disposable email addresses — no signup, no password. Perfect for avoiding spam when trying out new services.",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 58,
+        "id": 121,
         "name": "Alison",
         "url": "https://alison.com",
-        "description": "Over 5,000 free online courses with real certificates. From IT to languages to business — all genuinely free.",
+        "description": "Over 5,000 free online courses with real certificates — IT, languages, business, and more. Actually free.",
         "category": "learning",
         "screenshot": ""
     },
     {
-        "id": 59,
-        "name": "True Size",
-        "url": "https://www.truesize.of.earth",
-        "description": "Drag any country across the world map to see its true geographic size. Reveals how much Mercator maps deceive us.",
-        "category": "knowledge",
+        "id": 122,
+        "name": "Diode — Circuit Simulator",
+        "url": "https://withdiode.com/explore",
+        "description": "Build and simulate electronic circuits in 3D in your browser. Drag components, connect wires, watch it work.",
+        "category": "learning",
         "screenshot": ""
     },
     {
-        "id": 60,
-        "name": "World Monitor",
-        "url": "https://worldmonitor.app",
-        "description": "A live dashboard of the world — population, births, deaths, CO2, energy use, all ticking in real time.",
-        "category": "knowledge",
+        "id": 123,
+        "name": "AFFiNE",
+        "url": "https://affine.pro",
+        "description": "An open-source all-in-one workspace — notes, docs, and whiteboards combined. The privacy-first Notion alternative.",
+        "category": "tools",
         "screenshot": ""
     },
     {
-        "id": 61,
-        "name": "EmuPedia",
-        "url": "https://emupedia.net",
-        "description": "Play thousands of retro games — DOS, SNES, Game Boy, Arcade — directly in your browser. Pure gaming nostalgia.",
-        "category": "fun",
+        "id": 124,
+        "name": "Pomoflight",
+        "url": "https://pomoflight.com",
+        "description": "A beautiful Pomodoro timer that turns your focus sessions into a flight journey. Work feels like travel.",
+        "category": "tools",
         "screenshot": ""
     },
     {
-        "id": 62,
+        "id": 125,
+        "name": "Expresso",
+        "url": "https://www.expresso-app.org",
+        "description": "Paste any text and instantly see overused words, sentence length stats, and writing style issues. A writer's mirror.",
+        "category": "tools",
+        "screenshot": ""
+    },
+    {
+        "id": 126,
+        "name": "Remove Paywall",
+        "url": "https://www.removepaywall.com",
+        "description": "Paste any paywalled article URL and read it for free. Access NYT, Bloomberg, and more without a subscription.",
+        "category": "tools",
+        "screenshot": ""
+    },
+    {
+        "id": 127,
+        "name": "Airmore AI",
+        "url": "https://airmore.ai",
+        "description": "A collection of free AI tools — image generation, writing, voice, video, and more. All in one, no login needed.",
+        "category": "tools",
+        "screenshot": ""
+    },
+    {
+        "id": 128,
+        "name": "Muscle Wiki",
+        "url": "https://musclewiki.com",
+        "description": "Click any muscle on a 3D body map and instantly see the best exercises for it. The best free fitness reference.",
+        "category": "tools",
+        "screenshot": ""
+    },
+    {
+        "id": 129,
+        "name": "JMail",
+        "url": "https://jmail.world",
+        "description": "Instant disposable email addresses — no signup, no password. Perfect for avoiding spam when trying new services.",
+        "category": "tools",
+        "screenshot": ""
+    },
+    {
+        "id": 130,
         "name": "White Screen",
         "url": "https://whitescreen.online",
-        "description": "A pure white screen for your monitor — useful for cleaning screens, lighting for photos, or just blanking out distractions.",
-        "category": "fun",
+        "description": "A pure white screen for your monitor — useful for screen cleaning, photography lighting, or blanking distractions.",
+        "category": "tools",
         "screenshot": ""
     },
     {
-        "id": 63,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
+        "id": 131,
+        "name": "Archive.org",
+        "url": "https://archive.org",
+        "description": "The Wayback Machine — see what any website looked like in the past. Plus millions of free books, films, and music.",
+        "category": "tools",
         "screenshot": ""
     },
     {
-        "id": 50,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
+        "id": 132,
+        "name": "CamelCamelCamel",
+        "url": "https://camelcamelcamel.com",
+        "description": "Track Amazon price history for any product. Never pay full price again — see the lowest price it's ever been.",
+        "category": "tools",
         "screenshot": ""
     },
     {
-        "id": 51,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
+        "id": 133,
+        "name": "ManualsLib",
+        "url": "https://www.manualslib.com",
+        "description": "Find the user manual for any device you've ever owned. Millions of manuals, completely free to download.",
+        "category": "tools",
         "screenshot": ""
     },
     {
-        "id": 52,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
+        "id": 134,
+        "name": "10 Minute Mail",
+        "url": "https://10minutemail.com",
+        "description": "A temporary email that auto-deletes after 10 minutes. Use it when a site demands your email but you don't trust it.",
+        "category": "tools",
         "screenshot": ""
     },
     {
-        "id": 53,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
+        "id": 135,
+        "name": "Eat This Much",
+        "url": "https://www.eatthismuch.com",
+        "description": "Automated meal planner based on your calories and dietary preferences. Plan your whole week of eating in minutes.",
+        "category": "tools",
         "screenshot": ""
     },
     {
-        "id": 54,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
+        "id": 136,
+        "name": "JustWatch",
+        "url": "https://www.justwatch.com",
+        "description": "Find which streaming service has the movie or show you want to watch. Netflix, Prime, Hotstar — all at once.",
+        "category": "tools",
         "screenshot": ""
     },
     {
-        "id": 55,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
+        "id": 137,
+        "name": "Privnote",
+        "url": "https://privnote.com",
+        "description": "Send notes that self-destruct after being read once. Share passwords or secrets safely, then they're gone.",
+        "category": "tools",
         "screenshot": ""
     },
     {
-        "id": 56,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
+        "id": 138,
+        "name": "Ninite",
+        "url": "https://ninite.com",
+        "description": "Install or update all your essential software at once with one click. No toolbars, no bloatware, no fuss.",
+        "category": "tools",
         "screenshot": ""
     },
     {
-        "id": 57,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
+        "id": 139,
+        "name": "Dictation.io",
+        "url": "https://dictation.io",
+        "description": "Type with your voice, right in the browser — free, accurate, works in 60+ languages. No install required.",
+        "category": "tools",
         "screenshot": ""
     },
     {
-        "id": 58,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 59,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 60,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 61,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 62,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 63,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 64,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 65,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 66,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 67,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 68,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 69,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 70,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 71,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 72,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 73,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 74,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 75,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 76,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 77,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 78,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 79,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 80,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 81,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 82,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 83,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 84,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 85,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 86,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 87,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 88,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 89,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 90,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 91,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 92,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 93,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 94,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 95,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 96,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 97,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 98,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 99,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
-        "screenshot": ""
-    },
-    {
-        "id": 100,
-        "name": "",
-        "url": "",
-        "description": "",
-        "category": "fun",
+        "id": 140,
+        "name": "Finviz",
+        "url": "https://finviz.com",
+        "description": "Real-time financial market heatmap and stock screener. See the entire stock market as a visual grid at a glance.",
+        "category": "tools",
         "screenshot": ""
     }
 ]
