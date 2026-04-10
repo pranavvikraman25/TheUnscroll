@@ -1118,5 +1118,21 @@
         "description": "The full stock market as a live heatmap — see which sectors are up and down at a glance, every trading day.",
         "category": "tools",
         "screenshot": "https://s0.wp.com/mshots/v1/https://finviz.com/map.ashx?w=640"
+    },
+    {
+        "id": 141,
+        "name": "The Telephoner",
+        "url": "https://thetelephoner.com",
+        "description": "Get randomly connected to a stranger anywhere in the world via a phone call simulation. Weird, wholesome, and oddly addictive.",
+        "category": "fun",
+        "screenshot": "https://s0.wp.com/mshots/v1/https://thetelephoner.com?w=640"
+    },
+    {
+        "id": 142,
+        "name": "Slow Roads",
+        "url": "https://slowroads.io",
+        "description": "An endlessly generated, peaceful driving game through stunning landscapes. Set it to autopilot and just watch the world go by.",
+        "category": "games",
+        "screenshot": "https://s0.wp.com/mshots/v1/https://slowroads.io?w=640"
     }
 ]
