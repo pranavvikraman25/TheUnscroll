@@ -1,0 +1,171 @@
+[
+  {
+    "id": 1,
+    "title": "Generate a QR Code Inside Word",
+    "domain": "Microsoft Word",
+    "domainColor": "#2b579a",
+    "description": "Create a scannable QR code for any URL directly inside a Word document — no plugins, no internet, completely offline.",
+    "steps": [
+      "Click where you want the QR code",
+      "Press Ctrl + F9 to create a field code bracket { }",
+      "Inside the brackets, type: displaybarcode \"https://yoururl.com\" qr \\3",
+      "Press F9 to render it into a real QR code"
+    ],
+    "result": "A scannable QR code appears inline in your document. Right-click → Format Object to resize it.",
+    "tags": ["word", "qr", "office", "productivity"]
+  },
+  {
+    "id": 2,
+    "title": "Open the Emoji Picker Anywhere",
+    "domain": "Windows",
+    "domainColor": "#0078d4",
+    "description": "Access every emoji, symbol, kaomoji, and special character instantly from any text field on Windows.",
+    "steps": [
+      "Click inside any text input or document",
+      "Press Windows key + . (period) or Windows key + ; (semicolon)"
+    ],
+    "result": "A floating emoji picker opens. Search by name, browse by category, or pick from recently used ones.",
+    "tags": ["windows", "emoji", "keyboard", "shortcut"]
+  },
+  {
+    "id": 3,
+    "title": "Reopen a Tab You Just Closed",
+    "domain": "Any Browser",
+    "domainColor": "#ea4335",
+    "description": "Instantly bring back a tab you accidentally closed — works in Chrome, Firefox, Edge, and Safari.",
+    "steps": [
+      "Press Ctrl + Shift + T (Windows/Linux) or Cmd + Shift + T (Mac)"
+    ],
+    "result": "The last closed tab reopens exactly where you left it. Press again to keep restoring more closed tabs.",
+    "tags": ["browser", "chrome", "shortcut", "tabs"]
+  },
+  {
+    "id": 4,
+    "title": "Paste Text Without Formatting",
+    "domain": "Any App",
+    "domainColor": "#6b7280",
+    "description": "Copy text from a styled webpage and paste it as plain text — no fonts, colors, or sizes carried over.",
+    "steps": [
+      "Copy text as usual (Ctrl + C)",
+      "Instead of Ctrl + V, press Ctrl + Shift + V"
+    ],
+    "result": "The text pastes without any formatting. In apps that don't support this shortcut, paste into Notepad first, then copy again.",
+    "tags": ["productivity", "shortcut", "text", "formatting"]
+  },
+  {
+    "id": 5,
+    "title": "Clipboard History — See Everything You've Copied",
+    "domain": "Windows",
+    "domainColor": "#0078d4",
+    "description": "Windows keeps a history of everything you've copied. Stop losing the thing you copied two steps ago.",
+    "steps": [
+      "First enable it: Settings → System → Clipboard → Turn on Clipboard History",
+      "Press Windows key + V to open the clipboard history panel",
+      "Click any item to paste it"
+    ],
+    "result": "A panel shows your last 25 copied items — text, images, and more. You can also pin frequently used items.",
+    "tags": ["windows", "clipboard", "shortcut", "productivity"]
+  },
+  {
+    "id": 6,
+    "title": "Insert Today's Date Instantly in Excel",
+    "domain": "Microsoft Excel",
+    "domainColor": "#217346",
+    "description": "Stamp the current date into any cell in one keystroke — no typing, no formatting required.",
+    "steps": [
+      "Click any cell in Excel",
+      "Press Ctrl + ; (semicolon) to insert today's date",
+      "Press Ctrl + Shift + ; to insert the current time"
+    ],
+    "result": "Today's date appears instantly in the cell. Note: this is a static value — it won't change tomorrow like the TODAY() formula.",
+    "tags": ["excel", "spreadsheet", "shortcut", "office"]
+  },
+  {
+    "id": 7,
+    "title": "Use Google Translate as a Proxy Reader",
+    "domain": "Google Translate",
+    "domainColor": "#4285f4",
+    "description": "Access paywalled or region-blocked articles by routing them through Google Translate — completely free.",
+    "steps": [
+      "Go to translate.google.com",
+      "In the source box, paste the full URL of the blocked article",
+      "Set target language to English (or any language)",
+      "Click the translated link that appears"
+    ],
+    "result": "Google fetches and renders the page through its servers, bypassing most soft paywalls and regional blocks.",
+    "tags": ["google", "proxy", "paywall", "browser", "trick"]
+  },
+  {
+    "id": 8,
+    "title": "Take a Screenshot of a Full Webpage",
+    "domain": "Chrome / Edge",
+    "domainColor": "#ea4335",
+    "description": "Capture an entire webpage as a PNG — including parts below the fold — without any extension.",
+    "steps": [
+      "Open the page you want to capture",
+      "Press F12 to open DevTools",
+      "Press Ctrl + Shift + P to open the command palette",
+      "Type 'screenshot' and select 'Capture full size screenshot'"
+    ],
+    "result": "A full-page PNG downloads automatically — the entire scrollable page in one image.",
+    "tags": ["chrome", "browser", "screenshot", "devtools"]
+  },
+  {
+    "id": 9,
+    "title": "Find Any File Modified Today on Windows",
+    "domain": "Windows Explorer",
+    "domainColor": "#0078d4",
+    "description": "Instantly filter your file explorer to show only files changed or created today — great for finding that file you saved somewhere.",
+    "steps": [
+      "Open File Explorer and navigate to a folder",
+      "Click the Search bar at the top",
+      "Type: datemodified:today",
+      "Press Enter"
+    ],
+    "result": "Only files modified today appear. You can also use datemodified:this week or datemodified:yesterday.",
+    "tags": ["windows", "files", "search", "explorer"]
+  },
+  {
+    "id": 10,
+    "title": "Pin a Tab to Save Space in Chrome",
+    "domain": "Chrome / Edge",
+    "domainColor": "#ea4335",
+    "description": "Shrink frequently-used tabs like Gmail or Spotify to tiny icons so they never accidentally get closed.",
+    "steps": [
+      "Right-click on any tab",
+      "Select 'Pin tab'"
+    ],
+    "result": "The tab shrinks to just the favicon and moves to the left. Pinned tabs can't be accidentally closed and persist across restarts.",
+    "tags": ["chrome", "browser", "tabs", "productivity"]
+  },
+  {
+    "id": 11,
+    "title": "Turn Any YouTube Video into a GIF",
+    "domain": "YouTube",
+    "domainColor": "#ff0000",
+    "description": "Create an instant shareable GIF from any moment in a YouTube video — directly in the browser URL bar.",
+    "steps": [
+      "Open any YouTube video",
+      "In the URL bar, add 'gif' before 'youtube' — e.g., www.gifyoutube.com/watch?v=...",
+      "Select your start time and duration on the tool that opens",
+      "Download or share the GIF"
+    ],
+    "result": "A free GIF generator opens with the exact video. Clip any segment up to 10 seconds into a shareable GIF.",
+    "tags": ["youtube", "gif", "video", "sharing"]
+  },
+  {
+    "id": 12,
+    "title": "Use Your Phone as a Webcam on Windows",
+    "domain": "Windows 11",
+    "domainColor": "#0078d4",
+    "description": "Windows 11 has a built-in Phone Link feature that lets you use your Android phone's camera as a PC webcam — no apps needed.",
+    "steps": [
+      "Open Settings → Bluetooth & devices → Mobile devices",
+      "Enable 'Allow this PC to access your mobile devices'",
+      "Link your Android phone via the Phone Link app",
+      "In any video call app, select 'Virtual Camera' as the webcam source"
+    ],
+    "result": "Your phone's high-quality rear camera works as a webcam. Far better quality than most built-in laptop cameras.",
+    "tags": ["windows", "webcam", "phone", "android", "video"]
+  }
+]

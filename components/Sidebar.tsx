@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 
 const sectionGroups = [
     {
@@ -148,7 +149,27 @@ export default function Sidebar({ active, onSelect, total, savedCount }: {
                 </>
             )}
 
-            <div style={{ marginTop: 'auto', paddingTop: '14px', borderTop: '1px solid #f3f4f6' }}>
+            {/* Tricks link */}
+            <div style={{ height: '1px', background: '#f3f4f6', margin: '8px 0 4px' }} />
+            <Link href="/tricks" style={{
+                padding: '8px 10px', borderRadius: '7px', fontSize: '12.5px',
+                fontWeight: 500,
+                background: 'linear-gradient(135deg, #fef9e7 0%, #f0fdf4 100%)',
+                color: '#374151',
+                display: 'flex', alignItems: 'center', gap: '8px',
+                textDecoration: 'none',
+                border: '1px solid #e5e7eb',
+            }}>
+                <span style={{ fontSize: '14px' }}>💡</span>
+                Tricks & Tips
+                <span style={{
+                    marginLeft: 'auto', fontSize: '10px', fontWeight: 700,
+                    background: '#2d8a4e', color: '#fff',
+                    padding: '1px 6px', borderRadius: '10px',
+                }}>NEW</span>
+            </Link>
+
+            <div style={{ marginTop: '10px', paddingTop: '12px', borderTop: '1px solid #f3f4f6' }}>
                 <div style={{ fontSize: '11px', color: '#9ca3af', marginBottom: '4px' }}>{total} sites and counting</div>
                 <a
                     href="https://github.com/pranavvikraman25/tabbreaker"

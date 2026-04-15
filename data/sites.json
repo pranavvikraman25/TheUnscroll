@@ -1134,5 +1134,85 @@
         "description": "An endlessly generated, peaceful driving game through stunning landscapes. Set it to autopilot and just watch the world go by.",
         "category": "games",
         "screenshot": "https://s0.wp.com/mshots/v1/https://slowroads.io?w=640"
+    },
+    {
+        "id": 143,
+        "name": "Zperiod",
+        "url": "https://zperiod.app",
+        "description": "A beautifully minimal period and cycle tracker that works right in your browser — no account, no app download needed.",
+        "category": "tools",
+        "screenshot": "https://s0.wp.com/mshots/v1/https://zperiod.app?w=640"
+    },
+    {
+        "id": 144,
+        "name": "NASA Artemis II AROW",
+        "url": "https://www.nasa.gov/missions/artemis-ii/arow",
+        "description": "Track NASA's Artemis II mission in real-time — crew positions, spacecraft status, and countdown to humanity's return to the Moon.",
+        "category": "science",
+        "screenshot": "https://s0.wp.com/mshots/v1/https://www.nasa.gov/missions/artemis-ii/arow?w=640"
+    },
+    {
+        "id": 145,
+        "name": "TerraInk",
+        "url": "https://terraink.app",
+        "description": "A beautiful map-based drawing and annotation tool. Paint over real geography and create stunning illustrated maps.",
+        "category": "creativity",
+        "screenshot": "https://s0.wp.com/mshots/v1/https://terraink.app?w=640"
+    },
+    {
+        "id": 146,
+        "name": "Channel Surfer",
+        "url": "https://channelsurfer.tv",
+        "description": "Surf through random live TV channels from across the world just like flipping channels on an old television set.",
+        "category": "chill",
+        "screenshot": "https://s0.wp.com/mshots/v1/https://channelsurfer.tv?w=640"
+    },
+    {
+        "id": 147,
+        "name": "Epstein Exposed",
+        "url": "https://epsteinexposed.com",
+        "description": "A comprehensive public database of documents, connections, and facts from the Jeffrey Epstein case and court filings.",
+        "category": "science",
+        "screenshot": "https://s0.wp.com/mshots/v1/https://epsteinexposed.com?w=640"
+    },
+    {
+        "id": 148,
+        "name": "Cyber Threat Map",
+        "url": "https://threatmap.checkpoint.com",
+        "description": "Watch real-time global cyberattacks visualized on a live world map. Every line is an actual attack happening right now.",
+        "category": "science",
+        "screenshot": "https://s0.wp.com/mshots/v1/https://threatmap.checkpoint.com?w=640"
+    },
+    {
+        "id": 149,
+        "name": "HomeByMe",
+        "url": "https://home.by.me",
+        "description": "Design and furnish your dream home in 3D directly in the browser. Plan rooms, place furniture, and walk through your design.",
+        "category": "creativity",
+        "screenshot": "https://s0.wp.com/mshots/v1/https://home.by.me?w=640"
+    },
+    {
+        "id": 150,
+        "name": "3D Tuning",
+        "url": "https://www.3dtuning.com/en-US/home",
+        "description": "Customize and tune any car in stunning 3D — change color, wheels, body kits, and more. Every car model imaginable.",
+        "category": "creativity",
+        "screenshot": "https://s0.wp.com/mshots/v1/https://www.3dtuning.com?w=640"
+    },
+    {
+        "id": 151,
+        "name": "Mecabricks",
+        "url": "https://mecabricks.com",
+        "description": "Build with virtual LEGO bricks in your browser in full 3D. A complete LEGO studio — no bricks, no budget needed.",
+        "category": "creativity",
+        "screenshot": "https://s0.wp.com/mshots/v1/https://mecabricks.com?w=640"
+    },
+    {
+        "id": 152,
+        "name": "Google Pomelli",
+        "url": "https://labs.google.com/pomelli/about",
+        "description": "A Google Labs experiment — explore the connections between words, ideas, and concepts through a beautiful interactive web.",
+        "category": "science",
+        "screenshot": "https://s0.wp.com/mshots/v1/https://labs.google.com/pomelli/about?w=640"
     }
 ]
