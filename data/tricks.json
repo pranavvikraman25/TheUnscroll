@@ -167,5 +167,445 @@
     ],
     "result": "Your phone's high-quality rear camera works as a webcam. Far better quality than most built-in laptop cameras.",
     "tags": ["windows", "webcam", "phone", "android", "video"]
+  },
+  {
+    "id": 13,
+    "title": "Snipping Tool Anywhere, Instantly",
+    "domain": "Windows",
+    "domainColor": "#0078d4",
+    "description": "Take a precise screenshot of any area on your screen in one shortcut — no apps needed, no PrintScreen hassle.",
+    "steps": [
+      "Press Windows + Shift + S",
+      "Drag to select any area of the screen",
+      "The screenshot is copied to clipboard immediately"
+    ],
+    "result": "Paste it directly into any chat, email, or document with Ctrl + V. A notification also lets you annotate it before saving.",
+    "tags": ["windows", "screenshot", "shortcut"]
+  },
+  {
+    "id": 14,
+    "title": "Snap Windows to Any Side with the Keyboard",
+    "domain": "Windows",
+    "domainColor": "#0078d4",
+    "description": "Arrange two or more windows side by side without touching the mouse — perfect for dual-screen productivity.",
+    "steps": [
+      "Focus any window",
+      "Press Windows + Left Arrow to snap it to the left half",
+      "Press Windows + Right Arrow to snap to the right",
+      "Press Windows + Up/Down to maximize or minimize"
+    ],
+    "result": "Windows suggests filling the other half with another open app. Press Windows + Z for the full Snap Layouts grid on Windows 11.",
+    "tags": ["windows", "productivity", "multitasking", "shortcut"]
+  },
+  {
+    "id": 15,
+    "title": "Open Task Manager Directly",
+    "domain": "Windows",
+    "domainColor": "#0078d4",
+    "description": "Most people press Ctrl+Alt+Delete and then click Task Manager. There's a faster way.",
+    "steps": [
+      "Press Ctrl + Shift + Esc"
+    ],
+    "result": "Task Manager opens instantly — no intermediate screen. Right-click the taskbar also has 'Task Manager' for mouse users.",
+    "tags": ["windows", "shortcut", "performance"]
+  },
+  {
+    "id": 16,
+    "title": "God Mode — Windows Control Panel Superpower",
+    "domain": "Windows",
+    "domainColor": "#0078d4",
+    "description": "One hidden folder gives you access to every single Windows setting in one place — no digging through menus.",
+    "steps": [
+      "Right-click the desktop → New → Folder",
+      "Name the folder exactly: GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}",
+      "Press Enter — the folder icon changes to a control panel icon",
+      "Open it to see 200+ settings organized by category"
+    ],
+    "result": "Every Windows setting, system tool, and configuration option in one scrollable list. Works on Windows 10 and 11.",
+    "tags": ["windows", "hidden", "settings", "advanced"]
+  },
+  {
+    "id": 17,
+    "title": "Google Search Like a Pro — Power Operators",
+    "domain": "Google Search",
+    "domainColor": "#4285f4",
+    "description": "Most people search with plain words. These operators let you find exactly what you want in seconds.",
+    "steps": [
+      "site:reddit.com your topic — search only within Reddit",
+      "filetype:pdf machine learning — find PDF files on a topic",
+      "\"exact phrase\" — search for exact word order",
+      "-word — exclude a word from results",
+      "before:2020 after:2019 — filter by date range"
+    ],
+    "result": "Combine operators: site:reddit.com \"productivity tips\" -ads gives you Reddit threads about productivity with no sponsored results.",
+    "tags": ["google", "search", "operators", "research"]
+  },
+  {
+    "id": 18,
+    "title": "Google as a Calculator, Timer and Unit Converter",
+    "domain": "Google Search",
+    "domainColor": "#4285f4",
+    "description": "Google Search has a built-in calculator, unit converter, and timer — no need to open any other app.",
+    "steps": [
+      "Type 'timer 25 minutes' to start a countdown timer",
+      "Type '500 USD to INR' for live currency conversion",
+      "Type '100 km to miles' for unit conversion",
+      "Type 'sqrt(144)' or '15% of 340' for math",
+      "Type 'flip a coin' or 'roll a dice' for randomness"
+    ],
+    "result": "Everything runs directly in the search results page — the timer even rings in your browser.",
+    "tags": ["google", "calculator", "timer", "conversion"]
+  },
+  {
+    "id": 19,
+    "title": "Excel Flash Fill — Auto-Complete Any Pattern",
+    "domain": "Microsoft Excel",
+    "domainColor": "#217346",
+    "description": "Excel watches what you're typing and automatically fills the rest of a column following the same pattern — no formulas needed.",
+    "steps": [
+      "Type the first example of what you want (e.g., extract first name from 'John Smith')",
+      "Type the second example manually",
+      "Press Ctrl + E",
+      "Excel fills the entire column following your pattern"
+    ],
+    "result": "Works for splitting names, reformatting phone numbers, extracting emails, changing date formats — any consistent text pattern.",
+    "tags": ["excel", "spreadsheet", "productivity", "data"]
+  },
+  {
+    "id": 20,
+    "title": "Show All Formulas in an Excel Sheet",
+    "domain": "Microsoft Excel",
+    "domainColor": "#217346",
+    "description": "See every formula in every cell at once — perfect for auditing a spreadsheet someone else built.",
+    "steps": [
+      "Press Ctrl + ` (grave accent — the key to the left of 1)",
+      "All formulas show instead of their results",
+      "Press Ctrl + ` again to toggle back to values"
+    ],
+    "result": "The entire sheet switches to formula view. Columns auto-widen to show full formula text. Great for debugging.",
+    "tags": ["excel", "formulas", "spreadsheet", "audit"]
+  },
+  {
+    "id": 21,
+    "title": "Lock a Cell Reference with F4",
+    "domain": "Microsoft Excel",
+    "domainColor": "#217346",
+    "description": "When dragging formulas down a column, cell references shift automatically. F4 locks them so they stay fixed.",
+    "steps": [
+      "Click inside a formula on a cell reference (e.g., A1)",
+      "Press F4 to toggle between: A1 → $A$1 → A$1 → $A1 → A1",
+      "$A$1 = fully locked | A$1 = row locked | $A1 = column locked"
+    ],
+    "result": "Use $A$1 to lock a reference completely so it doesn't shift when you drag the formula to other cells.",
+    "tags": ["excel", "formulas", "spreadsheet", "shortcut"]
+  },
+  {
+    "id": 22,
+    "title": "Multi-Cursor Editing in VS Code",
+    "domain": "VS Code",
+    "domainColor": "#007acc",
+    "description": "Edit multiple lines simultaneously without find & replace — one of the most powerful productivity tricks in any code editor.",
+    "steps": [
+      "Hold Alt and click anywhere to add extra cursors",
+      "Or: Select a word, then press Ctrl + D to select the next occurrence",
+      "Keep pressing Ctrl + D to add more occurrences",
+      "Type to edit all selected occurrences at once"
+    ],
+    "result": "All cursors type simultaneously. Press Escape to return to single cursor. Works in VS Code, Cursor, and most modern editors.",
+    "tags": ["vscode", "coding", "editor", "productivity"]
+  },
+  {
+    "id": 23,
+    "title": "VS Code Command Palette — Do Anything",
+    "domain": "VS Code",
+    "domainColor": "#007acc",
+    "description": "The Command Palette is a searchable menu of every VS Code command — faster than any menu.",
+    "steps": [
+      "Press Ctrl + Shift + P (or Cmd + Shift + P on Mac)",
+      "Type any command name — 'format', 'git commit', 'theme'",
+      "Press Enter to run it"
+    ],
+    "result": "You can format code, change color theme, toggle terminal, run tasks, and install extensions — all without a mouse.",
+    "tags": ["vscode", "coding", "shortcut", "editor"]
+  },
+  {
+    "id": 24,
+    "title": "Middle-Click to Open Links in Background",
+    "domain": "Any Browser",
+    "domainColor": "#ea4335",
+    "description": "Stop right-clicking → 'Open in new tab'. Middle-click is faster and opens links in the background so you keep reading.",
+    "steps": [
+      "Hover over any link",
+      "Click your scroll wheel (middle button) instead of left-clicking"
+    ],
+    "result": "The link opens in a new tab in the background — your current page stays focused. Middle-click a tab to close it too.",
+    "tags": ["browser", "mouse", "tabs", "productivity"]
+  },
+  {
+    "id": 25,
+    "title": "Search Within Any Website from Chrome's Address Bar",
+    "domain": "Chrome / Edge",
+    "domainColor": "#ea4335",
+    "description": "Search YouTube, Amazon, or any site directly from the Chrome address bar without going to the site first.",
+    "steps": [
+      "Type the website name in the address bar (e.g. 'youtube.com')",
+      "Press Tab — the bar changes to 'Search YouTube'",
+      "Type your search term and press Enter"
+    ],
+    "result": "You're taken directly to the search results on that site. Works automatically for most sites after you've visited them once.",
+    "tags": ["chrome", "browser", "search", "shortcut"]
+  },
+  {
+    "id": 26,
+    "title": "View Source Code of Any Webpage",
+    "domain": "Any Browser",
+    "domainColor": "#ea4335",
+    "description": "See the full HTML of any webpage — useful for learning how sites are built or finding hidden content.",
+    "steps": [
+      "Go to any webpage",
+      "Press Ctrl + U (Windows) or Cmd + Option + U (Mac)",
+      "Or type 'view-source:' before the URL in the address bar"
+    ],
+    "result": "The full HTML source opens in a new tab. Use Ctrl + F to search for specific elements, text, or metadata.",
+    "tags": ["browser", "html", "developer", "web"]
+  },
+  {
+    "id": 27,
+    "title": "Gmail + Trick — Infinite Email Addresses",
+    "domain": "Gmail",
+    "domainColor": "#ea4335",
+    "description": "You have infinite unique email addresses with your single Gmail account — great for filtering or bypassing 'one account per person' limits.",
+    "steps": [
+      "Your Gmail is: yourname@gmail.com",
+      "Add +anything after your name: yourname+netflix@gmail.com",
+      "Emails sent to any +tag version arrive in your inbox",
+      "Set up a Gmail filter on 'To: yourname+netflix@gmail.com' to auto-label them"
+    ],
+    "result": "Signup to every service with a different +tag. See exactly who sells your email by which tag gets spam.",
+    "tags": ["gmail", "email", "privacy", "filtering"]
+  },
+  {
+    "id": 28,
+    "title": "Google Maps — Save Offline Map of Any City",
+    "domain": "Google Maps",
+    "domainColor": "#4285f4",
+    "description": "Download a city map so it works fully without internet — navigation, search, and directions all offline.",
+    "steps": [
+      "Open Google Maps on your phone",
+      "Search for a city or area",
+      "Tap the city name at the bottom to open its info card",
+      "Tap the three-dot menu → Download offline map",
+      "Adjust the region and tap Download"
+    ],
+    "result": "The map works without any internet connection. Perfect for travel, areas with poor signal, or saving mobile data.",
+    "tags": ["google maps", "offline", "travel", "mobile"]
+  },
+  {
+    "id": 29,
+    "title": "Undo Anything in Windows File Explorer",
+    "domain": "Windows Explorer",
+    "domainColor": "#0078d4",
+    "description": "Accidentally deleted, renamed, or moved a file? Ctrl + Z works in File Explorer just like in Word.",
+    "steps": [
+      "Open File Explorer",
+      "Press Ctrl + Z immediately after the mistake",
+      "Press multiple times to undo multiple file operations"
+    ],
+    "result": "Files are restored, renames are reversed, moves are undone. Works for rename, move, copy, and delete operations.",
+    "tags": ["windows", "files", "undo", "shortcut"]
+  },
+  {
+    "id": 30,
+    "title": "Chrome DevTools — Pick Any Color from the Screen",
+    "domain": "Chrome DevTools",
+    "domainColor": "#ea4335",
+    "description": "Chrome has a built-in eyedropper that can pick any color from anywhere on your screen — not just the webpage.",
+    "steps": [
+      "Press F12 to open DevTools",
+      "In the Elements tab, click any color swatch in the CSS panel",
+      "The color picker opens — click the eyedropper icon (bottom left)",
+      "Click anywhere on your screen to pick that color"
+    ],
+    "result": "The exact hex/RGB/HSL code appears. Copy it directly. Works across any visible pixel on your entire screen.",
+    "tags": ["chrome", "devtools", "design", "color", "developer"]
+  },
+  {
+    "id": 31,
+    "title": "Drag Any Tab into Its Own Window",
+    "domain": "Any Browser",
+    "domainColor": "#ea4335",
+    "description": "Split your browser tabs into separate windows instantly — useful for side-by-side comparison or dual monitor setups.",
+    "steps": [
+      "Click and hold any tab",
+      "Drag it away from the tab bar",
+      "Release — it becomes its own window",
+      "Drag it back to merge it into another window"
+    ],
+    "result": "The tab opens as a standalone window. Drag multiple tabs together to merge them. Great for putting a YouTube video on one monitor.",
+    "tags": ["browser", "tabs", "window", "multitasking"]
+  },
+  {
+    "id": 32,
+    "title": "Read Any Wikipedia Article Offline with a URL Trick",
+    "domain": "Wikipedia",
+    "domainColor": "#333333",
+    "description": "Load a clean, printable version of any Wikipedia article — faster, no ads, no sidebars.",
+    "steps": [
+      "Open any Wikipedia article",
+      "In the URL, change 'en.wikipedia.org/wiki/' to 'en.m.wikipedia.org/wiki/'",
+      "Or add ?action=render at the end of the URL"
+    ],
+    "result": "A clean article-only view loads — perfect for reading. The mobile version also loads significantly faster on slow connections.",
+    "tags": ["wikipedia", "reading", "browser", "trick"]
+  },
+  {
+    "id": 33,
+    "title": "PowerPoint: Laser Pointer + Drawing During Presentation",
+    "domain": "Microsoft PowerPoint",
+    "domainColor": "#d04526",
+    "description": "Turn your cursor into a laser pointer or annotation pen while presenting — no extra hardware needed.",
+    "steps": [
+      "Start your slideshow (press F5)",
+      "Hold Ctrl and press the left mouse button — cursor becomes a laser pointer",
+      "Press Ctrl + P to switch to pen mode for drawing on slides",
+      "Press E to erase all drawings",
+      "Press Ctrl + A to switch back to arrow"
+    ],
+    "result": "Highlight points live during your presentation. The audience sees the laser or annotations on the projected screen.",
+    "tags": ["powerpoint", "presentation", "office", "trick"]
+  },
+  {
+    "id": 34,
+    "title": "Google Docs — Type with Your Voice",
+    "domain": "Google Docs",
+    "domainColor": "#4285f4",
+    "description": "Dictate entire documents hands-free in Google Docs — supports punctuation commands and works in 60+ languages.",
+    "steps": [
+      "Open Google Docs in Chrome",
+      "Go to Tools → Voice typing",
+      "Click the microphone icon that appears",
+      "Speak naturally — say 'period', 'comma', 'new line' for punctuation"
+    ],
+    "result": "Your speech is transcribed in real-time with surprising accuracy. Say 'select all', 'bold', 'italics' for formatting commands.",
+    "tags": ["google docs", "voice", "dictation", "accessibility"]
+  },
+  {
+    "id": 35,
+    "title": "Find the Exact Font Used on Any Website",
+    "domain": "Chrome DevTools",
+    "domainColor": "#ea4335",
+    "description": "Identify any font on any website in seconds — no extensions needed.",
+    "steps": [
+      "Right-click any text on a webpage",
+      "Select 'Inspect'",
+      "In the Elements panel, click the 'Computed' tab",
+      "Scroll to find 'font-family' — this is the exact font name"
+    ],
+    "result": "You see the full font stack. Search the font name on Google Fonts or MyFonts to find and download it.",
+    "tags": ["fonts", "design", "devtools", "chrome", "web"]
+  },
+  {
+    "id": 36,
+    "title": "Google Search: Find Flights and Hotels Directly",
+    "domain": "Google Search",
+    "domainColor": "#4285f4",
+    "description": "Google has a built-in flight and hotel search that's often cheaper and faster than dedicated booking sites.",
+    "steps": [
+      "Search: 'flights from Chennai to Dubai'",
+      "A full flight finder appears — filter by date, stops, airline",
+      "Search: 'hotels in Paris under 100 dollars' for hotel search",
+      "Click 'Explore' on the flight results to see a price calendar"
+    ],
+    "result": "Google shows prices across all airlines with a price calendar showing cheapest days to fly. Links go directly to booking sites.",
+    "tags": ["google", "travel", "flights", "hotels", "money"]
+  },
+  {
+    "id": 37,
+    "title": "Windows: Create an Invisible Folder",
+    "domain": "Windows",
+    "domainColor": "#0078d4",
+    "description": "Make a folder with no name and no visible icon — hiding it in plain sight on your desktop.",
+    "steps": [
+      "Create a new folder on the desktop",
+      "Rename it: hold Alt, type 0160 on the numpad, press Enter (this is a non-breaking space — an invisible character)",
+      "Right-click → Properties → Customize → Change Icon",
+      "Select a blank/transparent icon from the list"
+    ],
+    "result": "The folder appears invisible on the desktop. It's still there — click the area where it is to open it.",
+    "tags": ["windows", "hidden", "privacy", "files", "trick"]
+  },
+  {
+    "id": 38,
+    "title": "YouTube: Loop Any Section of a Video",
+    "domain": "YouTube",
+    "domainColor": "#ff0000",
+    "description": "Loop a specific 10-second clip of a YouTube video — not the whole video. Great for learning dance moves, solos, or tutorials.",
+    "steps": [
+      "Go to the YouTube video",
+      "Right-click on the video player",
+      "Select 'Loop' to loop the entire video",
+      "For a specific section: open the video on youtu.be (or add it yourself at youtuberepeater.com)"
+    ],
+    "result": "The right-click Loop option endlessly repeats the full video. Third-party tools let you set AB loop points for specific sections.",
+    "tags": ["youtube", "video", "learning", "loop"]
+  },
+  {
+    "id": 39,
+    "title": "Recover Unsaved Word or Excel Files",
+    "domain": "Microsoft Office",
+    "domainColor": "#d04526",
+    "description": "Closed without saving? Office autosaves recovery files every few minutes — here's how to find them.",
+    "steps": [
+      "In Word or Excel: File → Info → Manage Document",
+      "Click 'Recover Unsaved Documents' (Word) or 'Recover Unsaved Workbooks' (Excel)",
+      "Browse the recovery folder that opens",
+      "Open your file and immediately Save As to a proper location"
+    ],
+    "result": "Office keeps autosave drafts for 4 days. You may lose the last few minutes of work, but rarely everything.",
+    "tags": ["word", "excel", "office", "recovery", "files"]
+  },
+  {
+    "id": 40,
+    "title": "Zoom In on Any Screen Without an App",
+    "domain": "Windows",
+    "domainColor": "#0078d4",
+    "description": "Windows has a built-in magnifier — zoom into any part of your screen for accessibility or detailed viewing.",
+    "steps": [
+      "Press Windows + Plus (+) to open the Magnifier and zoom in",
+      "Press Windows + Minus (-) to zoom out",
+      "Press Windows + Escape to close the Magnifier"
+    ],
+    "result": "The screen magnifies in real time as you move your mouse. Use it to read small text, inspect images, or for accessibility.",
+    "tags": ["windows", "accessibility", "zoom", "screen"]
+  },
+  {
+    "id": 41,
+    "title": "Google Reverse Image Search from Right-Click",
+    "domain": "Chrome / Edge",
+    "domainColor": "#4285f4",
+    "description": "Find where any image came from, identify people, landmarks, or products — directly from your browser.",
+    "steps": [
+      "Right-click any image on any webpage",
+      "Select 'Search image with Google' (Chrome) or 'Search the web for this image' (Edge)",
+      "Google shows visually similar images and pages where the image appears"
+    ],
+    "result": "Identify fake news photos, find the original source, buy products by photo, or find higher-resolution versions of any image.",
+    "tags": ["google", "images", "search", "reverse image"]
+  },
+  {
+    "id": 42,
+    "title": "Markdown in WhatsApp and Telegram",
+    "domain": "WhatsApp / Telegram",
+    "domainColor": "#25d366",
+    "description": "Format your messages with bold, italic, strikethrough, and monospace — without any settings to toggle.",
+    "steps": [
+      "Bold: *your text* (wrap with asterisks)",
+      "Italic: _your text_ (wrap with underscores)",
+      "Strikethrough: ~your text~ (wrap with tildes)",
+      "Monospace/code: `your text` (wrap with backticks)",
+      "In Telegram: **bold**, __italic__, `code`, ```code block```"
+    ],
+    "result": "Messages render with the formatting applied. Great for emphasis, corrections, or sharing code snippets in group chats.",
+    "tags": ["whatsapp", "telegram", "formatting", "messaging"]
   }
 ]

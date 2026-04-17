@@ -31,11 +31,29 @@ export default function Sidebar({ active, onSelect, total, savedCount }: {
 
       {/* Logo */}
       <div style={{ padding: '0 18px 20px' }}>
-        <div style={{ fontSize: '19px', fontWeight: 800, letterSpacing: '-0.5px', lineHeight: 1 }}>
-          <span style={{ color: '#2d8a4e' }}>The </span>
-          <span style={{ color: '#c8970a' }}>Unscroll</span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '9px' }}>
+          {/* SVG Icon Mark */}
+          <svg width="30" height="30" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="32" rx="8" fill="#0f1117"/>
+            {/* Left arm + bottom — green */}
+            <path d="M9 7 L9 19 Q9 25 16 25 Q23 25 23 19 L23 9"
+              stroke="#2d8a4e" strokeWidth="3.5" fill="none" strokeLinecap="round"/>
+            {/* Right side + bottom — amber overlay */}
+            <path d="M16 25 Q23 25 23 19 L23 9"
+              stroke="#c8970a" strokeWidth="3.5" fill="none" strokeLinecap="round"/>
+            {/* Scroll curl at top-right — the "unscroll" detail */}
+            <path d="M23 9 Q23 5 26 6 Q28.5 7.5 26.5 10"
+              stroke="#c8970a" strokeWidth="2.5" fill="none" strokeLinecap="round"/>
+          </svg>
+          {/* Wordmark */}
+          <div>
+            <div style={{ fontSize: '16px', fontWeight: 800, letterSpacing: '-0.4px', lineHeight: 1 }}>
+              <span style={{ color: '#2d8a4e' }}>The </span>
+              <span style={{ color: '#c8970a' }}>Unscroll</span>
+            </div>
+          </div>
         </div>
-        <div style={{ fontSize: '10.5px', color: '#b0b7c3', marginTop: '4px', letterSpacing: '0.01em' }}>
+        <div style={{ fontSize: '10px', color: '#b0b7c3', marginTop: '6px', letterSpacing: '0.01em' }}>
           Your cure for endless scrolling
         </div>
       </div>
