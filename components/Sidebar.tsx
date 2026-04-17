@@ -176,6 +176,7 @@ export default function Sidebar({ active, onSelect, total, savedCount }: {
         <div style={{ height: '1px', background: '#f3f4f6', marginBottom: '10px' }} />
         <div style={{ fontSize: '10px', fontWeight: 700, color: '#9ca3af', textTransform: 'uppercase', letterSpacing: '0.08em', padding: '0 2px', marginBottom: '6px' }}>Explore More</div>
         {([
+          { href: '/daily', label: "Today's Pick", emoji: '☀️', badge: 'DAILY' },
           { href: '/tricks', label: 'Tricks & Tips', emoji: '💡' },
           { href: '/books', label: 'Books', emoji: '📖' },
           { href: '/documentaries', label: 'Documentaries', emoji: '🎬' },
@@ -191,7 +192,7 @@ export default function Sidebar({ active, onSelect, total, savedCount }: {
           }}>
             <span style={{ fontSize: '13px', width: '18px', textAlign: 'center' }}>{item.emoji}</span>
             {item.label}
-            {item.badge && <span style={{ marginLeft: 'auto', fontSize: '9px', fontWeight: 700, background: '#2d8a4e', color: '#fff', padding: '1px 5px', borderRadius: '8px' }}>{item.badge}</span>}
+            {item.badge && <span style={{ marginLeft: 'auto', fontSize: '9px', fontWeight: 700, background: item.badge === 'DAILY' ? '#c8970a' : '#2d8a4e', color: '#fff', padding: '1px 5px', borderRadius: '8px' }}>{item.badge}</span>}
           </Link>
         ))}
       </div>

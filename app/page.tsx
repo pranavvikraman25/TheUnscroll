@@ -1,8 +1,10 @@
 'use client'
 import { useState, useMemo, useEffect } from 'react'
+import Link from 'next/link'
 import allSites from '../data/sites.json'
 import SiteCard from '../components/SiteCard'
 import Sidebar from '../components/Sidebar'
+import { getDailyPick } from '../lib/dailyPick'
 
 const sites = allSites.filter(s => s.name.trim() !== '')
 
@@ -208,10 +210,37 @@ export default function Home() {
             <span style={{ color: '#c8970a' }}>endless scrolling</span> ✦
           </h1>
           {!isMobile && (
-            <p style={{ fontSize: '14px', color: '#6b7280', margin: 0 }}>
+            <p style={{ fontSize: '14px', color: '#6b7280', margin: '0 0 18px' }}>
               Every site earns your attention the honest way — wonder, learning, or pure joy. No algorithm.
             </p>
           )}
+
+          {/* Daily Pick Banner */}
+          {(() => {
+            const pick = getDailyPick()
+            return (
+              <Link href="/daily" style={{
+                display: 'flex', alignItems: 'center', gap: '12px',
+                background: pick.color + '08',
+                border: `1px solid ${pick.color}33`,
+                borderRadius: '12px', padding: '12px 16px',
+                textDecoration: 'none', marginTop: isMobile ? '10px' : '0',
+              }}>
+                <div style={{
+                  width: '38px', height: '38px', borderRadius: '10px',
+                  background: pick.color + '18', display: 'flex',
+                  alignItems: 'center', justifyContent: 'center',
+                  fontSize: '18px', flexShrink: 0,
+                }}>{pick.emoji}</div>
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <div style={{ fontSize: '10px', fontWeight: 700, color: pick.color, textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '2px' }}>☀️ Daily Pick</div>
+                  <div style={{ fontWeight: 600, fontSize: '13px', color: '#111', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{pick.title}</div>
+                  {!isMobile && <div style={{ fontSize: '11px', color: '#6b7280', marginTop: '1px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{pick.subtitle}</div>}
+                </div>
+                <span style={{ fontSize: '12px', fontWeight: 600, color: pick.color, flexShrink: 0 }}>View →</span>
+              </Link>
+            )
+          })()}
         </div>
 
         {/* Grid — 2 cols on mobile, auto on desktop */}
