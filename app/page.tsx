@@ -101,63 +101,102 @@ export default function Home() {
       {/* ── MAIN AREA ── */}
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflowY: 'auto', background: '#f9fafb', minWidth: 0 }}>
 
-        {/* Top bar */}
+        {/* Top bar — premium search */}
         <div style={{
-          padding: '10px 14px', borderBottom: '1px solid #e5e7eb',
-          background: '#fff', display: 'flex', alignItems: 'center', gap: '10px',
+          padding: isMobile ? '10px 12px' : '12px 20px',
+          borderBottom: '1px solid #f0f0f0',
+          background: '#fff',
+          display: 'flex', alignItems: 'center', gap: '10px',
           position: 'sticky', top: 0, zIndex: 10,
         }}>
-          {/* Hamburger — shown on mobile only */}
+          {/* Mobile hamburger */}
           {isMobile && (
             <button
               onClick={() => setSidebarOpen(o => !o)}
               style={{
-                width: '36px', height: '36px', flexShrink: 0,
-                border: '1px solid #e5e7eb', borderRadius: '8px',
-                background: sidebarOpen ? '#f0fdf4' : '#fff',
+                width: '38px', height: '38px', flexShrink: 0,
+                border: '1px solid #e5e7eb', borderRadius: '9px',
+                background: sidebarOpen ? '#f0fdf4' : '#fafafa',
                 cursor: 'pointer', display: 'flex', flexDirection: 'column',
-                alignItems: 'center', justifyContent: 'center', gap: '4px',
-                padding: '0',
+                alignItems: 'center', justifyContent: 'center', gap: '4px', padding: 0,
               }}
             >
               {[0, 1, 2].map(i => (
                 <span key={i} style={{
-                  width: '16px', height: '2px', borderRadius: '2px',
-                  background: sidebarOpen ? '#2d8a4e' : '#374151',
-                  display: 'block',
-                  transition: 'background 0.15s',
+                  width: '15px', height: '1.5px', borderRadius: '2px',
+                  background: sidebarOpen ? '#2d8a4e' : '#555',
+                  display: 'block', transition: 'background 0.15s',
                 }} />
               ))}
             </button>
           )}
 
-          <input
-            type="text"
-            placeholder="Search sites..."
-            value={search}
-            onChange={e => setSearch(e.target.value)}
-            style={{
-              flex: 1, padding: '9px 12px', border: '1px solid #e5e7eb',
-              borderRadius: '8px', fontSize: '13px', background: '#f9fafb',
-              outline: 'none', color: '#111', minWidth: 0,
-            }}
-          />
+          {/* Search input with icon */}
+          <div style={{ flex: 1, position: 'relative', minWidth: 0 }}>
+            <svg
+              style={{ position: 'absolute', left: '13px', top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none' }}
+              width="15" height="15" viewBox="0 0 20 20" fill="none"
+            >
+              <circle cx="8.5" cy="8.5" r="5.75" stroke="#9ca3af" strokeWidth="1.75" />
+              <path d="M13 13L17 17" stroke="#9ca3af" strokeWidth="1.75" strokeLinecap="round" />
+            </svg>
+            <input
+              type="text"
+              placeholder={isMobile ? 'Search sites...' : 'Search across ' + sites.length + ' sites — try "chess", "NASA", "relax"...'}
+              value={search}
+              onChange={e => setSearch(e.target.value)}
+              style={{
+                width: '100%',
+                padding: '10px 14px 10px 38px',
+                border: '1px solid #ebebeb',
+                borderRadius: '10px',
+                fontSize: '13.5px',
+                background: '#fafafa',
+                outline: 'none',
+                color: '#111',
+                fontFamily: 'inherit',
+                boxSizing: 'border-box',
+                transition: 'border-color 0.15s, box-shadow 0.15s',
+              }}
+              onFocus={e => {
+                e.currentTarget.style.borderColor = '#2d8a4e'
+                e.currentTarget.style.boxShadow = '0 0 0 3px rgba(45,138,78,0.08)'
+                e.currentTarget.style.background = '#fff'
+              }}
+              onBlur={e => {
+                e.currentTarget.style.borderColor = '#ebebeb'
+                e.currentTarget.style.boxShadow = 'none'
+                e.currentTarget.style.background = '#fafafa'
+              }}
+            />
+          </div>
 
-          {/* Submit button — hide on mobile to save space */}
+          {/* Submit CTA */}
           {!isMobile && (
             <a
               href="https://github.com/pranavvikraman25/tabbreaker/issues/new"
               target="_blank" rel="noopener noreferrer"
               style={{
-                padding: '9px 18px', borderRadius: '8px', fontSize: '13px',
-                border: '1px solid #2d8a4e', color: '#2d8a4e',
-                textDecoration: 'none', fontWeight: 600, whiteSpace: 'nowrap',
+                padding: '10px 18px',
+                borderRadius: '10px',
+                fontSize: '13px',
+                background: '#2d8a4e',
+                color: '#fff',
+                textDecoration: 'none',
+                fontWeight: 600,
+                whiteSpace: 'nowrap',
+                letterSpacing: '0.01em',
+                display: 'flex', alignItems: 'center', gap: '6px',
               }}
             >
-              + Submit a site
+              Suggest a site
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
             </a>
           )}
         </div>
+
 
         {/* Hero */}
         <div style={{ padding: isMobile ? '18px 14px 14px' : '28px 24px 20px', borderBottom: '1px solid #f3f4f6', background: '#fff' }}>
