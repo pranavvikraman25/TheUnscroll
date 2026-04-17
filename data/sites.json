@@ -49,11 +49,11 @@
     },
     {
         "id": 7,
-        "name": "MapCrunch",
-        "url": "https://www.mapcrunch.com",
-        "description": "Click Teleport and get dropped into a random Google Street View location anywhere in the world. A passport-free adventure.",
+        "name": "Zoom Earth",
+        "url": "https://zoom.earth",
+        "description": "Live satellite imagery of Earth updated every 10 minutes — track storms, wildfires, hurricanes, and snowstorms in real time.",
         "category": "travel",
-        "screenshot": "https://s0.wp.com/mshots/v1/https://www.mapcrunch.com?w=640"
+        "screenshot": "https://image.thum.io/get/width/640/https://zoom.earth"
     },
     {
         "id": 8,
@@ -85,7 +85,7 @@
         "url": "https://www.marinetraffic.com",
         "description": "Track ships and tankers moving across the oceans in real-time. Every cargo ship, cruise liner, and tanker, live.",
         "category": "travel",
-        "screenshot": "https://s0.wp.com/mshots/v1/https://www.marinetraffic.com?w=640"
+        "screenshot": "https://image.thum.io/get/width/640/https://www.marinetraffic.com"
     },
     {
         "id": 12,
@@ -129,11 +129,11 @@
     },
     {
         "id": 17,
-        "name": "Weave Silk",
-        "url": "https://weavesilk.com",
-        "description": "Draw mesmerizing symmetrical flowing art with your mouse. Every stroke mirrors itself into hypnotic patterns.",
+        "name": "Fluid Simulation",
+        "url": "https://paveldogreat.github.io/WebGL-Fluid-Simulation/",
+        "description": "Splash, swirl, and paint in a gorgeous real-time fluid physics simulation. Every gesture creates hypnotic colour flows.",
         "category": "creativity",
-        "screenshot": "https://s0.wp.com/mshots/v1/https://weavesilk.com?w=640"
+        "screenshot": "https://image.thum.io/get/width/640/https://paveldogreat.github.io/WebGL-Fluid-Simulation/"
     },
     {
         "id": 18,
@@ -405,7 +405,7 @@
         "url": "https://www.atlasobscura.com",
         "description": "A guide to 25,000+ hidden wonders, curious places, and unusual landmarks around the world. The weird travel bible.",
         "category": "science",
-        "screenshot": "https://s0.wp.com/mshots/v1/https://www.atlasobscura.com?w=640"
+        "screenshot": "https://image.thum.io/get/width/640/https://www.atlasobscura.com"
     },
     {
         "id": 52,
@@ -597,7 +597,7 @@
         "url": "https://en.akinator.com",
         "description": "The web genie that guesses the character you're thinking of in just 20 questions. Eerily accurate.",
         "category": "games",
-        "screenshot": "https://s0.wp.com/mshots/v1/https://en.akinator.com?w=640"
+        "screenshot": "https://image.thum.io/get/width/640/https://en.akinator.com"
     },
     {
         "id": 76,
@@ -717,7 +717,7 @@
         "url": "https://www.thegitcity.com",
         "description": "Visualize any GitHub profile as a 3D pixel-art city — buildings represent repos, activity lights up the skyline.",
         "category": "games",
-        "screenshot": "https://s0.wp.com/mshots/v1/https://www.thegitcity.com?w=640"
+        "screenshot": "https://image.thum.io/get/width/640/https://www.thegitcity.com"
     },
     {
         "id": 91,
@@ -745,11 +745,11 @@
     },
     {
         "id": 94,
-        "name": "My 90s TV",
-        "url": "https://www.my90stv.com",
-        "description": "A simulated 90s TV experience with real commercials, shows, and music videos playing on loop. Pure nostalgia.",
+        "name": "Pluto TV",
+        "url": "https://pluto.tv",
+        "description": "250+ free live TV channels — movies, news, reality, sports — all streaming with no subscription, no credit card, ever.",
         "category": "chill",
-        "screenshot": "https://s0.wp.com/mshots/v1/https://www.my90stv.com?w=640"
+        "screenshot": "https://image.thum.io/get/width/640/https://pluto.tv"
     },
     {
         "id": 95,
@@ -785,11 +785,11 @@
     },
     {
         "id": 99,
-        "name": "The Oatmeal",
-        "url": "https://www.theoatmeal.com",
-        "description": "Hilarious, insightful comics and quizzes about cats, grammar, mantis shrimp, and the absurdity of life.",
+        "name": "xkcd",
+        "url": "https://xkcd.com",
+        "description": "Legendary webcomics by a former NASA engineer — science, math, romance, and sarcasm. Every strip hides something clever.",
         "category": "chill",
-        "screenshot": "https://s0.wp.com/mshots/v1/https://www.theoatmeal.com?w=640"
+        "screenshot": "https://image.thum.io/get/width/640/https://xkcd.com"
     },
     {
         "id": 100,
@@ -805,7 +805,7 @@
         "url": "https://medium.com",
         "description": "Long-form articles on every topic by writers who actually know what they're talking about. Many stories are free.",
         "category": "chill",
-        "screenshot": "https://s0.wp.com/mshots/v1/https://medium.com?w=640"
+        "screenshot": "https://image.thum.io/get/width/640/https://medium.com"
     },
     {
         "id": 102,
@@ -853,7 +853,7 @@
         "url": "https://autocatalogarchive.com",
         "description": "Browse thousands of original car brochures and catalogs from the 1950s to today. A paradise for car lovers.",
         "category": "chill",
-        "screenshot": "https://s0.wp.com/mshots/v1/https://autocatalogarchive.com?w=640"
+        "screenshot": "https://image.thum.io/get/width/640/https://autocatalogarchive.com"
     },
     {
         "id": 108,
@@ -869,7 +869,7 @@
         "url": "https://www.typingclub.com",
         "description": "Learn to touch-type fast with gamified, structured lessons. You'll thank yourself for every year after.",
         "category": "learning",
-        "screenshot": "https://s0.wp.com/mshots/v1/https://www.typingclub.com?w=640"
+        "screenshot": "https://image.thum.io/get/width/640/https://www.typingclub.com"
     },
     {
         "id": 110,
@@ -993,11 +993,11 @@
     },
     {
         "id": 125,
-        "name": "Expresso",
-        "url": "https://www.expresso-app.org",
-        "description": "Paste any text and instantly see overused words, sentence length stats, and writing style issues. A writer's mirror.",
+        "name": "Hemingway Editor",
+        "url": "https://hemingwayapp.com",
+        "description": "Paste any text and it highlights hard sentences, passive voice, adverbs, and grade level. Makes your writing razor-sharp.",
         "category": "tools",
-        "screenshot": "https://s0.wp.com/mshots/v1/https://www.expresso-app.org?w=640"
+        "screenshot": "https://image.thum.io/get/width/640/https://hemingwayapp.com"
     },
     {
         "id": 126,
@@ -1021,7 +1021,7 @@
         "url": "https://musclewiki.com",
         "description": "Click any muscle on a 3D body map and instantly see the best exercises for it. The best free fitness reference.",
         "category": "tools",
-        "screenshot": "https://s0.wp.com/mshots/v1/https://musclewiki.com?w=640"
+        "screenshot": "https://image.thum.io/get/width/640/https://musclewiki.com"
     },
     {
         "id": 129,
@@ -1057,11 +1057,11 @@
     },
     {
         "id": 133,
-        "name": "ManualsLib",
-        "url": "https://www.manualslib.com",
-        "description": "Find the user manual for any device you've ever owned. Millions of manuals, completely free to download.",
+        "name": "iFixit",
+        "url": "https://www.ifixit.com",
+        "description": "Free repair guides for every device you own — phones, laptops, appliances. Step-by-step with photos. Repair beats replace.",
         "category": "tools",
-        "screenshot": "https://s0.wp.com/mshots/v1/https://www.manualslib.com?w=640"
+        "screenshot": "https://image.thum.io/get/width/640/https://www.ifixit.com"
     },
     {
         "id": 134,
@@ -1069,7 +1069,7 @@
         "url": "https://10minutemail.com",
         "description": "A temporary email that auto-deletes after 10 minutes. Use it when a site demands your email but you don't trust it.",
         "category": "tools",
-        "screenshot": "https://s0.wp.com/mshots/v1/https://10minutemail.com?w=640"
+        "screenshot": "https://image.thum.io/get/width/640/https://10minutemail.com"
     },
     {
         "id": 135,
@@ -1093,7 +1093,7 @@
         "url": "https://privnote.com",
         "description": "Send notes that self-destruct after being read once. Share passwords or secrets safely, then they're gone.",
         "category": "tools",
-        "screenshot": "https://s0.wp.com/mshots/v1/https://privnote.com?w=640"
+        "screenshot": "https://image.thum.io/get/width/640/https://privnote.com"
     },
     {
         "id": 138,
@@ -1121,11 +1121,11 @@
     },
     {
         "id": 141,
-        "name": "The Telephoner",
-        "url": "https://thetelephoner.com",
-        "description": "Get randomly connected to a stranger anywhere in the world via a phone call simulation. Weird, wholesome, and oddly addictive.",
-        "category": "fun",
-        "screenshot": "https://s0.wp.com/mshots/v1/https://thetelephoner.com?w=640"
+        "name": "Supercook",
+        "url": "https://www.supercook.com",
+        "description": "Enter the ingredients you already have at home and it finds recipes that use exactly them. Zero food waste, maximum creativity.",
+        "category": "tools",
+        "screenshot": "https://image.thum.io/get/width/640/https://www.supercook.com"
     },
     {
         "id": 142,

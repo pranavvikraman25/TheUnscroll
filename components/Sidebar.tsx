@@ -171,25 +171,31 @@ export default function Sidebar({ active, onSelect, total, savedCount }: {
         )}
       </div>
 
-      {/* Tricks link */}
+      {/* Explore More section */}
       <div style={{ padding: '0 10px', marginTop: '12px' }}>
         <div style={{ height: '1px', background: '#f3f4f6', marginBottom: '10px' }} />
-        <Link href="/tricks" style={{
-          padding: '8px 10px', borderRadius: '8px',
-          background: 'linear-gradient(135deg, #fef9e7 0%, #f0fdf4 100%)',
-          color: '#374151', display: 'flex', alignItems: 'center', gap: '8px',
-          textDecoration: 'none', fontSize: '13px', fontWeight: 500,
-          border: '1px solid #e9ecef',
-        }}>
-          <span style={{ fontSize: '13px' }}>💡</span>
-          Tricks & Tips
-          <span style={{
-            marginLeft: 'auto', fontSize: '9px', fontWeight: 700,
-            background: '#2d8a4e', color: '#fff',
-            padding: '2px 6px', borderRadius: '10px', letterSpacing: '0.04em',
-          }}>NEW</span>
-        </Link>
+        <div style={{ fontSize: '10px', fontWeight: 700, color: '#9ca3af', textTransform: 'uppercase', letterSpacing: '0.08em', padding: '0 2px', marginBottom: '6px' }}>Explore More</div>
+        {([
+          { href: '/tricks', label: 'Tricks & Tips', emoji: '💡' },
+          { href: '/books', label: 'Books', emoji: '📖' },
+          { href: '/documentaries', label: 'Documentaries', emoji: '🎬' },
+          { href: '/podcasts', label: 'Podcasts', emoji: '🎙️' },
+          { href: '/courses', label: 'Courses', emoji: '🎓' },
+          { href: '/rabbit-holes', label: 'Rabbit Holes', emoji: '🕳️', badge: 'NEW' },
+          { href: '/mental-models', label: 'Mental Models', emoji: '🧠', badge: 'NEW' },
+        ] as {href:string;label:string;emoji:string;badge?:string}[]).map(item => (
+          <Link key={item.href} href={item.href} style={{
+            padding: '7px 10px', borderRadius: '8px',
+            color: '#374151', display: 'flex', alignItems: 'center', gap: '8px',
+            textDecoration: 'none', fontSize: '12.5px', fontWeight: 400, marginBottom: '1px',
+          }}>
+            <span style={{ fontSize: '13px', width: '18px', textAlign: 'center' }}>{item.emoji}</span>
+            {item.label}
+            {item.badge && <span style={{ marginLeft: 'auto', fontSize: '9px', fontWeight: 700, background: '#2d8a4e', color: '#fff', padding: '1px 5px', borderRadius: '8px' }}>{item.badge}</span>}
+          </Link>
+        ))}
       </div>
+
 
       {/* Footer */}
       <div style={{ padding: '0 18px', marginTop: 'auto', paddingTop: '16px' }}>
