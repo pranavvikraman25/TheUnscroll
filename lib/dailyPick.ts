@@ -121,6 +121,12 @@ export function getDailyPick(): DailyPick {
   return pool[index]
 }
 
+// Random pick from the entire pool
+export function getRandomPick(): DailyPick {
+  const pool = buildPool()
+  return pool[Math.floor(Math.random() * pool.length)]
+}
+
 // Get today's date formatted nicely
 export function getTodayFormatted(): string {
   return new Date().toLocaleDateString('en-IN', {
