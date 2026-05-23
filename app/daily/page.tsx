@@ -153,7 +153,7 @@ export default function DailyPickPage() {
                 textDecoration: 'none', fontSize: '13px', fontWeight: 600,
                 border: `1px solid ${pick.color}33`,
               }}>
-                Browse all {pick.type === 'rabbit-hole' ? 'rabbit holes' : pick.type + 's'} →
+                Browse all {pick.type === 'rabbit-hole' ? 'rabbit holes' : (pick.type === 'movie' || pick.type === 'movie-moment') ? 'movies' : pick.type + 's'} →
               </Link>
             )}
           </div>
@@ -163,7 +163,7 @@ export default function DailyPickPage() {
         <div style={{
           textAlign: 'center', fontSize: '12px', color: '#9ca3af', lineHeight: 1.6,
         }}>
-          Today's pick is drawn from <strong style={{ color: '#374151' }}>260+ curated items</strong> across 8 categories.<br />
+          Today's pick is drawn from <strong style={{ color: '#374151' }}>280+ curated items</strong> across 10 categories.<br />
           Click the dice to discover something completely different. ✨
         </div>
       </div>

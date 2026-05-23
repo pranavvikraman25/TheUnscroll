@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Framed",
+    "url": "https://framed.wtf/",
+    "category": "movies",
+    "description": "The absolute gold standard of daily movie puzzles. It displays one single high-quality screenshot from a hidden movie. Guess wrong to reveal more frames.",
+    "screenshot": "https://s0.wp.com/mshots/v1/https://framed.wtf/?w=640"
+  },
+  {
+    "id": 2,
+    "name": "Cine2Nerdle (The Daily Burgle)",
+    "url": "https://www.thedailyburgle.app/",
+    "category": "movies",
+    "description": "An intense, grid-based puzzle game for hardcore cinema buffs. Link interconnected words, actors, or plots to solve the daily movie heist puzzle.",
+    "screenshot": "https://s0.wp.com/mshots/v1/https://www.thedailyburgle.app/?w=640"
+  },
+  {
+    "id": 3,
+    "name": "Moviedle",
+    "url": "https://dles.aukspot.com/",
+    "category": "movies",
+    "description": "A fast-paced visual guessing game. It compresses an entire 2-hour movie into a rapid 1-second fast-forward clip. Guess the film from flashes of light.",
+    "screenshot": "https://s0.wp.com/mshots/v1/https://dles.aukspot.com/?w=640"
+  },
+  {
+    "id": 4,
+    "name": "The Movie Database (TMDB)",
+    "url": "https://www.themoviedb.org/",
+    "category": "movies",
+    "description": "The premier community-built, open-source alternative to IMDb. Crowd-sourced, devoid of bloated ads, housing massive galleries of artwork and deep trivia.",
+    "screenshot": "https://s0.wp.com/mshots/v1/https://www.themoviedb.org/?w=640"
+  },
+  {
+    "id": 5,
+    "name": "Box Office Mojo",
+    "url": "https://www.boxofficemojo.com/",
+    "category": "movies",
+    "description": "The financial bible of movie geeks. A massive live dashboard tracking global and domestic film grosses, budgets, and weekend box office stats.",
+    "screenshot": "https://s0.wp.com/mshots/v1/https://www.boxofficemojo.com/?w=640"
+  },
+  {
+    "id": 6,
+    "name": "WhatSong",
+    "url": "https://www.what-song.com/Movies",
+    "category": "movies",
+    "description": "A search engine built to answer: 'What song was playing during that specific scene?' Maps movie soundtracks scene-by-scene with descriptions.",
+    "screenshot": "https://s0.wp.com/mshots/v1/https://www.what-song.com/Movies?w=640"
+  },
+  {
+    "id": 7,
+    "name": "JustWatch India",
+    "url": "https://www.justwatch.com/in",
+    "category": "movies",
+    "description": "A massive interactive clearinghouse mapping where every movie is streaming. Filter by rating, price, and platform without needing to log in.",
+    "screenshot": "https://s0.wp.com/mshots/v1/https://www.justwatch.com/in?w=640"
+  },
+  {
+    "id": 8,
+    "name": "TasteDive",
+    "url": "https://tastedive.com/",
+    "category": "movies",
+    "description": "A contextual recommendation explorer. Type in any movie you love, and it map-generates a clean list of related films, shows, and books.",
+    "screenshot": "https://s0.wp.com/mshots/v1/https://tastedive.com/?w=640"
+  },
+  {
+    "id": 9,
+    "name": "Letterboxd (Explore Mode)",
+    "url": "https://letterboxd.com/films/",
+    "category": "movies",
+    "description": "Turns the famous social network into an aesthetic discovery board. Browse popular community lists like 'Visually Stunning Cyberpunk' without logging in.",
+    "screenshot": "https://s0.wp.com/mshots/v1/https://letterboxd.com/films/?w=640"
+  },
+  {
+    "id": 10,
+    "name": "Nothing to Watch",
+    "url": "https://nothing-to-watch.port80.ch/",
+    "category": "movies",
+    "description": "A neat tool designed to help you quickly choose what to watch based on simple filters, escaping decision paralysis.",
+    "screenshot": "https://s0.wp.com/mshots/v1/https://nothing-to-watch.port80.ch/?w=640"
+  }
+]

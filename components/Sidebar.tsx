@@ -180,6 +180,7 @@ export default function Sidebar({ active, onSelect, total, savedCount }: {
           { href: '/tricks', label: 'Tricks & Tips', emoji: '💡' },
           { href: '/books', label: 'Books', emoji: '📖' },
           { href: '/documentaries', label: 'Documentaries', emoji: '🎬' },
+          { href: '/movies', label: 'Movies & Cinema', emoji: '🍿', badge: 'NEW' },
           { href: '/podcasts', label: 'Podcasts', emoji: '🎙️' },
           { href: '/courses', label: 'Courses', emoji: '🎓' },
           { href: '/rabbit-holes', label: 'Rabbit Holes', emoji: '🕳️', badge: 'NEW' },

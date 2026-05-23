@@ -9,6 +9,7 @@ const sections = [
   { href: '/tricks', label: 'Tricks & Tips', emoji: '💡', desc: '42 power tricks' },
   { href: '/books', label: 'Books', emoji: '📖', desc: '15 free classics' },
   { href: '/documentaries', label: 'Documentaries', emoji: '🎬', desc: '10 free on YouTube' },
+  { href: '/movies', label: 'Movies & Cinema', emoji: '🍿', desc: '10 tools & 20 moments' },
   { href: '/podcasts', label: 'Podcasts', emoji: '🎙️', desc: '10 best episodes' },
   { href: '/courses', label: 'Courses', emoji: '🎓', desc: 'MIT, Harvard, Yale' },
   { href: '/rabbit-holes', label: 'Rabbit Holes', emoji: '🕳️', desc: '8 Wikipedia chains' },
@@ -145,7 +146,7 @@ export default function GlobalNav() {
         </div>
 
         <div style={{ padding: '14px 20px', borderTop: '1px solid #f3f4f6', fontSize: '11px', color: '#c0c4cc' }}>
-          The Unscroll · 9 sections · always growing
+          The Unscroll · 10 sections · always growing
         </div>
       </div>
 

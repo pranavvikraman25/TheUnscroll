@@ -6,8 +6,10 @@ import podcasts from '../data/podcasts.json'
 import courses from '../data/courses.json'
 import holes from '../data/rabbitholes.json'
 import models from '../data/mentalmodels.json'
+import movies from '../data/movies.json'
+import moments from '../data/moviemoments.json'
 
-export type PickType = 'site' | 'book' | 'trick' | 'documentary' | 'podcast' | 'course' | 'rabbit-hole' | 'mental-model'
+export type PickType = 'site' | 'book' | 'trick' | 'documentary' | 'podcast' | 'course' | 'rabbit-hole' | 'mental-model' | 'movie' | 'movie-moment'
 
 export interface DailyPick {
   type: PickType
@@ -30,6 +32,8 @@ const typeConfig: Record<PickType, { label: string; emoji: string; color: string
   'course':       { label: 'Course of the Day',        emoji: '🎓', color: '#c8970a' },
   'rabbit-hole':  { label: 'Rabbit Hole of the Day',   emoji: '🕳️', color: '#8b5cf6' },
   'mental-model': { label: 'Think of the Day',         emoji: '🧠', color: '#14b8a6' },
+  'movie':        { label: 'Movie Tool of the Day',    emoji: '🍿', color: '#2d8a4e' },
+  'movie-moment': { label: 'Cinema Moment of the Day',  emoji: '🎥', color: '#c8970a' },
 }
 
 // Build a combined pool of all content
@@ -106,6 +110,24 @@ function buildPool(): DailyPick[] {
     description: m.description,
     url: '/mental-models',
     route: '/mental-models',
+  }))
+
+  movies.forEach(m => pool.push({
+    type: 'movie', ...typeConfig['movie'],
+    title: m.name,
+    subtitle: m.url.replace(/^https?:\/\//, ''),
+    description: m.description,
+    url: m.url,
+    route: '/movies',
+  }))
+
+  moments.forEach(mo => pool.push({
+    type: 'movie-moment', ...typeConfig['movie-moment'],
+    title: mo.title,
+    subtitle: `${mo.movie} · ${mo.year}`,
+    description: mo.description,
+    url: '/movies',
+    route: '/movies',
   }))
 
   return pool

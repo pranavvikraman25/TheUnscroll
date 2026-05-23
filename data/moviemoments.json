@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "title": "The Lumière Brothers' First Public Screening",
+    "year": "1895",
+    "movie": "Arrival of a Train at La Ciotat",
+    "description": "The Lumière brothers screened their short film to a paying audience. The myth goes that terrified viewers panicked and ran to the back of the room, thinking a real train was about to crash through the wall.",
+    "significance": "Widely considered the birth of public projected cinema.",
+    "emoji": "🚂"
+  },
+  {
+    "id": 2,
+    "title": "Georges Méliès Sends a Rocket into the Moon's Eye",
+    "year": "1902",
+    "movie": "A Trip to the Moon",
+    "description": "Using hand-painted color frames, double exposures, and theatrical stage tricks, Méliès created the iconic image of a space capsule landing smack in the eye of the Man in the Moon.",
+    "significance": "The genesis of science fiction and visual special effects in cinema.",
+    "emoji": "🌙"
+  },
+  {
+    "id": 3,
+    "title": "Sergei Eisenstein's Odessa Steps Montage",
+    "year": "1925",
+    "movie": "Battleship Potemkin",
+    "description": "A horrifying sequence of soldiers marching down a massive staircase firing into a crowd, highlighted by a baby carriage bouncing out of control down the steps. The rhythm of the editing built unprecedented tension.",
+    "significance": "Pioneered 'Montage Theory' — demonstrating that the collision of shots creates meaning and emotion far beyond a single scene.",
+    "emoji": "👶"
+  },
+  {
+    "id": 4,
+    "title": "Al Jolson Speaks: 'You Ain't Heard Nothin' Yet!'",
+    "year": "1927",
+    "movie": "The Jazz Singer",
+    "description": "Al Jolson ad-libbed dialogue between songs. When he uttered the prophetic words, the audience erupted. For the first time, spoken dialogue was synchronized with action on a commercial scale.",
+    "significance": "Ended the Silent Era overnight and birthed the 'Talkies'.",
+    "emoji": "🗣️"
+  },
+  {
+    "id": 5,
+    "title": "Dorothy Steps Into Technicolor Munchkinland",
+    "year": "1939",
+    "movie": "The Wizard of Oz",
+    "description": "Dorothy opens the door of her sepia-toned, tornado-struck Kansas home to reveal the shockingly vibrant, technicolor world of Munchkinland. The transition was accomplished by painting the Kansas set brown and having a stand-in open the door.",
+    "significance": "A masterpiece of visual storytelling that proved color cinematography was a powerful artistic tool.",
+    "emoji": "🌈"
+  },
+  {
+    "id": 6,
+    "title": "Citizen Kane Redefines the Camera's Eye",
+    "year": "1941",
+    "movie": "Citizen Kane",
+    "description": "Orson Welles and cinematographer Gregg Toland utilized 'deep focus' (keeping foreground, middle ground, and background in sharp focus simultaneously) alongside ceilinged sets and low camera angles.",
+    "significance": "Rewrote the rulebook of cinematography, lighting, and non-linear narrative structure.",
+    "emoji": "🌹"
+  },
+  {
+    "id": 7,
+    "title": "Akira Kurosawa's Rain-Slicked Battle Scene",
+    "year": "1954",
+    "movie": "Seven Samurai",
+    "description": "The final battle in the torrential mud was shot with multiple cameras at different focal lengths, capturing the chaotic violence with visceral realism. Kurosawa used telephoto lenses to flatten the perspective and bring the audience into the action.",
+    "significance": "Pioneered modern action filmmaking techniques, slow-motion deaths, and multi-camera coverage.",
+    "emoji": "⚔️"
+  },
+  {
+    "id": 8,
+    "title": "Alfred Hitchcock's Psycho Shower Scene",
+    "year": "1960",
+    "movie": "Psycho",
+    "description": "Hitchcock filmed a brutal murder using 78 rapid-fire cuts and screeching violins, showing only flashes of a knife, running water, and spraying blood, but never the knife actually penetrating the flesh.",
+    "significance": "Bypassed strict censorship rules, shocked audiences worldwide, and proved editing could make viewers visualize violence that wasn't actually shown.",
+    "emoji": "🚿"
+  },
+  {
+    "id": 9,
+    "title": "Stanley Kubrick's Mesolithic-to-Space Match Cut",
+    "year": "1968",
+    "movie": "2001: A Space Odyssey",
+    "description": "An ape discovers how to use a bone as a weapon, throws it triumphantly into the sky, and the camera tracks its spin. As it falls, it cuts directly to a nuclear satellite drifting in deep space.",
+    "significance": "The most famous match cut in history, bridging four million years of human evolutionary and technological history in a fraction of a second.",
+    "emoji": "🦴"
+  },
+  {
+    "id": 10,
+    "title": "The Baptism of Fire and Blood",
+    "year": "1972",
+    "movie": "The Godfather",
+    "description": "Michael Corleone stands as godfather at his nephew’s baptism, renouncing Satan, while Francis Ford Coppola parallel-cuts to Michael’s capos brutally executing the heads of the five rival families.",
+    "significance": "The ultimate example of parallel editing, showing the tragic duality of Michael's descent into absolute moral corruption.",
+    "emoji": "✝️"
+  },
+  {
+    "id": 11,
+    "title": "Jaws Invents the Summer Blockbuster",
+    "year": "1975",
+    "movie": "Jaws",
+    "description": "Because the mechanical shark kept breaking down, director Steven Spielberg was forced to shoot from the shark's point of view, using John Williams' two-note theme to represent its terrifying presence.",
+    "significance": "Turned a troubled production into a cultural phenomenon, forever changing movie distribution, marketing, and the concept of summer releases.",
+    "emoji": "🦈"
+  },
+  {
+    "id": 12,
+    "title": "The Impossibly Massive Star Destroyer Opens Star Wars",
+    "year": "1977",
+    "movie": "Star Wars: Episode IV - A New Hope",
+    "description": "After a brief exchange, a rebel blockbuster flies overhead, chased by a Star Destroyer that keeps coming... and coming... filling the screen with its sheer, overwhelming scale.",
+    "significance": "An instant jaw-dropping hook that announced the arrival of George Lucas's Industrial Light & Magic and a new era of blockbusters.",
+    "emoji": "🚀"
+  },
+  {
+    "id": 13,
+    "title": "Jurassic Park Proves Computers Can Create Life",
+    "year": "1993",
+    "movie": "Jurassic Park",
+    "description": "Spielberg originally planned to use stop-motion go-motion armatures. But artists at ILM secretly rendered a test of a CGI T-Rex running. Spielberg saw it, gasped, and went full digital.",
+    "significance": "The moment CGI went from a novelty to an industry standard, showing photorealistic creatures were possible.",
+    "emoji": "🦖"
+  },
+  {
+    "id": 14,
+    "title": "Quentin Tarantino's Pulp Fiction Wins Cannes",
+    "year": "1994",
+    "movie": "Pulp Fiction",
+    "description": "With its circular structure, pop-culture-obsessed hitmen, and needle-drop soundtrack, Tarantino's second film won the Palme d'Or, defying conventional studio storytelling.",
+    "significance": "Launched the indie film boom of the 1990s and made non-linear storytelling commercially viable.",
+    "emoji": "🍔"
+  },
+  {
+    "id": 15,
+    "title": "Pixar Breathes Digital Life into Toy Story",
+    "year": "1995",
+    "movie": "Toy Story",
+    "description": "Steve Jobs-backed Pixar Animation Studios teamed with Disney to release a story about secret toy lives. It had no hand-drawn cells, only rendered vertices and pixels.",
+    "significance": "The world's first fully computer-animated feature film, redefining the animation industry.",
+    "emoji": "🤠"
+  },
+  {
+    "id": 16,
+    "title": "The Matrix Revolutions Bullet Time",
+    "year": "1999",
+    "movie": "The Matrix",
+    "description": "To capture Neo dodging bullets on a rooftop, the directors set up a green-screen array of 120 still cameras in a circle, firing sequentially. The resulting frames were stitched together to simulate a floating camera.",
+    "significance": "Introduced 'Bullet Time' — a landmark synthesis of photography and digital rendering that changed action movies forever.",
+    "emoji": "🕶️"
+  },
+  {
+    "id": 17,
+    "title": "The Dark Knight Goes Full IMAX",
+    "year": "2008",
+    "movie": "The Dark Knight",
+    "description": "Christopher Nolan shot the opening bank heist and other select action scenes using massive, loud 70mm IMAX cameras, projecting them onto 8-story screens in theatres.",
+    "significance": "The first major Hollywood feature to use IMAX cameras, changing how premium blockbusters are captured and experienced.",
+    "emoji": "🃏"
+  },
+  {
+    "id": 18,
+    "title": "James Cameron Builds the World of Pandora",
+    "year": "2009",
+    "movie": "Avatar",
+    "description": "Cameron waited 15 years for the technology to develop, building a virtual camera system that let him view actors in real-time as CGI Na'vi on digital backdrops.",
+    "significance": "Pioneered modern performance-capture and ignited a global, decade-long 3D theatrical boom.",
+    "emoji": "🍃"
+  },
+  {
+    "id": 19,
+    "title": "Parasite Wins Best Picture at the Oscars",
+    "year": "2020",
+    "movie": "Parasite",
+    "description": "Bong Joon Ho's brilliant dark comedy thriller about class warfare won four Academy Awards, including Best Picture, beating out Hollywood giants.",
+    "significance": "The first non-English-language film in Oscar history to win Best Picture, breaking the 'one-inch tall barrier of subtitles'.",
+    "emoji": "🍑"
+  },
+  {
+    "id": 20,
+    "title": "Alfonso Cuarón Redefines Sound Space with Roma",
+    "year": "2018",
+    "movie": "Roma",
+    "description": "Roma utilized a complex Dolby Atmos mix where sound moved with objects relative to the camera in a 3D hemisphere, making the hum of Mexico City feel physically present.",
+    "significance": "Pushed spatial audio mixing to its absolute limit, turning sound design into a literal architecture.",
+    "emoji": "🌊"
+  }
+]
