@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 const sections = [
-  { href: '/', label: 'All Sites', emoji: '🌐', desc: '152+ curated websites' },
+  { href: '/', label: 'All Sites', emoji: '🌐', desc: '162+ curated websites' },
   { href: '/daily', label: "Today's Pick", emoji: '☀️', desc: 'Changes every day' },
   { href: '/tricks', label: 'Tricks & Tips', emoji: '💡', desc: '42 power tricks' },
   { href: '/books', label: 'Books', emoji: '📖', desc: '15 free classics' },

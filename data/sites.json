@@ -1214,5 +1214,85 @@
         "description": "A Google Labs experiment — explore the connections between words, ideas, and concepts through a beautiful interactive web.",
         "category": "science",
         "screenshot": "https://s0.wp.com/mshots/v1/https://labs.google.com/pomelli/about?w=640"
+    },
+    {
+        "id": 153,
+        "name": "Framed",
+        "url": "https://framed.wtf",
+        "description": "The absolute gold standard of daily movie puzzles. Displays one high-quality screenshot from a hidden movie. Guess wrong to reveal more frames.",
+        "category": "games",
+        "screenshot": "https://s0.wp.com/mshots/v1/https://framed.wtf?w=640"
+    },
+    {
+        "id": 154,
+        "name": "Cine2Nerdle",
+        "url": "https://www.thedailyburgle.app",
+        "description": "An intense, grid-based puzzle game for hardcore cinema buffs. Link interconnected words, actors, or plots to solve the daily movie heist puzzle.",
+        "category": "games",
+        "screenshot": "https://s0.wp.com/mshots/v1/https://www.thedailyburgle.app?w=640"
+    },
+    {
+        "id": 155,
+        "name": "Moviedle",
+        "url": "https://dles.aukspot.com",
+        "description": "A fast-paced visual guessing game that compresses an entire 2-hour movie into a rapid 1-second video clip. Guess the film from flashes of light.",
+        "category": "games",
+        "screenshot": "https://s0.wp.com/mshots/v1/https://dles.aukspot.com?w=640"
+    },
+    {
+        "id": 156,
+        "name": "The Movie Database (TMDB)",
+        "url": "https://www.themoviedb.org",
+        "description": "The premier community-built, ad-free alternative to IMDb. Features massive galleries of user-voted movie posters, cast backdrops, and deep trivia.",
+        "category": "chill",
+        "screenshot": "https://s0.wp.com/mshots/v1/https://www.themoviedb.org?w=640"
+    },
+    {
+        "id": 157,
+        "name": "Box Office Mojo",
+        "url": "https://www.boxofficemojo.com",
+        "description": "The financial bible of movie geeks. A massive live dashboard tracking global film grosses, budgets, and weekend performance statistics.",
+        "category": "science",
+        "screenshot": "https://s0.wp.com/mshots/v1/https://www.boxofficemojo.com?w=640"
+    },
+    {
+        "id": 158,
+        "name": "WhatSong",
+        "url": "https://www.what-song.com/Movies",
+        "description": "A beautifully organized search engine built to answer: 'What song was playing during that specific scene?' soundtrack mapping.",
+        "category": "tools",
+        "screenshot": "https://s0.wp.com/mshots/v1/https://www.what-song.com/Movies?w=640"
+    },
+    {
+        "id": 159,
+        "name": "JustWatch India",
+        "url": "https://www.justwatch.com/in",
+        "description": "A massive interactive database mapping where movies are legally streaming. Search or use advanced filters to see top-rated free films.",
+        "category": "tools",
+        "screenshot": "https://s0.wp.com/mshots/v1/https://www.justwatch.com/in?w=640"
+    },
+    {
+        "id": 160,
+        "name": "TasteDive",
+        "url": "https://tastedive.com",
+        "description": "A contextual recommendation explorer. Enter a movie you love, and it instantly generates a clean, interactive list of related titles and books.",
+        "category": "chill",
+        "screenshot": "https://s0.wp.com/mshots/v1/https://tastedive.com?w=640"
+    },
+    {
+        "id": 161,
+        "name": "Letterboxd (Explore)",
+        "url": "https://letterboxd.com/films",
+        "description": "Browse popular community lists like 'Visually Stunning Cyberpunk' or 'Greatest Neo-Noirs' curated by millions of film lovers.",
+        "category": "chill",
+        "screenshot": "https://s0.wp.com/mshots/v1/https://letterboxd.com/films?w=640"
+    },
+    {
+        "id": 162,
+        "name": "Nothing to Watch",
+        "url": "https://nothing-to-watch.port80.ch",
+        "description": "A neat tool designed to help you quickly choose what to watch based on simple filters, helping you escape decision paralysis.",
+        "category": "tools",
+        "screenshot": "https://s0.wp.com/mshots/v1/https://nothing-to-watch.port80.ch?w=640"
     }
 ]
