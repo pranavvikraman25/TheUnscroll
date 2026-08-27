@@ -9,17 +9,24 @@ import {
   IconPodcast,
   IconCourses,
   IconRabbitHole,
-  IconMentalModel
+  IconMentalModel,
+  IconTravel,
+  IconCreativity,
+  IconScience,
+  IconGames,
+  IconChill,
+  IconLearning,
+  IconTools,
 } from './Icons'
 
 const categories = [
-  { key: 'travel',     label: 'Virtual Travel',  color: '#006ccc' },
-  { key: 'creativity', label: 'Creativity',       color: '#c54444' },
-  { key: 'science',    label: 'Science & Data',   color: '#7c3aed' },
-  { key: 'games',      label: 'Games & Fun',      color: '#b45309' },
-  { key: 'chill',      label: 'Chill & Read',     color: '#08b54d' },
-  { key: 'learning',   label: 'Learning',         color: '#28a745' },
-  { key: 'tools',      label: 'Tools & Utils',    color: '#383838' },
+  { key: 'travel',     label: 'Virtual Travel',  color: '#006ccc', icon: IconTravel },
+  { key: 'creativity', label: 'Creativity',       color: '#c54444', icon: IconCreativity },
+  { key: 'science',    label: 'Science & Data',   color: '#7c3aed', icon: IconScience },
+  { key: 'games',      label: 'Games & Fun',      color: '#b45309', icon: IconGames },
+  { key: 'chill',      label: 'Chill & Read',     color: '#08b54d', icon: IconChill },
+  { key: 'learning',   label: 'Learning',         color: '#28a745', icon: IconLearning },
+  { key: 'tools',      label: 'Tools & Utils',    color: '#383838', icon: IconTools },
 ]
 
 export default function Sidebar({ active, onSelect, total, savedCount }: {
@@ -56,7 +63,7 @@ export default function Sidebar({ active, onSelect, total, savedCount }: {
           </svg>
           {/* Wordmark */}
           <div>
-            <div style={{ fontSize: '17px', fontWeight: 800, letterSpacing: '-0.4px', lineHeight: 1 }}>
+            <div style={{ fontSize: '17px', fontWeight: 900, letterSpacing: '-0.4px', lineHeight: 1 }}>
               <span style={{ color: '#08b54d' }}>The </span>
               <span style={{ color: '#141414' }}>Unscroll</span>
             </div>
@@ -68,45 +75,45 @@ export default function Sidebar({ active, onSelect, total, savedCount }: {
       </div>
 
       {/* Category Nav */}
-      <div style={{ padding: '0 12px', display: 'flex', flexDirection: 'column', gap: '2px' }}>
+      <div style={{ padding: '0 12px', display: 'flex', flexDirection: 'column', gap: '3px' }}>
 
         {/* All sites button */}
         <button
           onClick={() => onSelect('all')}
           style={{
             padding: '9px 12px',
-            borderRadius: '6px',
+            borderRadius: '8px',
             border: 'none',
             cursor: 'pointer',
             textAlign: 'left',
             fontFamily: 'inherit',
             fontSize: '13.5px',
-            fontWeight: active === 'all' ? 700 : 500,
-            color: active === 'all' ? '#141414' : '#525252',
-            background: active === 'all' ? '#f0f0f0' : 'transparent',
+            fontWeight: active === 'all' ? 800 : 600,
+            color: active === 'all' ? '#08b54d' : '#141414',
+            background: active === 'all' ? '#e8f8ee' : 'transparent',
             display: 'flex',
             alignItems: 'center',
-            gap: '10px',
+            gap: '12px',
             marginBottom: '6px',
             transition: 'all 0.15s ease'
           }}
         >
           <span style={{
-            width: '20px', height: '20px', borderRadius: '4px',
-            background: active === 'all' ? '#08b54d' : '#e0e1e1',
+            width: '24px', height: '24px', borderRadius: '6px',
+            background: active === 'all' ? '#08b54d' : '#f0f0f0',
             display: 'flex', alignItems: 'center', justifyContent: 'center',
-            fontSize: '10px', flexShrink: 0, transition: 'all 0.15s ease',
+            flexShrink: 0, transition: 'all 0.15s ease',
           }}>
-            <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-              <rect x="0" y="0" width="4" height="4" rx="1" fill={active === 'all' ? '#ffffff' : '#525252'} />
-              <rect x="6" y="0" width="4" height="4" rx="1" fill={active === 'all' ? '#ffffff' : '#525252'} />
-              <rect x="0" y="6" width="4" height="4" rx="1" fill={active === 'all' ? '#ffffff' : '#525252'} />
-              <rect x="6" y="6" width="4" height="4" rx="1" fill={active === 'all' ? '#ffffff' : '#525252'} />
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <rect x="1" y="1" width="4" height="4" rx="1" fill={active === 'all' ? '#ffffff' : '#525252'} />
+              <rect x="7" y="1" width="4" height="4" rx="1" fill={active === 'all' ? '#ffffff' : '#525252'} />
+              <rect x="1" y="7" width="4" height="4" rx="1" fill={active === 'all' ? '#ffffff' : '#525252'} />
+              <rect x="7" y="7" width="4" height="4" rx="1" fill={active === 'all' ? '#ffffff' : '#525252'} />
             </svg>
           </span>
           All sites
           <span style={{
-            marginLeft: 'auto', fontSize: '11px', fontWeight: 700,
+            marginLeft: 'auto', fontSize: '11px', fontWeight: 800,
             color: active === 'all' ? '#08b54d' : '#666666',
           }}>{total}</span>
         </button>
@@ -114,38 +121,44 @@ export default function Sidebar({ active, onSelect, total, savedCount }: {
         {/* Divider */}
         <div style={{ height: '1px', background: '#e0e1e1', margin: '2px 4px 6px' }} />
 
-        {/* Category list */}
-        {categories.map(cat => (
-          <button
-            key={cat.key}
-            onClick={() => onSelect(cat.key)}
-            style={{
-              padding: '8px 12px',
-              borderRadius: '6px',
-              border: 'none',
-              cursor: 'pointer',
-              textAlign: 'left',
-              fontFamily: 'inherit',
-              fontSize: '13px',
-              fontWeight: active === cat.key ? 700 : 500,
-              color: active === cat.key ? cat.color : '#525252',
-              background: active === cat.key ? cat.color + '15' : 'transparent',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '10px',
-              transition: 'all 0.15s ease',
-              outline: 'none',
-            }}
-          >
-            <span style={{
-              width: '8px', height: '8px', borderRadius: '50%',
-              background: active === cat.key ? cat.color : '#cacaca',
-              flexShrink: 0,
-              transition: 'all 0.15s ease',
-            }} />
-            {cat.label}
-          </button>
-        ))}
+        {/* Category list with SVG Icons */}
+        {categories.map(cat => {
+          const IconComp = cat.icon
+          const isActive = active === cat.key
+          return (
+            <button
+              key={cat.key}
+              onClick={() => onSelect(cat.key)}
+              style={{
+                padding: '9px 12px',
+                borderRadius: '8px',
+                border: 'none',
+                cursor: 'pointer',
+                textAlign: 'left',
+                fontFamily: 'inherit',
+                fontSize: '13.5px',
+                fontWeight: isActive ? 800 : 600,
+                color: isActive ? cat.color : '#383838',
+                background: isActive ? cat.color + '15' : 'transparent',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '12px',
+                transition: 'all 0.15s ease',
+                outline: 'none',
+              }}
+            >
+              <span style={{
+                width: '24px', height: '24px', borderRadius: '6px',
+                background: isActive ? cat.color : '#f0f0f0',
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                flexShrink: 0, transition: 'all 0.15s ease',
+              }}>
+                <IconComp size={14} color={isActive ? '#ffffff' : '#525252'} />
+              </span>
+              {cat.label}
+            </button>
+          )
+        })}
 
         {/* Saved */}
         {savedCount > 0 && (
@@ -154,24 +167,28 @@ export default function Sidebar({ active, onSelect, total, savedCount }: {
             <button
               onClick={() => onSelect('saved')}
               style={{
-                padding: '8px 12px', borderRadius: '6px', border: 'none',
+                padding: '9px 12px', borderRadius: '8px', border: 'none',
                 cursor: 'pointer', textAlign: 'left', fontFamily: 'inherit',
-                fontSize: '13px',
-                fontWeight: active === 'saved' ? 700 : 500,
-                color: active === 'saved' ? '#08b54d' : '#525252',
+                fontSize: '13.5px',
+                fontWeight: active === 'saved' ? 800 : 600,
+                color: active === 'saved' ? '#08b54d' : '#383838',
                 background: active === 'saved' ? '#e8f8ee' : 'transparent',
-                display: 'flex', alignItems: 'center', gap: '10px',
+                display: 'flex', alignItems: 'center', gap: '12px',
                 outline: 'none',
               }}
             >
               <span style={{
-                width: '8px', height: '8px', borderRadius: '50%',
-                background: active === 'saved' ? '#08b54d' : '#cacaca',
-                flexShrink: 0,
-              }} />
+                width: '24px', height: '24px', borderRadius: '6px',
+                background: active === 'saved' ? '#08b54d' : '#f0f0f0',
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                flexShrink: 0, color: active === 'saved' ? '#ffffff' : '#525252',
+                fontSize: '12px', fontWeight: 800
+              }}>
+                ✓
+              </span>
               Saved
               <span style={{
-                marginLeft: 'auto', fontSize: '11px', fontWeight: 700,
+                marginLeft: 'auto', fontSize: '11px', fontWeight: 800,
                 background: '#e8f8ee', color: '#08b54d',
                 padding: '2px 8px', borderRadius: '50px',
                 border: '1px solid rgba(8, 181, 77, 0.2)'
@@ -184,7 +201,7 @@ export default function Sidebar({ active, onSelect, total, savedCount }: {
       {/* Explore More section */}
       <div style={{ padding: '0 12px', marginTop: '16px' }}>
         <div style={{ height: '1px', background: '#e0e1e1', marginBottom: '12px' }} />
-        <div style={{ fontSize: '10px', fontWeight: 700, color: '#666666', textTransform: 'uppercase', letterSpacing: '0.08em', padding: '0 4px', marginBottom: '8px' }}>
+        <div style={{ fontSize: '10px', fontWeight: 800, color: '#666666', textTransform: 'uppercase', letterSpacing: '0.08em', padding: '0 4px', marginBottom: '8px' }}>
           Explore Modules
         </div>
         {([
@@ -204,7 +221,7 @@ export default function Sidebar({ active, onSelect, total, savedCount }: {
             <Link key={item.href} href={item.href} style={{
               padding: '8px 10px', borderRadius: '6px',
               color: '#383838', display: 'flex', alignItems: 'center', gap: '10px',
-              textDecoration: 'none', fontSize: '12.5px', fontWeight: 600, marginBottom: '2px',
+              textDecoration: 'none', fontSize: '13px', fontWeight: 600, marginBottom: '2px',
               transition: 'all 0.15s ease'
             }}>
               <span style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', color: '#666666' }}>
@@ -213,7 +230,7 @@ export default function Sidebar({ active, onSelect, total, savedCount }: {
               {item.label}
               {item.badge && (
                 <span style={{
-                  marginLeft: 'auto', fontSize: '9px', fontWeight: 700,
+                  marginLeft: 'auto', fontSize: '9px', fontWeight: 800,
                   background: item.badge === 'DAILY' ? '#ffc107' : '#08b54d',
                   color: item.badge === 'DAILY' ? '#141414' : '#ffffff',
                   padding: '2px 6px', borderRadius: '4px'
@@ -234,7 +251,7 @@ export default function Sidebar({ active, onSelect, total, savedCount }: {
         <a
           href="https://github.com/pranavvikraman25/tabbreaker"
           target="_blank" rel="noopener noreferrer"
-          style={{ fontSize: '11px', color: '#08b54d', textDecoration: 'none', fontWeight: 700 }}
+          style={{ fontSize: '11px', color: '#08b54d', textDecoration: 'none', fontWeight: 800 }}
         >
           Open source ↗
         </a>

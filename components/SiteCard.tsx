@@ -1,14 +1,23 @@
 'use client'
 import { useState } from 'react'
+import {
+  IconTravel,
+  IconCreativity,
+  IconScience,
+  IconGames,
+  IconChill,
+  IconLearning,
+  IconTools,
+} from './Icons'
 
-const categoryConfig: Record<string, { label: string; bg: string; color: string; border: string }> = {
-  travel:     { label: 'Travel',      bg: '#eef6fc', color: '#006ccc', border: 'rgba(0, 108, 204, 0.2)' },
-  creativity: { label: 'Creativity',  bg: '#fdf2f2', color: '#c54444', border: 'rgba(197, 68, 68, 0.2)' },
-  science:    { label: 'Science',     bg: '#f5f3ff', color: '#7c3aed', border: 'rgba(124, 58, 237, 0.2)' },
-  games:      { label: 'Games',       bg: '#fff7d4', color: '#b45309', border: 'rgba(180, 83, 9, 0.2)' },
-  chill:      { label: 'Chill',       bg: '#e8f8ee', color: '#08b54d', border: 'rgba(8, 181, 77, 0.2)' },
-  learning:   { label: 'Learning',    bg: '#e8f8ee', color: '#28a745', border: 'rgba(40, 167, 69, 0.2)' },
-  tools:      { label: 'Tools',       bg: '#f1f5f9', color: '#334155', border: 'rgba(51, 65, 85, 0.2)' },
+const categoryMap: Record<string, { label: string; icon: React.ComponentType<{ size?: number; color?: string }>; color: string }> = {
+  travel:     { label: 'Travel',      icon: IconTravel,     color: '#006ccc' },
+  creativity: { label: 'Creativity',  icon: IconCreativity, color: '#c54444' },
+  science:    { label: 'Science',     icon: IconScience,    color: '#7c3aed' },
+  games:      { label: 'Games',       icon: IconGames,      color: '#b45309' },
+  chill:      { label: 'Chill',       icon: IconChill,      color: '#08b54d' },
+  learning:   { label: 'Learning',    icon: IconLearning,   color: '#28a745' },
+  tools:      { label: 'Tools',       icon: IconTools,      color: '#383838' },
 }
 
 type Site = {
@@ -21,9 +30,11 @@ export default function SiteCard({ site, isSaved, onToggleSave }: {
 }) {
   const [imgError, setImgError] = useState(false)
   const [hovered, setHovered] = useState(false)
-  const cat = categoryConfig[site.category] || categoryConfig.tools
+  const cat = categoryMap[site.category] || categoryMap.tools
+  const CategoryIcon = cat.icon
 
   const openSite = () => window.open(site.url, '_blank', 'noopener,noreferrer')
+  const cleanDomain = site.url.replace(/^https?:\/\/(www\.)?/, '').split('/')[0]
 
   return (
     <div
@@ -31,12 +42,12 @@ export default function SiteCard({ site, isSaved, onToggleSave }: {
       onMouseLeave={() => setHovered(false)}
       style={{
         background: '#ffffff',
-        border: `1px solid ${hovered ? cat.color : '#e5e7eb'}`,
+        border: `1px solid ${hovered ? '#08b54d' : '#e0e1e1'}`,
         borderRadius: '12px',
         overflow: 'hidden',
-        boxShadow: hovered ? '0 10px 24px -4px rgba(10, 10, 10, 0.08)' : '0 1px 3px rgba(0,0,0,0.02)',
-        transform: hovered ? 'translateY(-2px)' : 'translateY(0)',
-        transition: 'all 0.2s cubic-bezier(0.16, 1, 0.3, 1)',
+        boxShadow: hovered ? '0 12px 28px -6px rgba(10, 10, 10, 0.1)' : '0 1px 3px rgba(0,0,0,0.02)',
+        transform: hovered ? 'translateY(-3px)' : 'translateY(0)',
+        transition: 'all 0.2s ease',
         display: 'flex',
         flexDirection: 'column',
       }}
@@ -45,27 +56,32 @@ export default function SiteCard({ site, isSaved, onToggleSave }: {
       <div
         onClick={openSite}
         style={{
-          width: '100%', height: '140px',
-          background: cat.bg,
+          width: '100%', height: '145px',
+          background: '#f8faf9',
           display: 'flex', alignItems: 'center', justifyContent: 'center',
           position: 'relative', overflow: 'hidden',
           cursor: 'pointer',
+          borderBottom: '1px solid #f0f0f0'
         }}
       >
-        {/* Top brand color indicator bar */}
+        {/* Top brand accent bar */}
         <div style={{
           position: 'absolute', top: 0, left: 0, right: 0, height: '3px',
-          background: cat.color, opacity: 0.8,
+          background: hovered ? '#08b54d' : cat.color, transition: 'background 0.2s ease',
         }} />
 
         {(!site.screenshot || imgError) ? (
-          <span style={{
-            fontSize: '42px', fontWeight: 800, color: cat.color,
-            opacity: 0.25, userSelect: 'none', letterSpacing: '-1px',
-            fontFamily: 'Inter, sans-serif'
+          <div style={{
+            display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px'
           }}>
-            {site.name.charAt(0)}
-          </span>
+            <span style={{
+              fontSize: '44px', fontWeight: 900, color: '#141414',
+              opacity: 0.15, userSelect: 'none', letterSpacing: '-1px',
+              fontFamily: 'Inter, sans-serif'
+            }}>
+              {site.name.charAt(0)}
+            </span>
+          </div>
         ) : (
           // eslint-disable-next-line @next/next/no-img-element
           <img
@@ -75,23 +91,39 @@ export default function SiteCard({ site, isSaved, onToggleSave }: {
           />
         )}
 
+        {/* Category Badge overlay on thumbnail top-left */}
+        <div style={{
+          position: 'absolute', top: '10px', left: '10px',
+          display: 'inline-flex', alignItems: 'center', gap: '6px',
+          background: '#141414', color: '#ffffff',
+          padding: '4px 10px', borderRadius: '4px',
+          fontSize: '10.5px', fontWeight: 800,
+          letterSpacing: '0.05em', textTransform: 'uppercase',
+          boxShadow: '0 2px 8px rgba(0,0,0,0.15)',
+          zIndex: 2,
+        }}>
+          <CategoryIcon size={12} color="#08b54d" />
+          <span>{cat.label}</span>
+        </div>
+
         {/* Hover overlay */}
         {hovered && (
           <div style={{
             position: 'absolute', inset: 0,
-            background: 'rgba(10, 10, 10, 0.45)',
+            background: 'rgba(20, 20, 20, 0.45)',
             display: 'flex', alignItems: 'center', justifyContent: 'center',
             backdropFilter: 'blur(2px)',
+            zIndex: 3,
           }}>
             <span style={{
-              fontSize: '12px', fontWeight: 700, color: '#ffffff',
-              padding: '6px 14px', borderRadius: '50px',
-              background: 'rgba(255,255,255,0.2)',
-              border: '1px solid rgba(255,255,255,0.4)',
+              fontSize: '12.5px', fontWeight: 800, color: '#ffffff',
+              padding: '8px 18px', borderRadius: '6px',
+              background: '#08b54d',
+              boxShadow: '0 4px 12px rgba(8, 181, 77, 0.3)',
               letterSpacing: '0.02em',
-              display: 'inline-flex', alignItems: 'center', gap: '4px'
+              display: 'inline-flex', alignItems: 'center', gap: '6px'
             }}>
-              Explore Site ↗
+              Open {site.name} ↗
             </span>
           </div>
         )}
@@ -101,17 +133,18 @@ export default function SiteCard({ site, isSaved, onToggleSave }: {
           onClick={(e) => { e.stopPropagation(); onToggleSave(site.id) }}
           aria-label={isSaved ? "Remove from saved" : "Save site"}
           style={{
-            position: 'absolute', top: '8px', right: '8px',
-            background: isSaved ? '#08b54d' : 'rgba(255,255,255,0.92)',
-            border: '1px solid rgba(0,0,0,0.08)',
+            position: 'absolute', top: '10px', right: '10px',
+            background: isSaved ? '#08b54d' : '#ffffff',
+            border: '1px solid #e0e1e1',
             borderRadius: '50%',
             width: '32px', height: '32px',
             display: 'flex', alignItems: 'center', justifyContent: 'center',
-            fontSize: '14px', cursor: 'pointer',
+            fontSize: '13px', cursor: 'pointer',
             color: isSaved ? '#ffffff' : '#383838',
-            zIndex: 2,
-            boxShadow: '0 2px 6px rgba(0,0,0,0.1)',
+            zIndex: 4,
+            boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
             transition: 'all 0.15s ease',
+            fontWeight: 800
           }}
         >
           {isSaved ? '✓' : '♡'}
@@ -121,37 +154,27 @@ export default function SiteCard({ site, isSaved, onToggleSave }: {
       {/* ── Card Body ── */}
       <div
         onClick={openSite}
-        style={{ padding: '14px 16px', cursor: 'pointer', flex: 1, display: 'flex', flexDirection: 'column' }}
+        style={{ padding: '16px 18px', cursor: 'pointer', flex: 1, display: 'flex', flexDirection: 'column' }}
       >
         <div style={{
           display: 'flex', alignItems: 'center',
           justifyContent: 'space-between',
           marginBottom: '6px', gap: '8px',
         }}>
-          <h3 style={{ fontWeight: 700, fontSize: '15px', color: '#0a0a0a', margin: 0, lineHeight: 1.3 }}>
+          <h3 style={{ fontWeight: 900, fontSize: '16px', color: '#141414', margin: 0, lineHeight: 1.3, letterSpacing: '-0.3px' }}>
             {site.name}
           </h3>
-          <span style={{
-            fontSize: '10px', fontWeight: 700, padding: '2px 8px',
-            borderRadius: '50px', background: cat.bg, color: cat.color,
-            whiteSpace: 'nowrap', flexShrink: 0,
-            border: `1px solid ${cat.border}`,
-            textTransform: 'uppercase',
-            letterSpacing: '0.03em'
-          }}>
-            {cat.label}
-          </span>
         </div>
 
         <div style={{
-          fontSize: '11.5px', color: '#08b54d', marginBottom: '8px',
-          fontWeight: 600, display: 'flex', alignItems: 'center', gap: '3px',
+          fontSize: '12px', color: '#08b54d', marginBottom: '10px',
+          fontWeight: 700, display: 'inline-flex', alignItems: 'center', gap: '4px',
         }}>
-          {site.url.replace(/^https?:\/\/(www\.)?/, '').split('/')[0]}
-          <span style={{ fontSize: '10px' }}>↗</span>
+          <span>{cleanDomain}</span>
+          <span style={{ fontSize: '11px' }}>↗</span>
         </div>
 
-        <p style={{ fontSize: '12.5px', color: '#525252', lineHeight: '1.5', margin: 0, flex: 1 }}>
+        <p style={{ fontSize: '13px', color: '#525252', lineHeight: '1.6', margin: 0, flex: 1, fontWeight: 500 }}>
           {site.description}
         </p>
       </div>
