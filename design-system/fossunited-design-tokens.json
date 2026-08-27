@@ -1,0 +1,51 @@
+{
+  "colors": {
+    "primary": "#08b54d",
+    "secondary": "#c54444",
+    "neutral": {
+      "dark": "#141414",
+      "darker": "#525252",
+      "light": "#fafafa",
+      "black": "#000000",
+      "gray": "#e6e6e6",
+      "mid": "#666666"
+    },
+    "accent": "#006ccc",
+    "surface": {
+      "offWhite": "#f0f0f0",
+      "white": "#fdfdfd",
+      "lightGrey": "#cacaca",
+      "charcoal": "#171717",
+      "darkGrey": "#383838",
+      "darkerGrey": "#515151"
+    },
+    "support": {
+      "roseMadder": "#e03636",
+      "vitalize": "#28a745",
+      "indigoCarmine": "#006ccc",
+      "reddishWhite": "#fff7d4",
+      "marigold": "#ffc107",
+      "loneHunter": "#93c848"
+    }
+  },
+  "typography": {
+    "families": ["Inter", "InterVariable"],
+    "weights": [300, 400, 420, 500, 600, 700],
+    "baseSize": "16px"
+  },
+  "spacing": {
+    "scale": ["1px", "20px", "24px", "28px", "32px", "40px", "60px", "72px", "80px", "84px"]
+  },
+  "borderRadius": {
+    "scale": ["3px", "6px", "12px", "16px", "50px", "100px"]
+  },
+  "motion": {
+    "duration": ["100ms", "200ms", "300ms"]
+  },
+  "voice": {
+    "tone": "friendly",
+    "pronoun": "we→you",
+    "headings": "Title Case",
+    "ctaVerbs": ["what", "is", "talk", "why", "live", "open"]
+  }
+}

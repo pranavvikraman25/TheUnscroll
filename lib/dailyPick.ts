@@ -14,7 +14,6 @@ export type PickType = 'site' | 'book' | 'trick' | 'documentary' | 'podcast' | '
 export interface DailyPick {
   type: PickType
   label: string
-  emoji: string
   color: string
   title: string
   subtitle: string
@@ -23,17 +22,17 @@ export interface DailyPick {
   route?: string
 }
 
-const typeConfig: Record<PickType, { label: string; emoji: string; color: string }> = {
-  'site':         { label: 'Site of the Day',          emoji: '🌐', color: '#0ea5e9' },
-  'book':         { label: 'Book of the Day',          emoji: '📖', color: '#7c3aed' },
-  'trick':        { label: 'Trick of the Day',         emoji: '💡', color: '#f97316' },
-  'documentary':  { label: 'Documentary of the Day',   emoji: '🎬', color: '#ec4899' },
-  'podcast':      { label: 'Listen of the Day',        emoji: '🎙️', color: '#22c55e' },
-  'course':       { label: 'Course of the Day',        emoji: '🎓', color: '#c8970a' },
-  'rabbit-hole':  { label: 'Rabbit Hole of the Day',   emoji: '🕳️', color: '#8b5cf6' },
-  'mental-model': { label: 'Think of the Day',         emoji: '🧠', color: '#14b8a6' },
-  'movie':        { label: 'Movie Tool of the Day',    emoji: '🍿', color: '#2d8a4e' },
-  'movie-moment': { label: 'Cinema Moment of the Day',  emoji: '🎥', color: '#c8970a' },
+const typeConfig: Record<PickType, { label: string; color: string }> = {
+  'site':         { label: 'Site of the Day',          color: '#006ccc' },
+  'book':         { label: 'Book of the Day',          color: '#7c3aed' },
+  'trick':        { label: 'Trick of the Day',         color: '#b45309' },
+  'documentary':  { label: 'Documentary of the Day',   color: '#c54444' },
+  'podcast':      { label: 'Listen of the Day',        color: '#28a745' },
+  'course':       { label: 'Course of the Day',        color: '#ffc107' },
+  'rabbit-hole':  { label: 'Rabbit Hole of the Day',   color: '#7c3aed' },
+  'mental-model': { label: 'Think of the Day',         color: '#08b54d' },
+  'movie':        { label: 'Movie Tool of the Day',    color: '#08b54d' },
+  'movie-moment': { label: 'Cinema Moment of the Day',  color: '#ffc107' },
 }
 
 // Build a combined pool of all content
@@ -133,23 +132,19 @@ function buildPool(): DailyPick[] {
   return pool
 }
 
-// Deterministic pick based on current date — same for all users on the same day
 export function getDailyPick(): DailyPick {
   const pool = buildPool()
   const today = new Date()
-  // Use days since epoch as seed
   const daysSinceEpoch = Math.floor(today.getTime() / (1000 * 60 * 60 * 24))
   const index = daysSinceEpoch % pool.length
   return pool[index]
 }
 
-// Random pick from the entire pool
 export function getRandomPick(): DailyPick {
   const pool = buildPool()
   return pool[Math.floor(Math.random() * pool.length)]
 }
 
-// Get today's date formatted nicely
 export function getTodayFormatted(): string {
   return new Date().toLocaleDateString('en-IN', {
     weekday: 'long', day: 'numeric', month: 'long', year: 'numeric',

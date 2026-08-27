@@ -1,14 +1,14 @@
 'use client'
 import { useState } from 'react'
 
-const categoryConfig: Record<string, { label: string; bg: string; color: string }> = {
-  travel:     { label: 'Travel',      bg: '#f0f9ff', color: '#0ea5e9' },
-  creativity: { label: 'Creativity',  bg: '#fdf2f8', color: '#ec4899' },
-  science:    { label: 'Science',     bg: '#f5f3ff', color: '#8b5cf6' },
-  games:      { label: 'Games',       bg: '#fff7ed', color: '#f97316' },
-  chill:      { label: 'Chill',       bg: '#f0fdfa', color: '#14b8a6' },
-  learning:   { label: 'Learning',    bg: '#f0fdf4', color: '#22c55e' },
-  tools:      { label: 'Tools',       bg: '#f8fafc', color: '#64748b' },
+const categoryConfig: Record<string, { label: string; bg: string; color: string; border: string }> = {
+  travel:     { label: 'Travel',      bg: '#eef6fc', color: '#006ccc', border: 'rgba(0, 108, 204, 0.2)' },
+  creativity: { label: 'Creativity',  bg: '#fdf2f2', color: '#c54444', border: 'rgba(197, 68, 68, 0.2)' },
+  science:    { label: 'Science',     bg: '#f5f3ff', color: '#7c3aed', border: 'rgba(124, 58, 237, 0.2)' },
+  games:      { label: 'Games',       bg: '#fff7d4', color: '#b45309', border: 'rgba(180, 83, 9, 0.2)' },
+  chill:      { label: 'Chill',       bg: '#e8f8ee', color: '#08b54d', border: 'rgba(8, 181, 77, 0.2)' },
+  learning:   { label: 'Learning',    bg: '#e8f8ee', color: '#28a745', border: 'rgba(40, 167, 69, 0.2)' },
+  tools:      { label: 'Tools',       bg: '#f1f5f9', color: '#334155', border: 'rgba(51, 65, 85, 0.2)' },
 }
 
 type Site = {
@@ -30,37 +30,39 @@ export default function SiteCard({ site, isSaved, onToggleSave }: {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       style={{
-        background: '#fff',
-        border: '1px solid #e5e7eb',
-        borderRadius: '14px',
+        background: '#ffffff',
+        border: `1px solid ${hovered ? cat.color : '#e5e7eb'}`,
+        borderRadius: '12px',
         overflow: 'hidden',
-        boxShadow: hovered ? '0 8px 28px rgba(0,0,0,0.09)' : 'none',
+        boxShadow: hovered ? '0 10px 24px -4px rgba(10, 10, 10, 0.08)' : '0 1px 3px rgba(0,0,0,0.02)',
         transform: hovered ? 'translateY(-2px)' : 'translateY(0)',
-        transition: 'box-shadow 0.2s, transform 0.2s, border-color 0.2s',
-        borderColor: hovered ? cat.color + '55' : '#e5e7eb',
+        transition: 'all 0.2s cubic-bezier(0.16, 1, 0.3, 1)',
+        display: 'flex',
+        flexDirection: 'column',
       }}
     >
-      {/* ── Clickable thumbnail ── */}
+      {/* ── Clickable Thumbnail ── */}
       <div
         onClick={openSite}
         style={{
-          width: '100%', height: '130px',
+          width: '100%', height: '140px',
           background: cat.bg,
           display: 'flex', alignItems: 'center', justifyContent: 'center',
           position: 'relative', overflow: 'hidden',
           cursor: 'pointer',
         }}
       >
-        {/* Top color accent */}
+        {/* Top brand color indicator bar */}
         <div style={{
           position: 'absolute', top: 0, left: 0, right: 0, height: '3px',
-          background: cat.color, opacity: 0.7,
+          background: cat.color, opacity: 0.8,
         }} />
 
         {(!site.screenshot || imgError) ? (
           <span style={{
-            fontSize: '40px', fontWeight: 800, color: cat.color,
-            opacity: 0.18, userSelect: 'none', letterSpacing: '-2px',
+            fontSize: '42px', fontWeight: 800, color: cat.color,
+            opacity: 0.25, userSelect: 'none', letterSpacing: '-1px',
+            fontFamily: 'Inter, sans-serif'
           }}>
             {site.name.charAt(0)}
           </span>
@@ -73,78 +75,83 @@ export default function SiteCard({ site, isSaved, onToggleSave }: {
           />
         )}
 
-        {/* Hover overlay with "Visit →" */}
+        {/* Hover overlay */}
         {hovered && (
           <div style={{
             position: 'absolute', inset: 0,
-            background: 'rgba(0,0,0,0.32)',
+            background: 'rgba(10, 10, 10, 0.45)',
             display: 'flex', alignItems: 'center', justifyContent: 'center',
-            backdropFilter: 'blur(1px)',
+            backdropFilter: 'blur(2px)',
           }}>
             <span style={{
-              fontSize: '12px', fontWeight: 600, color: '#fff',
-              padding: '6px 16px', borderRadius: '20px',
+              fontSize: '12px', fontWeight: 700, color: '#ffffff',
+              padding: '6px 14px', borderRadius: '50px',
               background: 'rgba(255,255,255,0.2)',
-              border: '1px solid rgba(255,255,255,0.35)',
+              border: '1px solid rgba(255,255,255,0.4)',
               letterSpacing: '0.02em',
+              display: 'inline-flex', alignItems: 'center', gap: '4px'
             }}>
-              Visit site ↗
+              Explore Site ↗
             </span>
           </div>
         )}
 
-        {/* Save button */}
+        {/* Save/Favorite toggle button */}
         <button
           onClick={(e) => { e.stopPropagation(); onToggleSave(site.id) }}
+          aria-label={isSaved ? "Remove from saved" : "Save site"}
           style={{
             position: 'absolute', top: '8px', right: '8px',
-            background: isSaved ? '#2d8a4e' : 'rgba(255,255,255,0.92)',
+            background: isSaved ? '#08b54d' : 'rgba(255,255,255,0.92)',
             border: '1px solid rgba(0,0,0,0.08)',
             borderRadius: '50%',
-            width: '30px', height: '30px',
+            width: '32px', height: '32px',
             display: 'flex', alignItems: 'center', justifyContent: 'center',
-            fontSize: '13px', cursor: 'pointer',
-            color: isSaved ? '#fff' : '#555',
+            fontSize: '14px', cursor: 'pointer',
+            color: isSaved ? '#ffffff' : '#383838',
             zIndex: 2,
-            transition: 'all 0.15s',
+            boxShadow: '0 2px 6px rgba(0,0,0,0.1)',
+            transition: 'all 0.15s ease',
           }}
         >
           {isSaved ? '✓' : '♡'}
         </button>
       </div>
 
-      {/* ── Card body ── */}
+      {/* ── Card Body ── */}
       <div
         onClick={openSite}
-        style={{ padding: '12px 14px', cursor: 'pointer' }}
+        style={{ padding: '14px 16px', cursor: 'pointer', flex: 1, display: 'flex', flexDirection: 'column' }}
       >
         <div style={{
-          display: 'flex', alignItems: 'flex-start',
+          display: 'flex', alignItems: 'center',
           justifyContent: 'space-between',
-          marginBottom: '4px', gap: '8px',
+          marginBottom: '6px', gap: '8px',
         }}>
-          <span style={{ fontWeight: 600, fontSize: '14px', color: '#111', lineHeight: 1.3 }}>
+          <h3 style={{ fontWeight: 700, fontSize: '15px', color: '#0a0a0a', margin: 0, lineHeight: 1.3 }}>
             {site.name}
-          </span>
+          </h3>
           <span style={{
-            fontSize: '10px', fontWeight: 600, padding: '2px 8px',
-            borderRadius: '20px', background: cat.bg, color: cat.color,
+            fontSize: '10px', fontWeight: 700, padding: '2px 8px',
+            borderRadius: '50px', background: cat.bg, color: cat.color,
             whiteSpace: 'nowrap', flexShrink: 0,
-            border: `1px solid ${cat.color}22`,
+            border: `1px solid ${cat.border}`,
+            textTransform: 'uppercase',
+            letterSpacing: '0.03em'
           }}>
             {cat.label}
           </span>
         </div>
 
         <div style={{
-          fontSize: '11px', color: '#2d8a4e', marginBottom: '7px',
-          display: 'flex', alignItems: 'center', gap: '3px',
+          fontSize: '11.5px', color: '#08b54d', marginBottom: '8px',
+          fontWeight: 600, display: 'flex', alignItems: 'center', gap: '3px',
         }}>
-          {site.url.replace(/^https?:\/\//, '')}
+          {site.url.replace(/^https?:\/\/(www\.)?/, '').split('/')[0]}
           <span style={{ fontSize: '10px' }}>↗</span>
         </div>
 
-        <p style={{ fontSize: '12px', color: '#6b7280', lineHeight: '1.55', margin: 0 }}>
+        <p style={{ fontSize: '12.5px', color: '#525252', lineHeight: '1.5', margin: 0, flex: 1 }}>
           {site.description}
         </p>
       </div>

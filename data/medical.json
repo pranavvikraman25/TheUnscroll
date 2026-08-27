@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "name": "Servier Medical Art",
+    "url": "https://smart.servier.com/",
+    "category": "Medical Illustrations",
+    "description": "A massive collection of over 3,000 free medical and scientific vector images. Fully editable, high-resolution vector illustrations for medical research, student presentations, and healthcare publications.",
+    "screenshot": "https://s0.wp.com/mshots/v1/https://smart.servier.com/?w=640",
+    "featured": true,
+    "badge": "FLAGSHIP RESOURCE"
+  },
+  {
+    "id": 2,
+    "name": "PubMed (NCBI)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/",
+    "category": "Biomedical Literature",
+    "description": "The gold-standard research database featuring over 36 million citations for biomedical literature, clinical research, life science journals, and online scientific books.",
+    "screenshot": "https://s0.wp.com/mshots/v1/https://pubmed.ncbi.nlm.nih.gov/?w=640",
+    "featured": false
+  },
+  {
+    "id": 3,
+    "name": "BioRender",
+    "url": "https://biorender.com/",
+    "category": "Scientific Diagrams",
+    "description": "The premiere scientific illustration tool designed for scientists and students. Create publication-quality medical diagrams and cellular pathways in minutes.",
+    "screenshot": "https://s0.wp.com/mshots/v1/https://biorender.com/?w=640",
+    "featured": false
+  },
+  {
+    "id": 4,
+    "name": "BioDigital Human",
+    "url": "https://human.biodigital.com/",
+    "category": "3D Anatomy",
+    "description": "An interactive 3D human body platform. Explore anatomy, disease conditions, and surgical procedures in an immersive WebGL 3D environment.",
+    "screenshot": "https://s0.wp.com/mshots/v1/https://human.biodigital.com/?w=640",
+    "featured": false
+  },
+  {
+    "id": 5,
+    "name": "MedlinePlus",
+    "url": "https://medlineplus.gov/",
+    "category": "Clinical Health",
+    "description": "Trusted health and medical information from the U.S. National Library of Medicine. Features detailed guides on diseases, tests, and medical drugs.",
+    "screenshot": "https://s0.wp.com/mshots/v1/https://medlineplus.gov/?w=640",
+    "featured": false
+  },
+  {
+    "id": 6,
+    "name": "InnerBody Anatomy",
+    "url": "https://www.innerbody.com/",
+    "category": "Anatomy Guide",
+    "description": "Free interactive anatomical guide showcasing hundreds of interactive body maps covering skeletal, cardiovascular, and nervous systems.",
+    "screenshot": "https://s0.wp.com/mshots/v1/https://www.innerbody.com/?w=640",
+    "featured": false
+  }
+]

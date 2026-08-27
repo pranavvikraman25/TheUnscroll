@@ -1294,5 +1294,61 @@
         "description": "A neat tool designed to help you quickly choose what to watch based on simple filters, helping you escape decision paralysis.",
         "category": "tools",
         "screenshot": "https://s0.wp.com/mshots/v1/https://nothing-to-watch.port80.ch?w=640"
+    },
+    {
+        "id": 163,
+        "name": "67Movies",
+        "url": "https://67movies.net/",
+        "description": "Comprehensive global movie directory to discover and watch films from all around the world.",
+        "category": "chill",
+        "screenshot": "https://s0.wp.com/mshots/v1/https://67movies.net/?w=640"
+    },
+    {
+        "id": 164,
+        "name": "FilmGuin",
+        "url": "https://filmguin.net/",
+        "description": "Stream movies and TV series across genres with clean cataloging and fast playback.",
+        "category": "chill",
+        "screenshot": "https://s0.wp.com/mshots/v1/https://filmguin.net/?w=640"
+    },
+    {
+        "id": 165,
+        "name": "ArrowTV",
+        "url": "https://arrowtv.net/",
+        "description": "Dedicated cinema portal for watching global TV shows, blockbusters, and trending movies.",
+        "category": "chill",
+        "screenshot": "https://s0.wp.com/mshots/v1/https://arrowtv.net/?w=640"
+    },
+    {
+        "id": 166,
+        "name": "Shows.st",
+        "url": "https://shows.st/",
+        "description": "Extensive index for streaming movies and popular series with full episode access.",
+        "category": "chill",
+        "screenshot": "https://s0.wp.com/mshots/v1/https://shows.st/?w=640"
+    },
+    {
+        "id": 167,
+        "name": "Movies2Love",
+        "url": "https://movies2love.com/",
+        "description": "Curated collection of movies and cinema recommendations to stream top titles worldwide.",
+        "category": "chill",
+        "screenshot": "https://s0.wp.com/mshots/v1/https://movies2love.com/?w=640"
+    },
+    {
+        "id": 168,
+        "name": "Road to Doomsday",
+        "url": "https://roadtodoomsday.com/",
+        "description": "The ultimate Avengers: Doomsday MCU preparation guide & complete chronological watchlist.",
+        "category": "tools",
+        "screenshot": "https://s0.wp.com/mshots/v1/https://roadtodoomsday.com/?w=640"
+    },
+    {
+        "id": 169,
+        "name": "Servier Medical Art",
+        "url": "https://smart.servier.com/",
+        "description": "Free, high-quality medical and scientific vector illustration database for research, presentations, and education.",
+        "category": "science",
+        "screenshot": "https://s0.wp.com/mshots/v1/https://smart.servier.com/?w=640"
     }
 ]

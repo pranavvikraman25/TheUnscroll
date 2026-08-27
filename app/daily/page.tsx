@@ -2,6 +2,7 @@
 import { useMemo, useState } from 'react'
 import Link from 'next/link'
 import { getDailyPick, getRandomPick, getTodayFormatted, DailyPick } from '../../lib/dailyPick'
+import { IconDaily, IconSparkles } from '../../components/Icons'
 
 export default function DailyPickPage() {
   const initialPick = useMemo(() => getDailyPick(), [])
@@ -29,21 +30,25 @@ export default function DailyPickPage() {
   return (
     <div style={{
       minHeight: '100vh',
-      background: `linear-gradient(135deg, ${pick.color}08 0%, #f9fafb 60%)`,
-      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+      background: `#fafafa`,
+      fontFamily: 'Inter, sans-serif',
+      color: '#141414',
       transition: 'background 0.5s ease',
     }}>
       {/* Nav */}
       <nav style={{
-        background: '#fff', borderBottom: '1px solid #f0f0f0',
-        padding: '12px 24px', display: 'flex', alignItems: 'center', gap: '12px',
+        background: '#ffffff', borderBottom: '1px solid #e0e1e1',
+        padding: '14px 28px', display: 'flex', alignItems: 'center', gap: '12px',
         position: 'sticky', top: 0, zIndex: 10,
       }}>
         <Link href="/" style={{ textDecoration: 'none', fontSize: '16px', fontWeight: 800 }}>
-          <span style={{ color: '#2d8a4e' }}>The </span><span style={{ color: '#c8970a' }}>Unscroll</span>
+          <span style={{ color: '#08b54d' }}>The </span><span style={{ color: '#141414' }}>Unscroll</span>
         </Link>
-        <span style={{ color: '#d1d5db' }}>/</span>
-        <span style={{ fontWeight: 600, fontSize: '14px', color: '#374151' }}>☀️ Daily Pick</span>
+        <span style={{ color: '#cacaca' }}>/</span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontWeight: 700, fontSize: '14px', color: '#08b54d' }}>
+          <IconDaily size={16} color="#08b54d" />
+          <span>Daily Featured Pick</span>
+        </div>
       </nav>
 
       <div style={{ maxWidth: '680px', margin: '0 auto', padding: '48px 24px' }}>
@@ -51,38 +56,39 @@ export default function DailyPickPage() {
         {/* Spin Wheel Area */}
         <div style={{ textAlign: 'center', marginBottom: '32px' }}>
           <div style={{
-            width: '100px', height: '100px', margin: '0 auto 16px',
+            width: '80px', height: '80px', margin: '0 auto 16px',
             position: 'relative', borderRadius: '50%',
-            background: '#fff', border: '2px solid #e5e7eb',
-            boxShadow: '0 8px 24px rgba(0,0,0,0.06)',
+            background: '#ffffff', border: '2px solid #e0e1e1',
+            boxShadow: '0 8px 24px rgba(10,10,10,0.06)',
             display: 'flex', alignItems: 'center', justifyContent: 'center',
             cursor: isSpinning ? 'default' : 'pointer',
           }} onClick={spinWheel}>
             <div style={{
-              fontSize: '42px', 
+              display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#08b54d',
               transition: isSpinning ? 'transform 1s cubic-bezier(0.25, 0.1, 0.25, 1)' : 'none',
               transform: `rotate(${wheelRotation}deg)`,
             }}>
-              🎲
+              <IconSparkles size={36} color="#08b54d" />
             </div>
           </div>
           <button
             onClick={spinWheel}
             disabled={isSpinning}
             style={{
-              padding: '8px 16px',
-              background: '#fff',
-              color: '#374151',
-              border: '1px solid #d1d5db',
-              borderRadius: '20px',
-              fontWeight: 600,
+              padding: '10px 20px',
+              background: '#08b54d',
+              color: '#ffffff',
+              border: 'none',
+              borderRadius: '6px',
+              fontWeight: 700,
               fontSize: '13px',
               cursor: isSpinning ? 'not-allowed' : 'pointer',
               opacity: isSpinning ? 0.7 : 1,
-              transition: 'all 0.2s',
+              transition: 'all 0.2s ease',
+              boxShadow: '0 2px 6px rgba(8, 181, 77, 0.25)'
             }}
-            onMouseEnter={e => { if (!isSpinning) e.currentTarget.style.background = '#f9fafb' }}
-            onMouseLeave={e => { if (!isSpinning) e.currentTarget.style.background = '#fff' }}
+            onMouseEnter={e => { if (!isSpinning) e.currentTarget.style.background = '#06963f' }}
+            onMouseLeave={e => { if (!isSpinning) e.currentTarget.style.background = '#08b54d' }}
           >
             Spin for a random pick
           </button>
@@ -94,64 +100,65 @@ export default function DailyPickPage() {
         }}>
           <div style={{
             display: 'inline-flex', alignItems: 'center', gap: '6px',
-            background: '#fff', border: '1px solid #e5e7eb',
-            borderRadius: '20px', padding: '5px 14px',
-            fontSize: '12px', color: '#6b7280', fontWeight: 500,
+            background: '#ffffff', border: '1px solid #e0e1e1',
+            borderRadius: '50px', padding: '6px 16px',
+            fontSize: '12px', color: '#525252', fontWeight: 600,
           }}>
-            <span>📅</span> {today}
+            {today}
           </div>
 
           {/* Type label */}
           <div style={{
             display: 'inline-flex', alignItems: 'center', gap: '8px',
-            background: pick.color + '18',
+            background: pick.color + '15',
             border: `1px solid ${pick.color}33`,
-            borderRadius: '20px', padding: '5px 14px',
-            fontSize: '12px', fontWeight: 700, color: pick.color,
+            borderRadius: '50px', padding: '6px 16px',
+            fontSize: '12px', fontWeight: 800, color: pick.color,
           }}>
-            <span>{pick.emoji}</span> {pick.label}
+            {pick.label}
           </div>
         </div>
 
         {/* Main card */}
         <div style={{
-          background: '#fff',
-          border: `2px solid ${pick.color}33`,
-          borderRadius: '20px',
+          background: '#ffffff',
+          border: `1px solid ${pick.color}`,
+          borderRadius: '16px',
           padding: '36px',
           marginBottom: '24px',
-          boxShadow: `0 20px 60px ${pick.color}18`,
-          transition: 'all 0.5s ease',
+          boxShadow: `0 12px 32px rgba(10, 10, 10, 0.08)`,
+          transition: 'all 0.3s ease',
         }}>
           <h1 style={{
-            fontSize: '28px', fontWeight: 800, color: '#111',
-            lineHeight: 1.2, marginBottom: '10px',
+            fontSize: '28px', fontWeight: 900, color: '#141414',
+            lineHeight: 1.2, marginBottom: '10px', letterSpacing: '-0.5px'
           }}>{pick.title}</h1>
           <div style={{
-            fontSize: '13px', color: pick.color, fontWeight: 600,
+            fontSize: '13.5px', color: pick.color, fontWeight: 700,
             marginBottom: '18px',
           }}>{pick.subtitle}</div>
           <p style={{
-            fontSize: '15px', color: '#374151', lineHeight: 1.75,
+            fontSize: '15px', color: '#525252', lineHeight: 1.7,
             marginBottom: '28px',
           }}>{pick.description}</p>
 
           {/* CTA */}
           <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
             <a href={pick.url} target="_blank" rel="noopener noreferrer" style={{
-              padding: '12px 28px', borderRadius: '10px',
-              background: pick.color, color: '#fff',
-              textDecoration: 'none', fontSize: '14px', fontWeight: 700,
+              padding: '12px 28px', borderRadius: '6px',
+              background: pick.color, color: '#ffffff',
+              textDecoration: 'none', fontSize: '14px', fontWeight: 800,
               display: 'inline-flex', alignItems: 'center', gap: '8px',
+              boxShadow: '0 4px 12px rgba(0,0,0,0.1)'
             }}>
-              {pick.emoji} Open now ↗
+              Open Platform ↗
             </a>
             {pick.route && pick.route !== pick.url && (
               <Link href={pick.route} style={{
-                padding: '12px 20px', borderRadius: '10px',
-                background: pick.color + '12', color: pick.color,
-                textDecoration: 'none', fontSize: '13px', fontWeight: 600,
-                border: `1px solid ${pick.color}33`,
+                padding: '12px 20px', borderRadius: '6px',
+                background: '#ffffff', color: pick.color,
+                textDecoration: 'none', fontSize: '13px', fontWeight: 700,
+                border: `1px solid ${pick.color}`,
               }}>
                 Browse all {pick.type === 'rabbit-hole' ? 'rabbit holes' : (pick.type === 'movie' || pick.type === 'movie-moment') ? 'movies' : pick.type + 's'} →
               </Link>
@@ -161,10 +168,10 @@ export default function DailyPickPage() {
 
         {/* Footer note */}
         <div style={{
-          textAlign: 'center', fontSize: '12px', color: '#9ca3af', lineHeight: 1.6,
+          textAlign: 'center', fontSize: '12.5px', color: '#666666', lineHeight: 1.6,
         }}>
-          Today's pick is drawn from <strong style={{ color: '#374151' }}>280+ curated items</strong> across 10 categories.<br />
-          Click the dice to discover something completely different. ✨
+          Today's pick is drawn from <strong style={{ color: '#141414', fontWeight: 700 }}>280+ curated resources</strong> across 10 categories.<br />
+          Click the spin button to discover something completely different.
         </div>
       </div>
     </div>

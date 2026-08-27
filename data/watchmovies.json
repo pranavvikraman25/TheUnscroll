@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "67Movies",
+    "url": "https://67movies.net/",
+    "category": "Watch Movies",
+    "description": "Comprehensive destination to discover, search, and stream full-length movies from all around the world in high definition.",
+    "screenshot": "https://s0.wp.com/mshots/v1/https://67movies.net/?w=640",
+    "tag": "All-in-One Cinema"
+  },
+  {
+    "id": 2,
+    "name": "FilmGuin",
+    "url": "https://filmguin.net/",
+    "category": "Watch Movies",
+    "description": "Clean, fast cinema streaming portal designed for exploring blockbusters, trending series, and independent titles.",
+    "screenshot": "https://s0.wp.com/mshots/v1/https://filmguin.net/?w=640",
+    "tag": "HD Movies & Shows"
+  },
+  {
+    "id": 3,
+    "name": "ArrowTV",
+    "url": "https://arrowtv.net/",
+    "category": "Watch Movies",
+    "description": "Dedicated streaming directory focusing on global television shows, classic series, and cinema releases.",
+    "screenshot": "https://s0.wp.com/mshots/v1/https://arrowtv.net/?w=640",
+    "tag": "Series & Blockbusters"
+  },
+  {
+    "id": 4,
+    "name": "Shows.st",
+    "url": "https://shows.st/",
+    "category": "Watch Movies",
+    "description": "Extensive catalog offering direct streaming links for movies and episodic series across multiple genres.",
+    "screenshot": "https://s0.wp.com/mshots/v1/https://shows.st/?w=640",
+    "tag": "Streaming Hub"
+  },
+  {
+    "id": 5,
+    "name": "Movies2Love",
+    "url": "https://movies2love.com/",
+    "category": "Watch Movies",
+    "description": "Curated movie platform celebrating cinema gems, top recommendations, and instant viewing options.",
+    "screenshot": "https://s0.wp.com/mshots/v1/https://movies2love.com/?w=640",
+    "tag": "Curated Portal"
+  }
+]

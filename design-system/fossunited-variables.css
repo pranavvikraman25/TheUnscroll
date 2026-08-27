@@ -1,0 +1,69 @@
+:root {
+  /* FOSS United Color System */
+  --color-primary: #08b54d;
+  --color-primary-hover: #06963f;
+  --color-primary-light: #e8f8ee;
+  --color-vitalize: #28a745;
+  
+  --color-secondary: #c54444;
+  --color-rose-madder: #e03636;
+  --color-secondary-light: #fdf2f2;
+
+  --color-accent: #006ccc;
+  --color-accent-light: #eef6fc;
+  
+  --color-marigold: #ffc107;
+  --color-lone-hunter: #93c848;
+  --color-reddish-white: #fff7d4;
+
+  /* Neutrals */
+  --neutral-black: #0a0a0a;
+  --neutral-dark: #141414;
+  --neutral-charcoal: #171717;
+  --neutral-dark-grey: #383838;
+  --neutral-mid: #666666;
+  --neutral-darker: #525252;
+  --neutral-light-grey: #e0e1e1;
+  --neutral-border: #e5e7eb;
+  --neutral-light: #fafafa;
+  --neutral-offwhite: #f0f0f0;
+  --neutral-white: #ffffff;
+
+  /* Typography */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-base-size: 16px;
+
+  /* Spacing Scale */
+  --space-1: 1px;
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-28: 28px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-60: 60px;
+  --space-72: 72px;
+  --space-80: 80px;
+
+  /* Radii Scale */
+  --radius-3: 3px;
+  --radius-6: 6px;
+  --radius-12: 12px;
+  --radius-16: 16px;
+  --radius-50: 50px;
+  --radius-full: 9999px;
+
+  /* Motion */
+  --duration-fast: 100ms;
+  --duration-normal: 200ms;
+  --duration-slow: 300ms;
+  --ease-default: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px -2px rgba(10, 10, 10, 0.08), 0 2px 4px -1px rgba(10, 10, 10, 0.04);
+  --shadow-lg: 0 12px 28px -4px rgba(10, 10, 10, 0.12), 0 4px 8px -2px rgba(10, 10, 10, 0.04);
+}

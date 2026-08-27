@@ -5,6 +5,7 @@ import allSites from '../data/sites.json'
 import SiteCard from '../components/SiteCard'
 import Sidebar from '../components/Sidebar'
 import { getDailyPick } from '../lib/dailyPick'
+import { IconDaily, IconSearch } from '../components/Icons'
 
 const sites = allSites.filter(s => s.name.trim() !== '')
 
@@ -15,7 +16,7 @@ export default function Home() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
 
-  // Detect mobile
+  // Detect mobile screen
   useEffect(() => {
     const check = () => setIsMobile(window.innerWidth < 768)
     check()
@@ -63,14 +64,14 @@ export default function Home() {
   }, [category, search, saved])
 
   return (
-    <div style={{ display: 'flex', height: '100vh', overflow: 'hidden', background: '#f9fafb', position: 'relative' }}>
+    <div style={{ display: 'flex', height: '100vh', overflow: 'hidden', background: '#fafafa', position: 'relative', fontFamily: 'Inter, sans-serif' }}>
 
       {/* ── MOBILE: dark overlay when sidebar is open ── */}
       {isMobile && sidebarOpen && (
         <div
           onClick={() => setSidebarOpen(false)}
           style={{
-            position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.45)',
+            position: 'fixed', inset: 0, background: 'rgba(10,10,10,0.45)',
             zIndex: 40, backdropFilter: 'blur(2px)',
           }}
         />
@@ -78,14 +79,12 @@ export default function Home() {
 
       {/* ── SIDEBAR ── */}
       <div style={{
-        // Mobile: fixed drawer sliding in from left
-        // Desktop: static sidebar in the flex row
         ...(isMobile ? {
           position: 'fixed',
           top: 0, left: 0, bottom: 0,
           zIndex: 50,
           transform: sidebarOpen ? 'translateX(0)' : 'translateX(-100%)',
-          transition: 'transform 0.25s cubic-bezier(0.4,0,0.2,1)',
+          transition: 'transform 0.25s cubic-bezier(0.16,1,0.3,1)',
           boxShadow: sidebarOpen ? '4px 0 24px rgba(0,0,0,0.15)' : 'none',
         } : {
           position: 'relative',
@@ -101,14 +100,14 @@ export default function Home() {
       </div>
 
       {/* ── MAIN AREA ── */}
-      <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflowY: 'auto', background: '#f9fafb', minWidth: 0 }}>
+      <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflowY: 'auto', background: '#fafafa', minWidth: 0 }}>
 
-        {/* Top bar — premium search */}
+        {/* Top Bar — FOSS United Search Header */}
         <div style={{
-          padding: isMobile ? '10px 12px' : '12px 20px',
-          borderBottom: '1px solid #f0f0f0',
-          background: '#fff',
-          display: 'flex', alignItems: 'center', gap: '10px',
+          padding: isMobile ? '12px 14px' : '14px 24px',
+          borderBottom: '1px solid #e0e1e1',
+          background: '#ffffff',
+          display: 'flex', alignItems: 'center', gap: '12px',
           position: 'sticky', top: 0, zIndex: 10,
         }}>
           {/* Mobile hamburger */}
@@ -117,16 +116,16 @@ export default function Home() {
               onClick={() => setSidebarOpen(o => !o)}
               style={{
                 width: '38px', height: '38px', flexShrink: 0,
-                border: '1px solid #e5e7eb', borderRadius: '9px',
-                background: sidebarOpen ? '#f0fdf4' : '#fafafa',
+                border: '1px solid #e0e1e1', borderRadius: '6px',
+                background: sidebarOpen ? '#e8f8ee' : '#ffffff',
                 cursor: 'pointer', display: 'flex', flexDirection: 'column',
                 alignItems: 'center', justifyContent: 'center', gap: '4px', padding: 0,
               }}
             >
               {[0, 1, 2].map(i => (
                 <span key={i} style={{
-                  width: '15px', height: '1.5px', borderRadius: '2px',
-                  background: sidebarOpen ? '#2d8a4e' : '#555',
+                  width: '16px', height: '2px', borderRadius: '1px',
+                  background: sidebarOpen ? '#08b54d' : '#141414',
                   display: 'block', transition: 'background 0.15s',
                 }} />
               ))}
@@ -136,37 +135,37 @@ export default function Home() {
           {/* Search input with icon */}
           <div style={{ flex: 1, position: 'relative', minWidth: 0 }}>
             <svg
-              style={{ position: 'absolute', left: '13px', top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none' }}
-              width="15" height="15" viewBox="0 0 20 20" fill="none"
+              style={{ position: 'absolute', left: '14px', top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none' }}
+              width="16" height="16" viewBox="0 0 20 20" fill="none"
             >
-              <circle cx="8.5" cy="8.5" r="5.75" stroke="#9ca3af" strokeWidth="1.75" />
-              <path d="M13 13L17 17" stroke="#9ca3af" strokeWidth="1.75" strokeLinecap="round" />
+              <circle cx="8.5" cy="8.5" r="5.75" stroke="#666666" strokeWidth="1.75" />
+              <path d="M13 13L17 17" stroke="#666666" strokeWidth="1.75" strokeLinecap="round" />
             </svg>
             <input
               type="text"
-              placeholder={isMobile ? 'Search sites...' : 'Search across ' + sites.length + ' sites — try "chess", "NASA", "relax"...'}
+              placeholder={isMobile ? 'Search sites...' : 'Search across ' + sites.length + ' websites — try "chess", "NASA", "medical"...'}
               value={search}
               onChange={e => setSearch(e.target.value)}
               style={{
                 width: '100%',
-                padding: '10px 14px 10px 38px',
-                border: '1px solid #ebebeb',
-                borderRadius: '10px',
+                padding: '11px 16px 11px 40px',
+                border: '1px solid #e0e1e1',
+                borderRadius: '6px',
                 fontSize: '13.5px',
                 background: '#fafafa',
                 outline: 'none',
-                color: '#111',
+                color: '#141414',
                 fontFamily: 'inherit',
                 boxSizing: 'border-box',
-                transition: 'border-color 0.15s, box-shadow 0.15s',
+                transition: 'all 0.15s ease',
               }}
               onFocus={e => {
-                e.currentTarget.style.borderColor = '#2d8a4e'
-                e.currentTarget.style.boxShadow = '0 0 0 3px rgba(45,138,78,0.08)'
-                e.currentTarget.style.background = '#fff'
+                e.currentTarget.style.borderColor = '#08b54d'
+                e.currentTarget.style.boxShadow = '0 0 0 3px rgba(8, 181, 77, 0.15)'
+                e.currentTarget.style.background = '#ffffff'
               }}
               onBlur={e => {
-                e.currentTarget.style.borderColor = '#ebebeb'
+                e.currentTarget.style.borderColor = '#e0e1e1'
                 e.currentTarget.style.boxShadow = 'none'
                 e.currentTarget.style.background = '#fafafa'
               }}
@@ -179,39 +178,42 @@ export default function Home() {
               href="https://github.com/pranavvikraman25/tabbreaker/issues/new"
               target="_blank" rel="noopener noreferrer"
               style={{
-                padding: '10px 18px',
-                borderRadius: '10px',
-                fontSize: '13px',
-                background: '#2d8a4e',
-                color: '#fff',
+                padding: '11px 20px',
+                borderRadius: '6px',
+                fontSize: '13.5px',
+                background: '#08b54d',
+                color: '#ffffff',
                 textDecoration: 'none',
-                fontWeight: 600,
+                fontWeight: 700,
                 whiteSpace: 'nowrap',
                 letterSpacing: '0.01em',
-                display: 'flex', alignItems: 'center', gap: '6px',
+                display: 'flex', alignItems: 'center', gap: '8px',
+                boxShadow: '0 2px 6px rgba(8, 181, 77, 0.25)',
+                transition: 'all 0.15s ease'
               }}
+              onMouseEnter={e => (e.currentTarget.style.background = '#06963f')}
+              onMouseLeave={e => (e.currentTarget.style.background = '#08b54d')}
             >
               Suggest a site
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                <path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="#fff" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </a>
           )}
         </div>
 
-
-        {/* Hero */}
-        <div style={{ padding: isMobile ? '18px 14px 14px' : '28px 24px 20px', borderBottom: '1px solid #f3f4f6', background: '#fff' }}>
-          <div style={{ fontSize: '11px', fontWeight: 600, color: '#9ca3af', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '6px' }}>
-            {category === 'all' ? `${sites.length} sites across 7 categories` : `${filtered.length} sites in this category`}
+        {/* Hero Section */}
+        <div style={{ padding: isMobile ? '20px 16px 16px' : '30px 28px 22px', borderBottom: '1px solid #e0e1e1', background: '#ffffff' }}>
+          <div style={{ fontSize: '11px', fontWeight: 700, color: '#08b54d', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '8px' }}>
+            {category === 'all' ? `${sites.length} SITES ACROSS 7 CATEGORIES` : `${filtered.length} SITES IN THIS CATEGORY`}
           </div>
-          <h1 style={{ fontSize: isMobile ? '20px' : '24px', fontWeight: 700, marginBottom: '6px', lineHeight: 1.3 }}>
-            <span style={{ color: '#2d8a4e' }}>The Unscroll</span> — your cure for{' '}
-            <span style={{ color: '#c8970a' }}>endless scrolling</span> ✦
+          <h1 style={{ fontSize: isMobile ? '22px' : '26px', fontWeight: 800, marginBottom: '8px', lineHeight: 1.3, color: '#141414', letterSpacing: '-0.5px' }}>
+            <span style={{ color: '#08b54d' }}>The Unscroll</span> — your cure for{' '}
+            <span style={{ color: '#c54444' }}>endless scrolling</span>
           </h1>
           {!isMobile && (
-            <p style={{ fontSize: '14px', color: '#6b7280', margin: '0 0 18px' }}>
-              Every site earns your attention the honest way — wonder, learning, or pure joy. No algorithm.
+            <p style={{ fontSize: '14.5px', color: '#525252', margin: '0 0 20px', lineHeight: 1.6, maxWidth: '720px' }}>
+              Every site earns your attention the honest way — wonder, learning, or pure joy. No algorithm, no doomscrolling.
             </p>
           )}
 
@@ -220,42 +222,50 @@ export default function Home() {
             const pick = getDailyPick()
             return (
               <Link href="/daily" style={{
-                display: 'flex', alignItems: 'center', gap: '12px',
-                background: pick.color + '08',
-                border: `1px solid ${pick.color}33`,
-                borderRadius: '12px', padding: '12px 16px',
-                textDecoration: 'none', marginTop: isMobile ? '10px' : '0',
+                display: 'flex', alignItems: 'center', gap: '14px',
+                background: '#fff7d4',
+                border: '1px solid rgba(255, 193, 7, 0.4)',
+                borderRadius: '8px', padding: '14px 18px',
+                textDecoration: 'none', marginTop: isMobile ? '12px' : '0',
+                transition: 'transform 0.15s ease'
               }}>
                 <div style={{
-                  width: '38px', height: '38px', borderRadius: '10px',
-                  background: pick.color + '18', display: 'flex',
+                  width: '40px', height: '40px', borderRadius: '6px',
+                  background: '#ffc107', display: 'flex',
                   alignItems: 'center', justifyContent: 'center',
-                  fontSize: '18px', flexShrink: 0,
-                }}>{pick.emoji}</div>
-                <div style={{ flex: 1, minWidth: 0 }}>
-                  <div style={{ fontSize: '10px', fontWeight: 700, color: pick.color, textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '2px' }}>☀️ Daily Pick</div>
-                  <div style={{ fontWeight: 600, fontSize: '13px', color: '#111', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{pick.title}</div>
-                  {!isMobile && <div style={{ fontSize: '11px', color: '#6b7280', marginTop: '1px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{pick.subtitle}</div>}
+                  flexShrink: 0, color: '#141414'
+                }}>
+                  <IconDaily size={20} color="#141414" />
                 </div>
-                <span style={{ fontSize: '12px', fontWeight: 600, color: pick.color, flexShrink: 0 }}>View →</span>
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <div style={{ fontSize: '10px', fontWeight: 800, color: '#141414', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '2px' }}>
+                    Daily Featured Pick
+                  </div>
+                  <div style={{ fontWeight: 700, fontSize: '14px', color: '#141414', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{pick.title}</div>
+                  {!isMobile && <div style={{ fontSize: '12px', color: '#525252', marginTop: '1px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{pick.subtitle}</div>}
+                </div>
+                <span style={{ fontSize: '12.5px', fontWeight: 700, color: '#141414', flexShrink: 0 }}>Explore →</span>
               </Link>
             )
           })()}
         </div>
 
-        {/* Grid — 2 cols on mobile, auto on desktop */}
+        {/* Grid of Site Cards */}
         <div style={{
-          padding: isMobile ? '14px 10px' : '20px 24px',
+          padding: isMobile ? '16px 12px' : '24px 28px',
           display: 'grid',
           gridTemplateColumns: isMobile
             ? 'repeat(2, 1fr)'
-            : 'repeat(auto-fill, minmax(240px, 1fr))',
-          gap: isMobile ? '10px' : '16px',
+            : 'repeat(auto-fill, minmax(260px, 1fr))',
+          gap: isMobile ? '12px' : '20px',
         }}>
           {filtered.length === 0 ? (
-            <div style={{ gridColumn: '1/-1', textAlign: 'center', padding: '60px 0', color: '#9ca3af' }}>
-              <div style={{ fontSize: '36px', marginBottom: '12px' }}>🔍</div>
-              <div style={{ fontSize: '14px' }}>No sites match. Try another keyword!</div>
+            <div style={{ gridColumn: '1/-1', textAlign: 'center', padding: '60px 0', color: '#666666' }}>
+              <div style={{ marginBottom: '12px', display: 'flex', justifyContent: 'center' }}>
+                <IconSearch size={36} color="#666666" />
+              </div>
+              <div style={{ fontSize: '15px', fontWeight: 700 }}>No sites match your search.</div>
+              <div style={{ fontSize: '13px', color: '#666666', marginTop: '4px' }}>Try searching another keyword!</div>
             </div>
           ) : (
             filtered.map(site => (
@@ -269,13 +279,13 @@ export default function Home() {
           )}
         </div>
 
-        {/* Mobile footer with submit link */}
+        {/* Mobile Footer */}
         {isMobile && (
-          <div style={{ padding: '16px 14px', borderTop: '1px solid #f3f4f6', background: '#fff', textAlign: 'center' }}>
+          <div style={{ padding: '18px 16px', borderTop: '1px solid #e0e1e1', background: '#ffffff', textAlign: 'center' }}>
             <a
               href="https://github.com/pranavvikraman25/tabbreaker/issues/new"
               target="_blank" rel="noopener noreferrer"
-              style={{ fontSize: '13px', color: '#2d8a4e', textDecoration: 'none', fontWeight: 600 }}
+              style={{ fontSize: '13.5px', color: '#08b54d', textDecoration: 'none', fontWeight: 700 }}
             >
               + Submit a site on GitHub
             </a>
